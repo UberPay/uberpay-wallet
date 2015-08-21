@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name" translatable="false">Uberpay (beta)</string>
+    <string name="app_name" translatable="false">UberPay</string>
     <string name="app_package" translatable="false">com.mygeopay.wallet.dev</string>
     <string name="almost_equal_to" translatable="false">≈</string>
     <string name="action_scan_qr_code">Scan</string>
@@ -62,7 +62,7 @@
     <string name="trade">Coin Swap</string>
     <string name="receive">Receive</string>
     <!-- Welcome fragment -->
-    <string name="welcome_text">Welcome to Uberpay wallet</string>
+    <string name="welcome_text">Welcome to UberPay wallet</string>
     <string name="create_wallet">Create a new wallet</string>
     <string name="restore_wallet">Restore a wallet</string>
     <string name="test_wallet">Test wallet</string>
@@ -86,7 +86,7 @@
     <string name="restore_error_words">Recovery phrase contains unrecognized words.</string>
     <string name="restore_error_mismatch">Recovery phrase entered does not match your recovery phrase.</string>
     <string name="restore_error">Could not verify your recovery phrase. %1$s</string>
-    <string name="extra_entropy">Extra entropy</string>
+    <string name="extra_entropy">Extra Entropy</string>
     <!-- Wallet activity -->
     <string name="test_wallet_message">This is a test wallet, where you can send and receive testnet Bitcoins, Litecoin and Dogecoins.\n\nIf you want to use the wallet with real money please go to: <b>Settings &gt; Restore wallet &gt; Create a new wallet</b>.</string>
     <string name="wallet_update_title">New version available</string>
@@ -99,8 +99,8 @@
     <!-- Balance fragment -->
     <string name="wallet_transactions_coinbase">mined</string>
     <string name="history_empty">No coins received so far!\n\nYou can get some through a coin swap, trading and selling goods or services.</string>
-    <string name="sent_to">sent to</string>
-    <string name="received_with">Received with</string>
+    <string name="sent_to">Sent to</string>
+    <string name="received_with">Received from</string>
     <string name="get_tx_info_error">Could not get transaction information</string>
     <string name="disconnected_label">No connection</string>
     <string name="no_wallet_pocket_selected">No wallet account selected</string>
@@ -174,7 +174,7 @@
     </plurals>
     <!-- About Activity -->
     <string name="title_activity_about">About Uberpay</string>
-    <string name="app_name_long">Uberpay for Android</string>
+    <string name="app_name_long">UberPay for Android</string>
     <string name="about_licence">A Project\nhttp://uberpay.io\nSource code licensed under GNU General Public License 3</string>
     <string name="about_credits_nubits">Server infrastructure donated by NuBits - The World\'s First Stable Digital Currency\nhttps://nubits.com/</string>
     <string name="about_credits_translations">Translations provided by:</string>
@@ -203,7 +203,7 @@
     <string name="received">Received</string>
     <string name="status_label">Status</string>
     <string name="date_label">date</string>
-    <string name="transaction_id_label">Transaction id</string>
+    <string name="transaction_id_label">Transaction ID</string>
     <string name="view_at_a_blockchain_explorer_link">View on blockchain explorer</string>
     <plurals name="status_building">
         <item quantity="one">%d confirmation</item>
@@ -212,7 +212,7 @@
     <string name="status_pending">Waiting for transaction confirmation</string>
     <string name="status_unknown">Transaction status unknown</string>
     <!-- Exchange Rates -->
-    <string name="title_activity_exchange_rates">Swap rates</string>
+    <string name="title_activity_exchange_rates">Swap Rates</string>
     <string name="set_local_currency">Set %1$s as a local currency</string>
     <string name="exchange_rates_loading">Loading exchange rates</string>
     <string name="exchange_rates_load_error">Could not load swap rates</string>
@@ -249,7 +249,7 @@
     <string name="trade_warn_no_account_found">You will be prompted to add a %1$s wallet</string>
     <string name="trade_warn_no_connection_title">No connection</string>
     <string name="trade_warn_no_connection_message">Internet connection is needed to swap coins.</string>
-    <string name="trade_error">Coin swap error</string>
+    <string name="trade_error">Coin Swap error</string>
     <string name="trade_error_no_supported_source_accounts">No supported accounts found</string>
     <string name="trade_error_service_not_available">Service temporary unavailable, please try again in a minute</string>
     <string name="trade_error_market_info">Service temporary unavailable.\nNo information about %1$s - %2$s pair</string>
@@ -264,8 +264,8 @@
     <string name="trade_status_waiting_deposit">Waiting for deposit&#8230;</string>
     <string name="trade_status_received_deposit">Received deposit of %1$s</string>
     <string name="trade_status_waiting_trade">Waiting for swap&#8230;</string>
-    <string name="trade_status_complete_detail">Coin swap complete, sent %1$s</string>
-    <string name="trade_status_complete">Coin swap complete</string>
+    <string name="trade_status_complete_detail">Coin Swap complete, sent %1$s</string>
+    <string name="trade_status_complete">Coin Swap complete</string>
     <string name="trade_status_view_transaction">View transaction</string>
     <string name="trade_status_email_receipt">Email receipt</string>
     <string name="trade_status_failed_detail">Swap failed: %1$s</string>
@@ -276,7 +276,7 @@
     <string name="email_receipt_title">Email receipt</string>
     <string name="email_receipt_message">Receive an email for this coin swap transaction</string>
     <!-- Exchange History -->
-    <string name="title_activity_exchange_history">Coin swap history</string>
+    <string name="title_activity_exchange_history">Coin Swap history</string>
     <string name="exchange_history_empty">No coin swap made</string>
     <!-- ShapeShift -->
     <string name="about_shapeshift_title">About ShapeShift.io</string>

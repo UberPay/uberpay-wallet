@@ -169,7 +169,7 @@
     </plurals>
     <!-- About Activity -->
     <string name="title_activity_about">Uberpayについて</string>
-    <string name="app_name_long">Uberpay for Android</string>
+    <string name="app_name_long">UberPay for Android</string>
     <string name="about_licence">オープンソース・プロジェクト\nhttp://uberpay.io\nソースコードはGNU General Public License 3のもとでライセンスされています</string>
     <string name="about_credits_nubits">サーバのインフラはNuBits - 世界初の安定したデジタル通貨 - の寄付により成り立っています\nhttps://nubits.com/</string>
     <string name="about_credits_translations">翻訳提供者:</string>

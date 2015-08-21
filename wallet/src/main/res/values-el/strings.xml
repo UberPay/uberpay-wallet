@@ -59,7 +59,7 @@
     <string name="trade">Μετατροπή</string>
     <string name="receive">Λήψη</string>
     <!-- Welcome fragment -->
-    <string name="welcome_text">Καλώς ήλθατε στο Uberpay</string>
+    <string name="welcome_text">Καλώς ήλθατε στο UberPay</string>
     <string name="create_wallet">Νέο πορτοφόλι</string>
     <string name="restore_wallet">Ανάκτηση πορτοφολιού</string>
     <string name="test_wallet">Δοκιμαστικό πορτοφόλι</string>
@@ -171,7 +171,7 @@
     </plurals>
     <!-- About Activity -->
     <string name="title_activity_about">Σχετικά με το Uberpay</string>
-    <string name="app_name_long">Uberpay για το λειτουργικό Android</string>
+    <string name="app_name_long">UberPay για το λειτουργικό Android</string>
     <string name="about_licence">Ένα πρόγραμμα ανοιχτού λογισμικού\nhttp://uberpay.io\nΟ πηγαίος κώδικας διατίθεται βάσει της άδειας GNU General Public License 3</string>
     <string name="about_credits_nubits">Οι κεντρικοί εξυπηρετητές είναι μια προσφορά της NuBits\nhttps://nubits.com/</string>
     <string name="about_credits_translations">Μεταφράσεις από τους:</string>
