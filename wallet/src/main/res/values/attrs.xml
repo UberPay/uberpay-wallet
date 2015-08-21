@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="Amount">
+        <attr name="show_big" format="boolean" />
+        <attr name="single_line" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="SendOutput">
+        <attr name="is_fee" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="Address">
+        <attr name="multi_line" format="boolean" />
+        <attr name="show_coin_icon" format="boolean" />
+    </declare-styleable>
+</resources>

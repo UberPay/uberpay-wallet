@@ -1,0 +1,107 @@
+<resources>
+    <!-- All UI margins must be in dp and multiples of 16 -->
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="standard_margin">16dp</dimen>
+    <dimen name="half_standard_margin">8dp</dimen>
+    <dimen name="quarter_standard_margin">4dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- Per the design guidelines, navigation drawers should be between 240dp and 320dp:
+         https://developer.android.com/design/patterns/navigation-drawer.html -->
+    <dimen name="navigation_drawer_width">240dp</dimen>
+
+    <!-- Generic sizes taken from
+         http://www.google.com/design/spec/style/typography.html#typography-standard-styles -->
+    <dimen name="caption">12sp</dimen>
+
+    <!-- Coin icons -->
+    <dimen name="generic_icon_size">36dp</dimen>
+
+    <!-- Font icons -->
+    <dimen name="font_icon_bg_size">50dp</dimen>
+    <dimen name="font_icon_text_size">24sp</dimen>
+
+    <!-- Generic items -->
+    <dimen name="generic_circle_bg_size">22dp</dimen>
+    <dimen name="generic_circle_text_size">14sp</dimen>
+
+    <!-- Amount Widget -->
+    <dimen name="amount_margin_top">16dp</dimen>
+    <!-- TODO enable for SmoothProgressBar-->
+    <!--<dimen name="amount_margin_top">8dp</dimen>-->
+    <dimen name="amount_margin_bottom">4dp</dimen>
+    <dimen name="amount_text_size_big">56sp</dimen>
+    <dimen name="amount_text_size">32sp</dimen>
+    <dimen name="amount_pending_text_size">24sp</dimen>
+    <dimen name="amount_symbol_text_size">24sp</dimen>
+    <dimen name="connectivity_symbol_size">18dp</dimen>
+
+    <!-- SendOutput Widget -->
+    <dimen name="send_output_amount_text_size">24sp</dimen>
+    <dimen name="send_output_type_text_size">24sp</dimen>
+
+    <!-- IntroActivity -->
+    <dimen name="intro_button_width">224dp</dimen>
+    <dimen name="intro_description">16sp</dimen>
+    <dimen name="seed_text_size">26sp</dimen>
+    <dimen name="seed_padding">16dp</dimen>
+    <dimen name="seed_smaller_padding">8dp</dimen>
+
+    <!-- Receive fragment -->
+    <dimen name="receive_address">20sp</dimen>
+    <dimen name="qr_code_size">224dp</dimen>
+    <dimen name="qr_code_padding">16dp</dimen>
+
+    <!-- Send fragment -->
+
+    <!-- Balance fragment -->
+    <dimen name="history_label">24sp</dimen>
+    <dimen name="history_empty">20sp</dimen>
+    <dimen name="transaction_entry">18sp</dimen>
+    <dimen name="transaction_pending">18sp</dimen>
+    <dimen name="balance_progress_bar_size">20dp</dimen>
+
+    <!-- generic rows -->
+    <dimen name="row_font_icon_margin">8dp</dimen>
+    <dimen name="row_font_icon_size">20sp</dimen>
+    <dimen name="row_font_icon_bg_size">40dp</dimen>
+    <dimen name="row_text_size_header_text">14sp</dimen>
+    <dimen name="row_text_size_amount">22sp</dimen>
+    <dimen name="row_text_size_label">16sp</dimen>
+    <dimen name="row_text_size_date">14sp</dimen>
+    <dimen name="row_padding_vertical">12dp</dimen>
+    <dimen name="row_padding_horizontal">@dimen/activity_horizontal_margin</dimen>
+
+    <!-- Transaction Row -->
+    <dimen name="transaction_row_margin_direction">@dimen/row_font_icon_margin</dimen>
+    <dimen name="transaction_row_direction_font_icon_size">@dimen/row_font_icon_size</dimen>
+    <dimen name="transaction_row_direction_bg_size">@dimen/row_font_icon_bg_size</dimen>
+    <dimen name="transaction_row_confirmations_font_icon_size">18sp</dimen>
+    <dimen name="transaction_row_text_size_direction_text">@dimen/row_text_size_header_text</dimen>
+    <dimen name="transaction_row_text_size_amount">@dimen/row_text_size_amount</dimen>
+    <dimen name="transaction_row_text_size_date">@dimen/row_text_size_date</dimen>
+    <dimen name="transaction_row_padding_vertical">@dimen/row_padding_vertical</dimen>
+    <dimen name="transaction_row_padding_horizontal">@dimen/row_padding_horizontal</dimen>
+
+    <!-- About Activity -->
+    <dimen name="app_name_long">32sp</dimen>
+
+    <!-- Exchange row -->
+    <dimen name="exchange_row_margin_symbol">@dimen/row_font_icon_margin</dimen>
+    <dimen name="exchange_row_symbol_text_size">16sp</dimen>
+    <dimen name="exchange_row_symbol_bg_size">50dp</dimen>
+    <dimen name="exchange_row_text_size_amount">@dimen/row_text_size_amount</dimen>
+    <dimen name="exchange_row_text_size_label">@dimen/row_text_size_label</dimen>
+    <dimen name="exchange_row_text_size_date">@dimen/row_text_size_date</dimen>
+    <dimen name="exchange_row_padding_vertical">@dimen/row_padding_vertical</dimen>
+    <dimen name="exchange_row_padding_horizontal">@dimen/row_padding_horizontal</dimen>
+
+    <!-- Coin list row -->
+    <dimen name="coin_list_row_padding_vertical">@dimen/quarter_standard_margin</dimen>
+
+    <!-- Address row -->
+    <dimen name="address_row_status_bg_size">22dp</dimen>
+    <dimen name="address_row_status_text_size">10sp</dimen>
+</resources>

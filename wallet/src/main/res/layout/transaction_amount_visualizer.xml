@@ -1,0 +1,21 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:coinomi="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical">
+
+    <com.mygeopay.wallet.ui.widget.SendOutput
+        android:id="@+id/transaction_output"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginBottom="@dimen/standard_margin" />
+
+    <com.mygeopay.wallet.ui.widget.SendOutput
+        android:id="@+id/transaction_fee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|top"
+        coinomi:is_fee="true" />
+</LinearLayout>

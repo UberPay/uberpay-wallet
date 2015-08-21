@@ -1,0 +1,101 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.ReceiveFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal" >
+
+                <TextView
+                    android:id="@+id/request_address_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:text="@string/receive_address_label"
+                    android:textColor="@color/gray_54_sec_text_icons" />
+
+                <TextView
+                    android:id="@+id/request_address_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/request_address_info"
+                    style="@style/NormalText"
+                    android:textSize="@dimen/receive_address"
+                    tools:text="Fancy address label" />
+
+                <TextView
+                    android:id="@+id/request_address"
+                    style="@style/SmallHelpText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/request_address_label"
+                    android:typeface="monospace"
+                    tools:text="nUdHX BSBY QPJR EXZM BUdu 8ARn WM2m z3XQp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:minWidth="500dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/qr_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:background="@color/gray_87_text"
+                    android:padding="@dimen/qr_code_padding" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_vertical_margin">
+
+                    <com.mygeopay.wallet.ui.widget.AmountEditView
+                        android:id="@+id/send_coin_amount"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5" />
+
+                    <com.mygeopay.wallet.ui.widget.AmountEditView
+                        android:id="@+id/send_local_amount"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/view_previous_addresses"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                style="@style/BorderlessButtonLink"
+                android:text="@string/view_previous_addresses" />
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

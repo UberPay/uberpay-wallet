@@ -1,0 +1,172 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:coinomi="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.WalletSendCoins">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical">
+                <TextView
+                    android:id="@+id/pay_to_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:text="@string/pay_to_label"
+                    android:textColor="@color/gray_54_sec_text_icons" />
+
+                <LinearLayout
+                    android:id="@+id/send_to_address_container"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/pay_to_label"
+                    android:layout_toLeftOf="@+id/address_button_container"
+                    android:layout_toStartOf="@+id/address_button_container">
+
+                    <!-- TODO make android:imeOptions="actionNext" work -->
+                    <AutoCompleteTextView
+                        android:id="@+id/send_to_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/NormalText"
+                        android:imeOptions="actionNext|flagNoExtractUi"
+                        android:completionThreshold="1"
+                        android:hint="@string/send_coins_fragment_receiving_address_tip"
+                        android:singleLine="true"
+                        android:inputType="textMultiLine|textNoSuggestions" />
+
+                    <TextView
+                        android:id="@+id/address_error_message"
+                        style="@style/ErrorText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/address_error" />
+
+                    <com.mygeopay.wallet.ui.widget.AddressView
+                        android:id="@+id/send_to_address_static"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/quarter_standard_margin"
+                        coinomi:show_coin_icon="true"
+                        android:visibility="gone"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/address_button_container"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/send_to_address_container">
+                    <ImageButton
+                        android:id="@+id/scan_qr_code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/scan_qr_code"
+                        android:src="@drawable/qr_code" />
+
+                    <ImageButton
+                        android:id="@+id/erase_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/erase_address"
+                        android:src="@drawable/erase"
+                        android:visibility="gone"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/amount_to_send_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/send_to_address_container"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:text="@string/amount_to_send_label"
+                    android:textColor="@color/gray_54_sec_text_icons" />
+
+                <LinearLayout
+                    android:id="@+id/amounts"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:baselineAligned="false"
+                    android:layout_below="@+id/amount_to_send_label">
+
+                    <com.mygeopay.wallet.ui.widget.AmountEditView
+                        android:id="@+id/send_coin_amount"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5" />
+
+                    <com.mygeopay.wallet.ui.widget.AmountEditView
+                        android:id="@+id/send_local_amount"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/amount_error_message"
+                    style="@style/ErrorText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/amounts"
+                    tools:text="@string/amount_error" />
+
+                <TextView
+                    android:id="@+id/amount_warning_message"
+                    style="@style/WarningText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/amount_error_message"
+                    tools:text="@string/amount_warn_fees_apply" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom">
+                <Button
+                    android:id="@+id/send_confirm"
+                    style="@style/ExchangeRowSymbol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:enabled="false"
+                    android:text="@string/button_send" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

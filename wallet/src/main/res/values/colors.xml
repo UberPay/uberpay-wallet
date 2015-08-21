@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- http://www.google.com/design/spec/style/color.html#color-ui-color-application -->
+    <color name="primary_100">#B3E5FC</color>
+    <color name="primary_500">#0F9D58</color>
+    <color name="primary_600">#0FAC4C</color>
+    <color name="primary_700">#0288D1</color>
+    <color name="primary_800">#0277BD</color>
+    <color name="primary_900">#01579B</color>
+    <color name="accent">#0091EA</color>
+
+    <!-- COLOR UPDATE SEND/RECEIVE CONFIRMATIONS -->
+    <!--color name="send_light">#FFECB3</color-->
+    <!--color name="send_normal">#FF6F00</color-->
+    <!--color name="receive_light">#B3E5FC</color-->
+    <!--color name="receive_normal">#0277BD</color-->
+
+    <!-- NEW COLORS -->
+    <color name="send_light">#eded2828</color>
+    <color name="send_normal">#FF6F00</color>
+    <color name="receive_light">#5bc134</color>
+    <color name="receive_normal">#0277BD</color>
+
+    <!-- END COLOR UPDATE -->
+    <color name="white">#FFFFFF</color>
+    <color name="white_almost">#F3F3F3</color>
+
+    <color name="gray_87_text">#dd000000</color>
+    <color name="gray_54_sec_text_icons">#89000000</color>
+    <color name="gray_26_hint_text">#42000000</color>
+    <color name="gray_12_dividers">#1e000000</color>
+
+    <color name="send_color_fg">@color/send_normal</color>
+    <color name="receive_color_fg">@color/receive_normal</color>
+    <color name="send_color_bg">@color/send_light</color>
+    <color name="receive_color_bg">@color/receive_light</color>
+
+    <color name="address_bg_unused">#FFC3E297</color>
+    <color name="address_bg_used">@color/receive_color_bg</color>
+
+    <color name="actionbar_fg">@color/white_almost</color>
+    <color name="actionbar_bg">@color/primary_500</color>
+
+    <color name="navigation_drawer_bg">#F0FFFFFF</color>
+    <color name="navigation_drawer_add_coins_bg">#A0FFFFFF</color>
+
+    <!-- Font icons -->
+    <color name="font_icon_fg_color">@color/white_almost</color>
+    <color name="font_icon_bg_color">@color/primary_500</color>
+
+    <!-- foreground -->
+    <color name="fg_significant">@color/gray_87_text</color>
+    <color name="fg_less_significant">@color/gray_54_sec_text_icons</color>
+    <color name="fg_insignificant">@color/gray_26_hint_text</color>
+    <color name="fg_error">#ffff0000</color>
+    <color name="fg_warning">#ffff7e1f</color>
+    <color name="fg_ok">#ff6db10c</color>
+
+    <!-- background -->
+    <color name="bg_bright">#ffffffff</color>
+    <color name="bg_less_bright">#ffe8e8f0</color>
+    <color name="bg_panel">#ffd8d8e0</color>
+    <color name="bg_form">#ffe8e8f0</color>
+    <color name="bg_list">#40ffffff</color>
+    <color name="bg_list_selected">#40808090</color>
+    <color name="bg_dialog_title">#ffb8b8b0</color>
+
+    <!-- scanner -->
+    <color name="scan_mask">#60000000</color>
+    <color name="scan_laser">#cc0000</color>
+    <color name="scan_dot">#ff6600</color>
+    <color name="scan_result_view">#b0000000</color>
+    <color name="scan_result_dots">#c099cc00</color>
+
+    <!-- progress bar -->
+    <integer-array name="progress_bar_colors">
+        <item>@color/primary_600</item>
+        <item>@color/primary_700</item>
+        <item>@color/primary_800</item>
+    </integer-array>
+
+</resources>

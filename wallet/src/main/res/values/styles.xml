@@ -1,0 +1,187 @@
+<resources>
+
+    <style name="AppThemeNoTitleBar" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="colorPrimary">@color/primary_500</item>
+
+        <!-- colorPrimaryDark is used for the status bar -->
+        <item name="colorPrimaryDark">@color/primary_900</item>
+
+        <!-- colorAccent is used as the default value for colorControlActivated,
+             which is used to tint widgets -->
+        <item name="colorAccent">@color/accent</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- colorPrimary is used for the default action bar background -->
+        <item name="colorPrimary">@color/primary_500</item>
+
+        <!-- colorPrimaryDark is used for the status bar -->
+        <item name="colorPrimaryDark">@color/primary_900</item>
+
+        <!-- colorAccent is used as the default value for colorControlActivated,
+             which is used to tint widgets -->
+        <item name="colorAccent">@color/accent</item>
+
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <!-- Special Button styles -->
+    <style name="BorderlessButton">
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+    </style>
+
+    <style name="BorderlessButtonLink" parent="BorderlessButton">
+        <item name="android:textColor">@color/primary_500</item>
+    </style>
+
+    <!-- Font icons -->
+    <style name="FontIconBig" parent="NormalText">
+        <item name="android:textSize">@dimen/font_icon_text_size</item>
+        <item name="android:textColor">@color/font_icon_fg_color</item>
+        <item name="android:background">@drawable/font_icon_bg</item>
+        <item name="android:gravity">center_horizontal|center_vertical</item>
+    </style>
+
+    <!-- Generic text styles -->
+    <style name="NormalText" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/gray_87_text</item>
+        <item name="android:textColorLink">@color/gray_87_text</item>
+    </style>
+
+    <style name="NormalBoldText" parent="NormalText">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="SecondaryText" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/gray_54_sec_text_icons</item>
+    </style>
+
+    <style name="HintText" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/gray_26_hint_text</item>
+    </style>
+
+    <style name="SmallHelpText" parent="SecondaryText">
+        <item name="android:textSize">@dimen/caption</item>
+    </style>
+
+    <style name="ErrorText" parent="">
+        <item name="android:textColor">@color/fg_error</item>
+    </style>
+
+    <style name="WarningText" parent="">
+        <item name="android:textColor">@color/fg_warning</item>
+    </style>
+
+    <style name="SeedText" parent="">
+        <item name="android:textColor">@color/primary_500</item>
+        <item name="android:textSize">@dimen/seed_text_size</item>
+    </style>
+
+    <style name="GenericCircle" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/generic_circle_text_size</item>
+    </style>
+
+    <style name="GenericCircleGreen" parent="GenericCircle">
+        <item name="android:background">@drawable/generic_green_circle</item>
+    </style>
+
+    <style name="GenericCircleRed" parent="GenericCircle">
+        <item name="android:background">@drawable/generic_red_circle</item>
+    </style>
+
+    <!-- Thin progress bar -->
+    <!--<style name="ProgressBar" parent="SmoothProgressBar">-->
+        <!--<item name="spb_stroke_separator_length">16dp</item>-->
+        <!--<item name="spb_sections_count">3</item>-->
+        <!--<item name="spb_speed">1.0</item>-->
+        <!--<item name="spb_stroke_width">2dp</item>-->
+        <!--<item name="spb_progressiveStart_speed">2</item>-->
+        <!--<item name="spb_progressiveStop_speed">3.4</item>-->
+        <!--<item name="spb_interpolator">spb_interpolator_decelerate</item>-->
+        <!--<item name="spb_mirror_mode">true</item>-->
+        <!--<item name="spb_reversed">true</item>-->
+        <!--<item name="spb_colors">@array/progress_bar_colors</item>-->
+        <!--<item name="spb_progressiveStart_activated">false</item>-->
+    <!--</style>-->
+
+    <!-- PagerTabStrip style -->
+    <style name="PagerTabStrip" parent="NormalText">
+        <item name="android:background">@color/actionbar_bg</item>
+        <item name="android:textColor">@color/actionbar_fg</item>
+    </style>
+
+    <!-- Widget amount style -->
+    <style name="Amount" parent="NormalText">
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="AmountBig" parent="Amount">
+        <item name="android:textSize">@dimen/amount_text_size_big</item>
+    </style>
+    <style name="AmountPending" parent="Amount">
+        <item name="android:textSize">@dimen/amount_pending_text_size</item>
+        <item name="android:textColor">@color/gray_26_hint_text</item>
+    </style>
+    <style name="AmountSymbol" parent="SecondaryText">
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="AmountSymbolBig" parent="AmountSymbol">
+        <item name="android:textSize">@dimen/amount_symbol_text_size</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <!-- Widget send output -->
+    <style name="SendOutputType" parent="NormalText">
+        <item name="android:textSize">@dimen/send_output_type_text_size</item>
+        <item name="android:textColor">@color/primary_500</item>
+    </style>
+    <style name="SendOutputTypeText" parent="NormalText">
+        <item name="android:textColor">@color/primary_500</item>
+    </style>
+    <style name="SendOutputAmount" parent="NormalText">
+        <item name="android:textSize">@dimen/send_output_amount_text_size</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <!-- Transaction row -->
+    <style name="TransactionRowDirectionFontIcon" parent="SecondaryText">
+        <item name="android:textSize">@dimen/transaction_row_direction_font_icon_size</item>
+    </style>
+    <style name="TransactionRowConfidenceFontIcon" parent="SecondaryText">
+        <item name="android:textSize">@dimen/transaction_row_confirmations_font_icon_size</item>
+    </style>
+    <style name="TransactionRowDirectionText" parent="SecondaryText">
+        <item name="android:textSize">@dimen/transaction_row_text_size_direction_text</item>
+    </style>
+    <style name="TransactionRowDate" parent="SecondaryText">
+        <item name="android:textSize">@dimen/transaction_row_text_size_date</item>
+    </style>
+    <style name="AddressRowLabel" parent="NormalText">
+        <item name="android:textSize">@dimen/row_text_size_label</item>
+    </style>
+    <style name="TransactionRowAmount" parent="Amount">
+        <item name="android:textSize">@dimen/transaction_row_text_size_amount</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- About Activity -->
+    <style name="AppNameLong">
+        <item name="android:textSize">@dimen/app_name_long</item>
+    </style>
+
+    <!-- Exchange row -->
+    <style name="ExchangeRowSymbol" parent="FontIconBig">
+        <item name="android:textSize">@dimen/exchange_row_symbol_text_size</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="ExchangeRowLabel" parent="NormalText">
+        <item name="android:textSize">@dimen/exchange_row_text_size_label</item>
+    </style>
+    <style name="ExchangeRowAmount" parent="Amount">
+        <item name="android:textSize">@dimen/exchange_row_text_size_amount</item>
+    </style>
+
+</resources>
