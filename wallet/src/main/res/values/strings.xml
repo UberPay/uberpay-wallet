@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name" translatable="false">UberPay</string>
-    <string name="app_package" translatable="false">com.mygeopay.wallet.dev</string>
+    <string name="app_package" translatable="false">com.mygeopay.wallet</string>
     <string name="almost_equal_to" translatable="false">≈</string>
     <string name="action_scan_qr_code">Scan</string>
     <string name="action_share">Share</string>
@@ -62,7 +62,7 @@
     <string name="trade">Coin Swap</string>
     <string name="receive">Receive</string>
     <!-- Welcome fragment -->
-    <string name="welcome_text">Welcome to UberPay wallet</string>
+    <string name="welcome_text">Welcome to UberPay Wallet</string>
     <string name="create_wallet">Create a new wallet</string>
     <string name="restore_wallet">Restore a wallet</string>
     <string name="test_wallet">Test wallet</string>
@@ -155,7 +155,7 @@
     <!-- PasswordConfirmationFragment -->
     <string name="enter_password">Enter your password</string>
     <!-- SignTransactionFragment -->
-    <string name="contacting_exchange">Contacting coin swap&#8230;</string>
+    <string name="contacting_exchange">Contacting Coin Swap&#8230;</string>
     <string name="preparing_transaction">Please wait while your transaction is being prepared and sent.</string>
     <string name="no_such_pocket_error">An error occurred while accessing this wallet account. If the problem persists, try restoring the wallet using the recovery phrase.</string>
     <string name="password_failed">The password entered is not valid.</string>
@@ -173,12 +173,12 @@
         <item quantity="other">%d seconds</item>
     </plurals>
     <!-- About Activity -->
-    <string name="title_activity_about">About Uberpay</string>
+    <string name="title_activity_about">About UberPay</string>
     <string name="app_name_long">UberPay for Android</string>
-    <string name="about_licence">A Project\nhttp://uberpay.io\nSource code licensed under GNU General Public License 3</string>
+    <string name="about_licence">Project UberPay (beta)\nhttp://uberpay.io\nSource code licensed under GNU General Public License 3</string>
     <string name="about_credits_nubits">Server infrastructure donated by NuBits - The World\'s First Stable Digital Currency\nhttps://nubits.com/</string>
     <string name="about_credits_translations">Translations provided by:</string>
-    <string name="about_credits_translations_credits" translatable="false">George Kimionis (Greek)\n@visvirial (Japanese)</string>
+    <string name="about_credits_translations_credits" translatable="false">George Kimionis (Ελληνικα)\n@visvirial (Japanese)</string>
     <string name="about_credits_bitcoinj">Uses Bitcoinj library\nhttp://bitcoinj.github.io/</string>
     <string name="about_credits_electrum">Uses Electrum server software\nhttps://electrum.org/</string>
     <string name="about_credits_schildbach">Influenced by Andreas Schildbach\nhttps://github.com/schildbach/bitcoin-wallet/</string>
@@ -257,7 +257,7 @@
     <string name="trade_error_max_limit">The supplied amount exceeds the limit of %1$s. Please use a smaller amount.</string>
     <string name="trade_error_min_limit">The minimum amount is at least %1$s</string>
     <!-- Exchange Status -->
-    <string name="title_activity_exchange_status">Coin Swap status</string>
+    <string name="title_activity_exchange_status">Coin Swap Status</string>
     <string name="trade_status_message">Your order will complete shortly. You can exit this screen without affecting the coin swap.</string>
     <string name="trade_status_complete_message">Your order completed successfully.</string>
     <string name="trade_status_label">Status</string>
@@ -277,7 +277,7 @@
     <string name="email_receipt_message">Receive an email for this coin swap transaction</string>
     <!-- Exchange History -->
     <string name="title_activity_exchange_history">Coin Swap history</string>
-    <string name="exchange_history_empty">No coin swap made</string>
+    <string name="exchange_history_empty">No Coin Swap Processed</string>
     <!-- ShapeShift -->
     <string name="about_shapeshift_title">About ShapeShift.io</string>
     <string name="about_shapeshift_message">ShapeShift.io is an instant altcoin exchange that provides Bitcoin and Altcoin conversion. No account needed.</string>

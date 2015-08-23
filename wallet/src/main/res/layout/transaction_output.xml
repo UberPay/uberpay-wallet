@@ -78,7 +78,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingTop="4dp"
-        tools:text="Address label" />
+        tools:text="Address Label" />
 
     <TextView
         android:id="@+id/output_address"

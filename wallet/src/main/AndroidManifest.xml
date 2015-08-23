@@ -50,7 +50,7 @@
         android:name="com.mygeopay.wallet.WalletApplication"
         android:allowBackup="false"
         android:hardwareAccelerated="true"
-        android:icon="@drawable/ic_launcher_dev"
+        android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
@@ -207,15 +207,15 @@
 
         <provider
             android:name="com.mygeopay.wallet.ExchangeRatesProvider"
-            android:authorities="com.mygeopay.wallet.dev.exchange_rates"
+            android:authorities="com.mygeopay.wallet.exchange_rates"
             android:exported="false" />
         <provider
             android:name="com.mygeopay.wallet.AddressBookProvider"
-            android:authorities="com.mygeopay.wallet.dev.address_book"
+            android:authorities="com.mygeopay.wallet.address_book"
             android:exported="false" />
         <provider
             android:name=".ExchangeHistoryProvider"
-            android:authorities="com.mygeopay.wallet.dev.exchange_history"
+            android:authorities="com.mygeopay.wallet.exchange_history"
             android:exported="false" />
 
         <service

@@ -56,7 +56,7 @@
         android:layout_height="wrap_content"
         android:layout_toRightOf="@id/exchange_status_icons"
         android:layout_toEndOf="@id/exchange_status_icons"
-        tools:text="Exchanging" />
+        tools:text="Coin Swapping" />
 
     <LinearLayout
         android:id="@+id/exchange_values"

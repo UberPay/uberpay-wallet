@@ -40,7 +40,7 @@
                     android:layout_below="@+id/request_address_info"
                     style="@style/NormalText"
                     android:textSize="@dimen/receive_address"
-                    tools:text="Fancy address label" />
+                    tools:text="Fancy Address Label" />
 
                 <TextView
                     android:id="@+id/request_address"
