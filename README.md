@@ -6,9 +6,9 @@ Our goal is to develop and consumer friendly multicoin wallet that will support 
 
 Coins Pending for inclusion:
 
-MazaCoin
-StartCoin
-MaxCoin
+- MazaCoin
+- StartCoin
+- MaxCoin
 
 
 * Electrum-server support
