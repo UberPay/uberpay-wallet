@@ -25,7 +25,7 @@ MaxCoin
 ## Version history
 
 New in version 1.6.04
-- 
+-  promote Ƀ as the Bitcoin symbol.
 
 ## Credits
 
