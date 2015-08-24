@@ -1,16 +1,15 @@
 Uberpay Wallet
 ===============
 
-Our goal is to develop and consumer friendly multicoin wallet that will support the Uberpay Bitcoin Kiosks. Store all the best cryptocurrency through a single app, without sacrificing security. Private keys are stored on your own device. Instead of having one backup file for every coin, you get a master key that can be memorized or stored on a piece of paper. Restore all wallets from a single recovery phrase.
+Our goal is to develop and consumer friendly multicoin wallet that will support the Uberpay Bitcoin Kiosks. 
 
 
-## Contributions
+Coins Pending for inclusion:
 
-Your contributions are very welcome, be it translations, extra features or new coins support. Just
-fork this repo and create a pull request with your changes.
+MazaCoin
+StartCoin
+MaxCoin
 
-For new coins support read this [document](https://coinomi.com/AddingSupportForANewCurrency/).
-Generally you need:
 
 * Electrum-server support
 * Coinomi core support
