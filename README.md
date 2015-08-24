@@ -17,7 +17,7 @@ Coins Pending for inclusion:
 
 ## Acknowledgement
 
-* Electrum-server support
+* Electrum-server support (Provided by Coinomi.com)
 * Coinomi core support https://github.com/Coinomi
 * A beautiful vector icon
 * Entry to the [BIP44 registry](https://github.com/satoshilabs/docs/blob/master/slips/slip-0044.rst) that is maintained by Satoshi labs
