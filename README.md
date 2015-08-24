@@ -46,3 +46,7 @@ Coinomi core support https://github.com/Coinomi
 ## License
 
 GNU General Public License v2 (GPL-2)
+
+## FinCEN Compliance
+
+- Geopay.me Inc FinCEN MSB Registration Number: 31000066724535.
