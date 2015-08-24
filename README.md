@@ -18,41 +18,7 @@ Generally you need:
 * Entry to the [BIP44 registry](https://github.com/satoshilabs/docs/blob/master/slips/slip-0044.rst) that is maintained by Satoshi labs
 
 
-## Releasing the app
-
-To release the app follow the steps.
-
-1) Change the following:
-
-* in strings.xml app_name string to "Uberpay" and app_package to com.mygeopay.wallet
-* in build.gradle the package from "com.mygeopay.wallet.dev" to "com.mygeopay.wallet"
-* in AndroidManifest.xml the android:icon to "ic_launcher" and all "com.mygeopay.wallet.dev.*"  to "com.mygeopay.wallet.*"
-* remove all ic_launcher_dev icons with `rm wallet/src/main/res/drawable*/ic_launcher_dev.png`
-* setup ACRA and ShapeShift
-
-2) Then in the Android Studio go to:
-
-* Build -> Clean Project and without waiting...
-* Build -> Generate Signed APK and generate a signed APK. ... and now you can grab yourself a nice cup of tea.
-
-3) Test this APK (TODO: with instrumentation tests).
-
-For now test it manually by installing it `adb install -r wallet/wallet-release.apk`
-
-> This one is in the TODOs and must be automated
-> because it will be here that you take a break ;)
-
-4) Upload to Play Store and check for any errors and if all OK publish in beta first.
-
-5) Create a GIT release commit:
-
-* Create a commit with the log entry similar to the description in the Play Store
-* Create a tag with the version of the released APK with `git tag vX.Y.Z <commit-hash>`
-
-
 ## Version history
 
 New in version 1.6.01
-- Can set an amount in receive screen
-- Chinese and Japanese translations
-- Updated the recovery phrase creation procedure
+- 
