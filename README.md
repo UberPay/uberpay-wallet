@@ -20,5 +20,5 @@ Generally you need:
 
 ## Version history
 
-New in version 1.6.01
+New in version 1.6.04
 - 
