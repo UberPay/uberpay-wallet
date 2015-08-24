@@ -11,6 +11,7 @@ Coins Pending for inclusion:
 - MaxCoin
 
 
+## Acknowledgement
 
 * Electrum-server support
 * Coinomi core support https://github.com/Coinomi
