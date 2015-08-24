@@ -35,3 +35,7 @@ New in version 1.6.04
 Original Source:
 
 Coinomi core support https://github.com/Coinomi
+
+## License
+
+GNU General Public License v2 (GPL-2)
