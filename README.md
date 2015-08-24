@@ -9,7 +9,7 @@ Coins Pending for inclusion:
 - MazaCoin
 - StartCoin
 - MaxCoin
-- 
+
 
 
 * Electrum-server support
