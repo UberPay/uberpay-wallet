@@ -10,7 +10,7 @@ Coins Pending for inclusion:
 - StartCoin
 - MaxCoin
 
-## Mercahnt Testnet POS (Point Of Sale)
+## Merchant Testnet POS (Point Of Sale)
 
 - http://testcoins.btcpays.me/testnet/
 
