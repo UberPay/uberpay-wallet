@@ -20,6 +20,7 @@ Coins Pending for inclusion:
 
 ## Pendin Features
 
+- ShapeShift.io Terms & Conditions Acceptace Feature
 - Account Summary
 - Integration with StartChat https://play.google.com/store/apps/details?id=com.wStartChat
 - Geopay.me's Gold/Silver Coin Swap Service (More to be announced)
