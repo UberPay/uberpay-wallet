@@ -1,4 +1,4 @@
-Uberpay Wallet
+UberPay Wallet
 ===============
 
 Our goal is to develop and consumer friendly multicoin wallet that will support the UberPay Bitcoin Kiosks. 
