@@ -14,6 +14,9 @@ Coins Pending for inclusion:
 
 - http://testcoins.btcpays.me/testnet/
 
+## UberPay Beta Test Participation
+
+- https://play.google.com/apps/testing/com.mygeopay.wallet
 
 ## Acknowledgement
 
