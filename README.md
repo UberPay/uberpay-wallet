@@ -1,7 +1,7 @@
 Uberpay Wallet
 ===============
 
-Our goal is to develop and consumer friendly multicoin wallet that will support the Uberpay Bitcoin Kiosks. 
+Our goal is to develop and consumer friendly multicoin wallet that will support the UberPay Bitcoin Kiosks. 
 
 
 Coins Pending for inclusion:
@@ -9,6 +9,10 @@ Coins Pending for inclusion:
 - MazaCoin
 - StartCoin
 - MaxCoin
+- 
+## Mercahnt Testnet POS (Point Of Sale)
+
+- http://testcoins.btcpays.me/testnet/
 
 
 ## Acknowledgement
