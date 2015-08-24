@@ -21,3 +21,9 @@ MaxCoin
 
 New in version 1.6.04
 - 
+
+## Credits
+
+Original Source:
+
+Coinomi core support https://github.com/Coinomi
