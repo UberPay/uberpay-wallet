@@ -6,8 +6,7 @@ Our goal is to a develop and consumer friendly multicoin wallet that will suppor
 
 Coins Pending for inclusion:
 
-- MazaCoin
-- StartCoin
+- StartCoin(pending electrum node)
 - MaxCoin
 
 ## Merchant Testnet POS (Point Of Sale)
@@ -39,7 +38,7 @@ Coins Pending for inclusion:
 New version 1.6.06c
 
 - Added MazaCoin
-- Added StartCoin (beta) Electrum Server still pending
+- Added StartCoin (beta ONLY) Electrum Server still pending (DO NOT SEND COINS to an UberPay CREATED StartCOIN wallet)
 - Corrected Hellenic (Greek) language prompts
 - Initiated Spanish language option
 
