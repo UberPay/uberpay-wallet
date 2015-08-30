@@ -10,11 +10,11 @@ android {
     compileSdkVersion 21
     buildToolsVersion "21.1.2"
     defaultConfig {
-        applicationId "com.mygeopay.wallet"
-        minSdkVersion 10
+        applicationId 'com.mygeopay.wallet'
+        minSdkVersion 11
         targetSdkVersion 21
         versionCode 44
-        versionName 'v1.6.06b'
+        versionName 'v1.6.06c'
     }
     buildTypes {
         release {
