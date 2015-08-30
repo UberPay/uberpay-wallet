@@ -53,6 +53,3 @@ For now test it manually by installing it `adb install -r wallet/wallet-release.
 ## Version history
 
 New in version 1.6.01
-- Can set an amount in receive screen
-- Chinese and Japanese translations
-- Updated the recovery phrase creation procedure
