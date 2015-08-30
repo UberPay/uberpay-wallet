@@ -32,6 +32,8 @@ Coins Pending for inclusion:
 - Integration with StartChat https://play.google.com/store/apps/details?id=com.wStartChat
 - Geopay.me's Gold/Silver Coin Swap Service (More to be announced)
 
+- Splash page implementation under review
+
 ## Version history
 
 New version 1.6.06c
@@ -41,7 +43,7 @@ New version 1.6.06c
 - Corrected Hellenic (Greek) language prompts
 - Initiated Spanish language option
 
-- version 1.6.04
+Version 1.6.04
 -  promote Ƀ as the Bitcoin symbol.
 
 ## Credits
