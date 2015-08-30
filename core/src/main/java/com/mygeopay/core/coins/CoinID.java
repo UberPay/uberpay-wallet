@@ -14,6 +14,7 @@ import java.util.Set;
 
 /**
  * @author John L. Jegutanis
+ * @author Adonis Valamontes
  */
 public enum CoinID {
     BITCOIN_MAIN(BitcoinMain.get()),
@@ -29,6 +30,8 @@ public enum CoinID {
     NUBITS_MAIN(NuBitsMain.get()),
     NAMECOIN_MAIN(NamecoinMain.get()),
     BLACKCOIN_MAIN(BlackcoinMain.get()),
+    MAZACOIN_MAIN(MazacoinMain.get()),
+    STARTCOIN_MAIN(StartcoinMain.get()),
     MONACOIN_MAIN(MonacoinMain.get()),
     FEATHERCOIN_MAIN(FeathercoinMain.get()),
     RUBYCOIN_MAIN(RubycoinMain.get()),

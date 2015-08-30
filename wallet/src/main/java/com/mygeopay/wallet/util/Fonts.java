@@ -20,9 +20,9 @@ public class Fonts {
 
         private final String fontPath;
 
-        private Font(final String path) {
-            this.fontPath = path;
+        private Font(final String path) { this.fontPath = path;
         }
+
     }
 
     public static synchronized void initFonts(AssetManager assets) {

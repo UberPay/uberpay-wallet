@@ -77,6 +77,8 @@
                 <data android:scheme="litecoin" />
                 <data android:scheme="dogecoin" />
                 <data android:scheme="peercoin" />
+                <data android:scheme="mazacoin" />
+                <data android:scheme="startcoin" />
                 <data android:scheme="dash" />
                 <data android:scheme="nu" />
                 <data android:scheme="blackcoin" />

@@ -16,6 +16,8 @@ import com.mygeopay.core.coins.DogecoinTest;
 import com.mygeopay.core.coins.FeathercoinMain;
 import com.mygeopay.core.coins.LitecoinMain;
 import com.mygeopay.core.coins.LitecoinTest;
+import com.mygeopay.core.coins.MazacoinMain;
+import com.mygeopay.core.coins.StartcoinMain;
 import com.mygeopay.core.coins.MonacoinMain;
 import com.mygeopay.core.coins.NamecoinMain;
 import com.mygeopay.core.coins.NuBitsMain;
@@ -141,6 +143,12 @@ public class Constants {
                                                     new ServerAddress("mona-cce-2.coinomi.net", 5022)),
             new CoinAddress(DigibyteMain.get(),     new ServerAddress("dgb-cce-1.coinomi.net", 5023),
                                                     new ServerAddress("dgb-cce-2.coinomi.net", 5023)),
+            new CoinAddress(MazacoinMain.get(),     new ServerAddress("tate.cryptoadhd.com", 50001),
+                                                    new ServerAddress("tate.maza.club", 50001)),
+            new CoinAddress(StartcoinMain.get(),    new ServerAddress("node1.startcoin.org", 9247),
+                                                    new ServerAddress("node2.startcoin.org", 9247)),
+            // 192.99.35.69:9247 # node1.startcoin.org
+            // 37.59.54.5:9247 # node2.startcoin.org
             // 5024 primecoin
             // 5025 clams
             // 5026 shadowcoin
@@ -175,6 +183,8 @@ public class Constants {
         COINS_ICONS.put(CoinID.NAMECOIN_MAIN.getCoinType(), R.drawable.namecoin);
         COINS_ICONS.put(CoinID.FEATHERCOIN_MAIN.getCoinType(), R.drawable.feathercoin);
 //        COINS_ICONS.put(CoinID.URO_MAIN.getCoinType(), R.drawable.uro);
+        COINS_ICONS.put(CoinID.MAZACOIN_MAIN.getCoinType(), R.drawable.mazacoin);
+        COINS_ICONS.put(CoinID.STARTCOIN_MAIN.getCoinType(), R.drawable.startcoin);
         COINS_ICONS.put(CoinID.DIGITALCOIN_MAIN.getCoinType(), R.drawable.digitalcoin);
         COINS_ICONS.put(CoinID.CANNACOIN_MAIN.getCoinType(), R.drawable.cannacoin);
         COINS_ICONS.put(CoinID.DIGIBYTE_MAIN.getCoinType(), R.drawable.digibyte);
@@ -201,7 +211,9 @@ public class Constants {
         COINS_BLOCK_EXPLORERS.put(CoinID.RUBYCOIN_MAIN.getCoinType(), "https://chainz.cryptoid.info/rby/tx.dws?%s");
         COINS_BLOCK_EXPLORERS.put(CoinID.NAMECOIN_MAIN.getCoinType(), "https://explorer.namecoin.info/tx/%s");
         COINS_BLOCK_EXPLORERS.put(CoinID.FEATHERCOIN_MAIN.getCoinType(), "http://explorer.feathercoin.com/tx/%s");
-//        COINS_BLOCK_EXPLORERS.put(CoinID.URO_MAIN.getCoinType(), "https://chainz.cryptoid.info/uro/tx.dws?%s");
+//      COINS_BLOCK_EXPLORERS.put(CoinID.URO_MAIN.getCoinType(), "https://chainz.cryptoid.info/uro/tx.dws?%s");
+        COINS_BLOCK_EXPLORERS.put(CoinID.MAZACOIN_MAIN.getCoinType(), "https://mazacha.in/tx/%s");
+        COINS_BLOCK_EXPLORERS.put(CoinID.STARTCOIN_MAIN.getCoinType(), "http://explorer.startcoin.org/tx/%s");
         COINS_BLOCK_EXPLORERS.put(CoinID.DIGITALCOIN_MAIN.getCoinType(), "https://chainz.cryptoid.info/dgc/tx.dws?%s");
         COINS_BLOCK_EXPLORERS.put(CoinID.CANNACOIN_MAIN.getCoinType(), "https://chainz.cryptoid.info/ccn/tx.dws?%s");
         COINS_BLOCK_EXPLORERS.put(CoinID.DIGIBYTE_MAIN.getCoinType(), "https://digiexplorer.info/tx/%s");
@@ -224,6 +236,8 @@ public class Constants {
             DogecoinMain.get(),
             LitecoinMain.get(),
             NuBitsMain.get(),
+            MazacoinMain.get(),
+            StartcoinMain.get(),
             PeercoinMain.get(),
             DashMain.get(),
             NamecoinMain.get(),
