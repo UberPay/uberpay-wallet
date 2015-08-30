@@ -34,7 +34,14 @@ Coins Pending for inclusion:
 
 ## Version history
 
-New in version 1.6.04
+New version 1.6.06c
+
+- Added MazaCoin
+- Added StartCoin (beta) Electrum Server still pending
+- Corrected Hellenic (Greek) language prompts
+- Initiated Spanish language option
+
+- version 1.6.04
 -  promote Ƀ as the Bitcoin symbol.
 
 ## Credits
