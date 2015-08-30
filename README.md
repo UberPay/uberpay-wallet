@@ -13,6 +13,13 @@ Coins Pending for inclusion:
 
 - http://testcoins.btcpays.me/testnet/
 
+## Bitcoin Kiosk/BTM
+-
+
+## Multicoin Point of Sale Terminal for Merchants
+
+-
+
 ## UberPay Beta Test Participation
 
 - https://play.google.com/apps/testing/com.mygeopay.wallet
