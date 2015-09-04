@@ -42,6 +42,9 @@ Coins Pending for inclusion:
 
 ## Version history
 
+Version 1.6.08
+- Updated UI experience detials
+
 New version 1.6.06c
 
 - Added MazaCoin
@@ -49,9 +52,6 @@ New version 1.6.06c
 - Corrected Hellenic (Greek) language prompts
 - Initiated Spanish language option
  
-
-Version 1.6.08
-- Updated UI experience detials
 
 Version 1.6.04
 -  promote Ƀ as the Bitcoin symbol.
