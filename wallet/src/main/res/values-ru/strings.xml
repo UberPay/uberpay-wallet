@@ -319,4 +319,5 @@
     <string name="account_private_key_label">личный ключ</string>
     <string name="account_extended_private_key_label">расширенный личный ключ</string>
     <string name="account_private_key_warning">Личный ключ позволяет вам отправлять монеты с этого аккаунта. Совсем не обязательно делать его копию, поскольку он создается на основе вашей <i>восстанавливающей фразы</i></string>
+    <string name="seed_encrypted_touch_to_decrypt">Touch to unlock</string>
 </resources>

@@ -98,7 +98,7 @@
     <string name="ambiguous_address_message">Please select the correct coin type</string>
     <!-- Balance fragment -->
     <string name="wallet_transactions_coinbase">mined</string>
-    <string name="history_empty">No coins received so far!\n\nYou can get some through a coin swap, trading and selling goods or services.</string>
+    <string name="history_empty">Your Wallet is empty\n\nUse the UberPay wallet for your daily purchases only\nWe recommend you keep enough for your daily spending</string>
     <string name="sent_to">Sent to</string>
     <string name="received_with">Received from</string>
     <string name="get_tx_info_error">Could not get transaction information</string>
@@ -178,7 +178,7 @@
     <string name="about_licence">Project UberPay (beta)\nhttp://uberpay.io\nSource code licensed under GNU General Public License 3</string>
     <string name="about_credits_nubits">Server infrastructure donated by NuBits - The World\'s First Stable Digital Currency\nhttps://nubits.com/</string>
     <string name="about_credits_translations">Translations provided by:</string>
-    <string name="about_credits_translations_credits" translatable="false">George Kimionis (Ελληνικα)\n@visvirial (Japanese)</string>
+    <string name="about_credits_translations_credits" translatable="false">George Kimionis (Ελληνικα)\n@Geopay (Ελληνικα)\n@visvirial (Japanese)</string>
     <string name="about_credits_bitcoinj">Uses Bitcoinj library\nhttp://bitcoinj.github.io/</string>
     <string name="about_credits_electrum">Uses Electrum server software\nhttps://electrum.org/</string>
     <string name="about_credits_schildbach">Influenced by Andreas Schildbach\nhttps://github.com/schildbach/bitcoin-wallet/</string>
@@ -186,7 +186,7 @@
     <string name="about_credits_crypto_icons">Crypto-icons by Chris Shepherd\nhttps://github.com/shphrd/crypto-icons</string>
     <string name="about_credits_font_icons">Font-icons by Daniel Bruce\nhttp://www.entypo.com</string>
     <string name="about_credits_exchange_rates">Exchange rates provided by\nhttp://www.cryptocoincharts.info/\nhttps://bitcoinaverage.com/</string>
-    <string name="about_coinomi_copyright" translatable="false">Uberpay 2014&#8211;2015</string>
+    <string name="about_coinomi_copyright" translatable="false">Geopay.me Inc. 2013&#8211;2015</string>
     <!-- Add Coins -->
     <string name="title_activity_add_coins">Add Coins</string>
     <string name="password_add_coin">You are about to create a %1$s account in your wallet.</string>
@@ -242,10 +242,10 @@
     <string name="seed_working">Please wait&#8230;</string>
     <string name="seed_password_protected">This recovery phrase is password protected (BIP39)</string>
     <!-- Exchange -->
-    <string name="trade_info">Select the coins you wish to swap.\nThe converted coins will be automatically added to your wallet.</string>
-    <string name="trade_info_rates">The given rate includes transaction fees withheld by ShapeShift.io</string>
-    <string name="trade_from_coin_label">Swap</string>
-    <string name="trade_to_coin_label">Receive</string>
+    <string name="trade_info">[Swap-In] coins will be automatically added to your wallet.</string>
+    <string name="trade_info_rates">Coin Swap rates include transaction fees by ShapeShift.io\nBy using UberPay\'s Swap Coin feature, you accept\nShapeShift.io\'s Terms and Conditions</string>
+    <string name="trade_from_coin_label">Swap-Out&#8230;</string>
+    <string name="trade_to_coin_label">Swap-In</string>
     <string name="trade_warn_no_account_found">You will be prompted to add a %1$s wallet</string>
     <string name="trade_warn_no_connection_title">No connection</string>
     <string name="trade_warn_no_connection_message">Internet connection is needed to swap coins.</string>
@@ -263,7 +263,7 @@
     <string name="trade_status_label">Status</string>
     <string name="trade_status_waiting_deposit">Waiting for deposit&#8230;</string>
     <string name="trade_status_received_deposit">Received deposit of %1$s</string>
-    <string name="trade_status_waiting_trade">Waiting for swap&#8230;</string>
+    <string name="trade_status_waiting_trade">Waiting for Coin Swap&#8230;</string>
     <string name="trade_status_complete_detail">Coin Swap complete, sent %1$s</string>
     <string name="trade_status_complete">Coin Swap complete</string>
     <string name="trade_status_view_transaction">View transaction</string>
@@ -274,7 +274,7 @@
     <string name="trade_status_tx_not_available">Transaction not found, try again in a few seconds</string>
     <!-- Email receipt dialog -->
     <string name="email_receipt_title">Email receipt</string>
-    <string name="email_receipt_message">Receive an email for this coin swap transaction</string>
+    <string name="email_receipt_message">Receive an email for this Coin Swap transaction</string>
     <!-- Exchange History -->
     <string name="title_activity_exchange_history">Coin Swap history</string>
     <string name="exchange_history_empty">No Coin Swap Processed</string>
@@ -282,4 +282,38 @@
     <string name="about_shapeshift_title">About ShapeShift.io</string>
     <string name="about_shapeshift_message">ShapeShift.io is an instant altcoin exchange that provides Bitcoin and Altcoin conversion. No account needed.</string>
     <string name="title_activity_trade">Coin Swap</string>
+    <string name="button_verify">Verify</string>
+    <string name="button_sign">Sign</string>
+    <string name="address_not_found_error">The provided address could not be found in this account.</string>
+    <string name="action_sign_verify_message">Verify Message</string>
+    <string name="action_account_details">Account Details</string>
+    <string name="account_description_label">Description</string>
+    <string name="account_private_key_label">Private Key</string>
+    <string name="account_extended_private_key_label">Extended private key</string>
+    <string name="account_extended_public_key_label">Extended public key</string>
+    <string name="account_public_key_warning">The private key allows you to send coins from this account. It is not necessary to backup this key as it is derived from your <i>recovery phrase</i></string>
+    <string name="account_public_key_label">Public key</string>
+    <string name="account_private_key_warning">Sharing your public key will allow anybody to view your balance and transaction history.</string>
+    <string name="message_signed">Message signed</string>
+    <string name="message_to_sign_label">message</string>
+    <string name="message_verification_failed">Message verification failed</string>
+    <string name="message_verified">Message verified</string>
+    <string name="signature_label">signature</string>
+    <string name="signing_address_label">signing address</string>
+    <string name="signing_info">You can sign or verify a message using an address.</string>
+    <string name="title_activity_account_details">Account details</string>
+    <string name="title_activity_sign_verify_message">Sign/verify message</string>
+    <string name="touch_to_decrypt_wallet">Touch to unlock</string>
+    <string name="wallet_restoration_coin">Creating key for %1$s</string>
+    <string name="wallet_restoration_master_key">Creating master key</string>
+    <string name="tx_message">message</string>
+    <string name="tx_message_from">from</string>
+    <string name="tx_message_private_add">Add public message</string>
+    <string name="tx_message_private">private message</string>
+    <string name="tx_message_private_remove">Remove private message</string>
+    <string name="tx_message_public">Remove public message</string>
+    <string name="tx_message_public_add">Add private message</string>
+    <string name="tx_message_public_remove">Remove private message</string>
+    <string name="tx_message_subject">subject</string>
 </resources>
+

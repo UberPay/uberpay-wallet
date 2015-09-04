@@ -16,7 +16,7 @@ public class BitcoinTest extends CoinType {
         dumpedPrivateKeyHeader = 239;
 
         family = BitFamily.get();
-        name = "BTC Testnet";
+        name = "BTCτ";
         symbol = "BTCt";
         uriScheme = "bitcoin";
         bip44Index = 1;

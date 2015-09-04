@@ -54,7 +54,7 @@
         <CheckedTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            style="@style/NormalText"
+            style="@style/SmallHelpText"
             android:autoLink="web"
             android:paddingTop="14dp"
             android:text="@string/about_licence" />
@@ -74,7 +74,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                style="@style/NormalText"
+                style="@style/SmallHelpText"
                 android:autoLink="web"
                 android:text="@string/about_credits_nubits" />
         </LinearLayout>
@@ -98,21 +98,21 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                style="@style/NormalText"
+                style="@style/SmallHelpText"
                 android:text="@string/about_credits_translations" />
         </LinearLayout>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            style="@style/NormalText"
+            style="@style/SmallHelpText"
             android:autoLink="web"
             android:text="@string/about_credits_translations_credits" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            style="@style/NormalText"
+            style="@style/SmallHelpText"
             android:autoLink="web"
             android:paddingTop="16dp"
             android:text="@string/about_credits_bitcoinj" />
@@ -120,7 +120,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            style="@style/NormalText"
+            style="@style/SmallHelpText"
             android:autoLink="web"
             android:paddingTop="16dp"
             android:text="@string/about_credits_electrum" />
@@ -128,7 +128,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            style="@style/NormalText"
+            style="@style/SmallHelpText"
             android:autoLink="web"
             android:paddingTop="16dp"
             android:text="@string/about_credits_schildbach" />
@@ -136,7 +136,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            style="@style/NormalText"
+            style="@style/SmallHelpText"
             android:autoLink="web"
             android:paddingTop="16dp"
             android:text="@string/about_credits_zxing" />
@@ -144,7 +144,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            style="@style/NormalText"
+            style="@style/SmallHelpText"
             android:autoLink="web"
             android:paddingTop="16dp"
             android:text="@string/about_credits_crypto_icons" />
@@ -152,7 +152,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            style="@style/NormalText"
+            style="@style/SmallHelpText"
             android:autoLink="web"
             android:paddingTop="16dp"
             android:text="@string/about_credits_font_icons" />
@@ -160,7 +160,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            style="@style/NormalText"
+            style="@style/SmallHelpText"
             android:autoLink="web"
             android:paddingTop="16dp"
             android:text="@string/about_credits_exchange_rates" />
@@ -176,7 +176,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            style="@style/NormalText"
+            style="@style/SmallHelpText"
             android:layout_gravity="center_horizontal"
             android:paddingTop="16dp"
             android:text="@string/about_coinomi_copyright" />

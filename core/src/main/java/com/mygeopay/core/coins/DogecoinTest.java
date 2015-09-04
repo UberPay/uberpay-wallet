@@ -15,7 +15,7 @@ public class DogecoinTest extends CoinType {
         spendableCoinbaseDepth = 240; // COINBASE_MATURITY_NEW
 
         family = BitFamily.get();
-        name = "DOGE Testnet";
+        name = "DOGEτ";
         symbol = "DOGEt";
         uriScheme = "dogecoin";
         bip44Index = 1;

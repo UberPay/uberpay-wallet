@@ -15,7 +15,7 @@ public class NamecoinMain extends CoinType {
         spendableCoinbaseDepth = 100;
 
         family = BitFamily.get();
-        name = "NMC (beta)";
+        name = "NMC (β)";
         symbol = "NMC";
         uriScheme = "namecoin";
         bip44Index = 7;

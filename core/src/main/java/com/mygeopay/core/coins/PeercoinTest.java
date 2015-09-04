@@ -18,7 +18,7 @@ public class PeercoinTest extends CoinType {
         spendableCoinbaseDepth = 500;
 
         family = PeerFamily.get();
-        name = "PPC Testnet";
+        name = "PPCτ";
         symbol = "PPCTEST";
         uriScheme = "peercoin"; // TODO verify, could be ppcoin?
         bip44Index = 1;
