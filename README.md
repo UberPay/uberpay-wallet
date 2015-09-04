@@ -48,6 +48,10 @@ New version 1.6.06c
 - Added StartCoin (beta ONLY) Electrum Server still pending (DO NOT SEND COINS to an UberPay CREATED StartCOIN wallet)
 - Corrected Hellenic (Greek) language prompts
 - Initiated Spanish language option
+ 
+
+Version 1.6.08
+- Updated UI experience detials
 
 Version 1.6.04
 -  promote Ƀ as the Bitcoin symbol.
