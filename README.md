@@ -42,7 +42,17 @@ Coins Pending for inclusion:
 
 ## Version history
 
-New version 1.6.06c
+New version 1.6.09
+
+- Added Parkbyte Coin
+- Added CESC Portuguese (alpha phase DO NOT SEND COINS to an UberPay CREATED CESC wallet Crypto Coin (electrum servers not stable)
+- Added Canada Coin
+- Added Shadowcoin
+- Updated Spanish Language
+- Added Portuguese language profile
+
+
+Version 1.6.06c
 
 - Added MazaCoin
 - Added StartCoin (beta ONLY) Electrum Server still pending (DO NOT SEND COINS to an UberPay CREATED StartCOIN wallet)

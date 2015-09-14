@@ -39,9 +39,9 @@
     <string name="scan_qr_code">Σάρωση QR code</string>
     <string name="erase_address">Διαγραφή διεύθυνσης</string>
     <string name="copied_to_clipboard">Αντιγράφηκε στη μνήμη</string>
-    <string name="wallet_title_request">ΛΗΨΗ</string>
-    <string name="wallet_title_balance">ΥΠΟΛΟΙΠΟ</string>
-    <string name="wallet_title_send">ΑΠΟΣΤΟΛΗ</string>
+    <string name="wallet_title_request">BAIXAR</string>
+    <string name="wallet_title_balance">DESCANSO</string>
+    <string name="wallet_title_send">ENVIAR</string>
     <string name="wallet_locked_message">Το πορτοφόλι σας είναι κλειδωμένο</string>
     <string name="unlock_wallet_title">Ξεκλειδώστε το πορτοφόλι σας</string>
     <string name="unlocking_wallet_working">Το πορτοφόλι σας ξεκλειδώνεται&#8230;</string>
@@ -59,7 +59,7 @@
     <string name="trade">Μετατροπή</string>
     <string name="receive">Λήψη</string>
     <!-- Welcome fragment -->
-    <string name="welcome_text">Καλώς ήλθατε στο UberPay</string>
+    <string name="welcome_text">Bem-vindo ao UberPay Wallet</string>
     <string name="create_wallet">Νέο πορτοφόλι</string>
     <string name="restore_wallet">Ανάκτηση πορτοφολιού</string>
     <string name="test_wallet">Δοκιμαστικό πορτοφόλι</string>
@@ -67,7 +67,7 @@
     <string name="test_wallet_warning_title">Δημιουργία δοκιμαστικού πορτοφολιού;</string>
     <string name="test_wallet_warning_message">Αν δημιουργήσετε ένα νέο δοκιμαστικό πορτοφόλι, το υπάρχον πορτοφόλι σας θα χαθεί εκτός αν έχετε ήδη αποθηκεύσει σε ασφαλές μέρος την <i>φράση ανάκτησής</i> σας.</string>
     <string name="incompatible_device_warning_title">Μη συμβατή συσκευή</string>
-    <string name="incompatible_device_warning_message">Η συσκευή σας δεν μπορεί να εκτελέσει κάποιες κρυπτογραφικές μεθόδους λόγω ελαττωμάτων στο λογισμικό ή την ίδια τη συσκευή.\nΤο πρόβλημα θα μπόρεσε να λυθεί ύστερα από την ενημέρωση λογισμικού από τον κατασκευαστή της συσκευής.\n\nΠαρακαλώ επικοινωνήστε μαζί μας αν έχετε απορίες: support@coinomi.com</string>
+    <string name="incompatible_device_warning_message">Η συσκευή σας δεν μπορεί να εκτελέσει κάποιες κρυπτογραφικές μεθόδους λόγω ελαττωμάτων στο λογισμικό ή την ίδια τη συσκευή.\nΤο πρόβλημα θα μπόρεσε να λυθεί ύστερα από την ενημέρωση λογισμικού από τον κατασκευαστή της συσκευής.\n\nΠαρακαλώ επικοινωνήστε μαζί μας αν έχετε απορίες: support@geopay.me</string>
     <!-- Recovery fragment -->
     <string name="seed_info">Αυτή είναι η <i>φράση ανάκτησής</i> σας, από την οποία παράγονται τα κλειδιά για το πορτοφόλι σας. Παρακαλούμε σημειώστε την κάπου και αποθηκεύστε την σε ασφαλές μέρος, όπως ακριβώς θα κάνατε με τα μετρητά σας. Οποιοσδήποτε έχει πρόσβαση στην φράση ανάκτησης έχει πλήρη πρόσβαση στα περιεχόμενα του πορτοφολιού.\nΑν χάσετε τη φράση ανάκτησης, το πορτοφόλι σας δεν θα μπορεί να ανακτηθεί.</string>
     <string name="seed_title">Η φράση ανάκτησης σας</string>
@@ -86,15 +86,15 @@
     <string name="extra_entropy">Ενισχυμένη εντροπία</string>
     <!-- Wallet activity -->
     <string name="test_wallet_message">Το παρόν είναι ένα δοκιμαστικό πορτοφόλι, όπου μπορείτε να στείλετε και παραλάβετε δοκιμαστικά νομίσματα Bitcoin, Litecoin, Dogecoin κ.ά.\n\nΑν επιθυμείτε να χρησιμοποιήσετε το πορτοφόλι με αληθινά χρήματα παρακαλώ επιλέξτε: <b>Ρυθμίσεις &gt; Ανάκτηση πορτοφολιού &gt; Δημιουργία νέου πορτοφολιού</b>.</string>
-    <string name="wallet_update_title">Νέα έκδοση διαθέσιμη</string>
-    <string name="wallet_update_message">Μια νέα έκδοση του Uberpay η οποία εμπεριέχει νέες δυνατότητες και τυχόν διορθώσεις αδυναμιών είναι διαθέσιμη.</string>
+    <string name="wallet_update_title">Nova versão disponível</string>
+    <string name="wallet_update_message">Uma nova versão do Uberpay está disponível, que contém novos recursos e correções.</string>
     <string name="pay_with">Αποστολή με</string>
     <string name="exchange_and_pay_title">Μετατροπή και αποστολή</string>
     <!-- PayToDialog-->
     <string name="ambiguous_address_title">Δυσνόητη διεύθυνση</string>
     <string name="ambiguous_address_message">Παρακαλώ επιλέξτε το σωστό τύπο νομίσματος</string>
     <!-- Balance fragment -->
-    <string name="wallet_transactions_coinbase">από εξόρυξη (mined)</string>
+    <string name="wallet_transactions_coinbase">minado (mined)</string>
     <string name="history_empty">Το πορτοφόλι σας δεν περιέχει νομίσματα ακόμα!\n\nΜπορείτε να προμηθευτείτε μερικά νομίσματα μέσω κάποιου ανταλλακτηρίου είτε ανταλλάσσοντάς τα με αγαθά ή υπηρεσίες.</string>
     <string name="sent_to">Απεστάλησαν στο</string>
     <string name="received_with">Παρελήφθησαν από</string>
@@ -148,7 +148,7 @@
     <string name="password_wallet_recovery">Για να ανακτήσετε το πορτοφόλι σας, παρακαλώ εισάγετε τον ίδιο κωδικό που είχατε χρησιμοποιήσει όταν είχατε ασφαλίσει αρχικά την φράση ανάκτησης.\nΑν εισάγετε έναν διαφορετικό κωδικό, ένα νέο, άδειο πορτοφόλι θα δημιουργηθεί.</string>
     <!-- FinalizeWalletRestorationFragment -->
     <string name="wallet_restoration">Παρακαλώ περιμένετε ενόσω το πορτοφόλι σας ανακτάται</string>
-    <string name="wallet_restoration_error">Αποτυχία ανάκτησης του πορτοφολιού σας.\n\n%1$s</string>
+    <string name="wallet_restoration_error">Não foi possível recuperar sua carteira.\n\n%1$s</string>
     <!-- PasswordConfirmationFragment -->
     <string name="enter_password">Εισάγετε τον κωδικό σας</string>
     <!-- SignTransactionFragment -->
@@ -277,4 +277,37 @@
     <!-- ShapeShift -->
     <string name="about_shapeshift_title">Σχετικά με την ShapeShift.io</string>
     <string name="about_shapeshift_message">Η ShapeShift.io είναι ένα ανταλλακτήριο στιγμιαίας μετατροπής Bitcoin και άλλων νομισμάτων. Η πλατφόρμα (διαθέσιμη μέσω της ιστοσελίδας και του API) αντιπροσωπεύει τον πιο γρήγορο και αποδοτικό τρόπο για να μετατρέψετε μεταξύ Bitcoin και δεκάδων άλλων νομισμάτων. Δεν απαιτείται δημιουργία λογαριασμού.</string>
+    <string name="account_private_key_label">Public Key</string>
+    <string name="account_description_label">Description</string>
+    <string name="account_extended_private_key_label">Extended private key</string>
+    <string name="account_extended_public_key_label">Extended public key</string>
+    <string name="account_public_key_warning">The private key allows you to send coins from this account. It is not necessary to backup this key as it is derived from your <i>recovery phrase</i></string>
+    <string name="account_public_key_label">Public key</string>
+    <string name="account_private_key_warning">Sharing your public key will allow anybody to view your balance and transaction history.</string>
+    <string name="action_account_details">Account details</string>
+    <string name="action_sign_verify_message">Sign/verify message</string>
+    <string name="address_not_found_error">The provided address could not be found in this account.</string>
+    <string name="button_sign">Sign</string>
+    <string name="button_verify">Verify</string>
+    <string name="message_signed">Message signed</string>
+    <string name="message_to_sign_label">message</string>
+    <string name="message_verification_failed">Message verification failed</string>
+    <string name="message_verified">Message verified</string>
+    <string name="signature_label">signature</string>
+    <string name="signing_address_label">signing address</string>
+    <string name="signing_info">You can sign or verify a message using an address.</string>
+    <string name="title_activity_account_details">Account details</string>
+    <string name="title_activity_sign_verify_message">Sign/verify message</string>
+    <string name="touch_to_decrypt_wallet">Touch to unlock</string>
+    <string name="wallet_restoration_coin">Creating key for %1$s</string>
+    <string name="wallet_restoration_master_key">Creating master key</string>
+    <string name="tx_message">mensagem</string>
+    <string name="tx_message_from">a partir da</string>
+    <string name="tx_message_private_add">Add public message</string>
+    <string name="tx_message_private">private message</string>
+    <string name="tx_message_private_remove">Remove private message</string>
+    <string name="tx_message_public">Remove public message</string>
+    <string name="tx_message_public_add">Add private message</string>
+    <string name="tx_message_public_remove">Remove private message</string>
+    <string name="tx_message_subject">subject</string>
 </resources>

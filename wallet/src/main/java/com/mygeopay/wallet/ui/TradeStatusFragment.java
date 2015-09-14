@@ -421,11 +421,11 @@ public class TradeStatusFragment extends Fragment {
 
     private void updateEmailReceipt() {
         // TODO enable
-        setInvisible(emailReceipt);
+       setInvisible(emailReceipt);
 //        setVisible(emailReceipt);
 //        emailReceipt.setOnClickListener(new View.OnClickListener() {
 //            @Override
-//            public void onClick(View v) {
+//           public void onClick(View v) {
 //                emailReceiptDialog.show(getFragmentManager(), null);
 //            }
 //        });

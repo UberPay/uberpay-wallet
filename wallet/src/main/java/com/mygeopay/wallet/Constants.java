@@ -5,9 +5,11 @@ import android.text.format.DateUtils;
 import com.mygeopay.core.coins.BitcoinMain;
 import com.mygeopay.core.coins.BitcoinTest;
 import com.mygeopay.core.coins.BlackcoinMain;
+import com.mygeopay.core.coins.CanadaeCoinMain;
 import com.mygeopay.core.coins.CannacoinMain;
 import com.mygeopay.core.coins.CoinID;
 import com.mygeopay.core.coins.CoinType;
+import com.mygeopay.core.coins.CryptoescudoMain;
 import com.mygeopay.core.coins.DashMain;
 import com.mygeopay.core.coins.DigibyteMain;
 import com.mygeopay.core.coins.DigitalcoinMain;
@@ -17,6 +19,8 @@ import com.mygeopay.core.coins.FeathercoinMain;
 import com.mygeopay.core.coins.LitecoinMain;
 import com.mygeopay.core.coins.LitecoinTest;
 import com.mygeopay.core.coins.MazacoinMain;
+import com.mygeopay.core.coins.ParkbyteMain;
+import com.mygeopay.core.coins.ShadowCashMain;
 import com.mygeopay.core.coins.StartcoinMain;
 import com.mygeopay.core.coins.MonacoinMain;
 import com.mygeopay.core.coins.NamecoinMain;
@@ -97,7 +101,7 @@ public class Constants {
     public static final char CURRENCY_MINUS_SIGN = '-';
 
     public static final String MARKET_APP_URL = "market://details?id=%s";
-    public static final String BINARY_URL = "https://github.com/Coinomi/coinomi-android/releases";
+    public static final String BINARY_URL = "https://github.com/UberPay/uberpay-wallet/releases";
 
     public static final String VERSION_URL = "http://uberpay.io/version";
 
@@ -145,8 +149,15 @@ public class Constants {
                                                     new ServerAddress("dgb-cce-2.coinomi.net", 5023)),
             new CoinAddress(MazacoinMain.get(),     new ServerAddress("tate.cryptoadhd.com", 50001),
                                                     new ServerAddress("tate.maza.club", 50001)),
+            new CoinAddress(CryptoescudoMain.get(), new ServerAddress("electrum1.cryptoescudo.org", 50001),
+                                                    new ServerAddress("electrum2.cryptoescudo.org", 50001),
+                                                    new ServerAddress("electrum3.cryptoescudo.org", 50001)),
             new CoinAddress(StartcoinMain.get(),    new ServerAddress("node1.startcoin.org", 9247),
                                                     new ServerAddress("node2.startcoin.org", 9247)),
+            new CoinAddress(ShadowCashMain.get(),   new ServerAddress("sdc-cce-1.coinomi.net", 5026),
+                                                    new ServerAddress("sdc-cce-2.coinomi.net", 5026)),
+            new CoinAddress(ParkbyteMain.get(),     new ServerAddress("pkb-cce-1.coinomi.net", 5035),
+                                                    new ServerAddress("pkb-cce-2.coinomi.net", 5035)),
             // 192.99.35.69:9247 # node1.startcoin.org
             // 37.59.54.5:9247 # node2.startcoin.org
             // 5024 primecoin
@@ -158,6 +169,8 @@ public class Constants {
                                                     new ServerAddress("vtc-cce-2.coinomi.net", 5028)),
             new CoinAddress(JumbucksMain.get(),     new ServerAddress("jbs-cce-1.coinomi.net", 5029),
                                                     new ServerAddress("jbs-cce-2.coinomi.net", 5029)),
+             new CoinAddress(CanadaeCoinMain.get(),  new ServerAddress("cdn-cce-1.coinomi.net", 5033),
+                                                    new ServerAddress("cdn-cce-2.coinomi.net", 5033)),
             new CoinAddress(VpncoinMain.get(),      new ServerAddress("vpn-cce-1.coinomi.net", 5032),
                                                     new ServerAddress("vpn-cce-2.coinomi.net", 5032))
     );
@@ -182,6 +195,10 @@ public class Constants {
         COINS_ICONS.put(CoinID.RUBYCOIN_MAIN.getCoinType(), R.drawable.rubycoin);
         COINS_ICONS.put(CoinID.NAMECOIN_MAIN.getCoinType(), R.drawable.namecoin);
         COINS_ICONS.put(CoinID.FEATHERCOIN_MAIN.getCoinType(), R.drawable.feathercoin);
+        COINS_ICONS.put(CoinID.CANADAECOIN_MAIN.getCoinType(), R.drawable.canadaecoin);
+        COINS_ICONS.put(CoinID.SHADOWCASH_MAIN.getCoinType(), R.drawable.shadowcash);
+        COINS_ICONS.put(CoinID.PARKBYTE_MAIN.getCoinType(), R.drawable.parkbyte);
+        COINS_ICONS.put(CoinID.CRYPTOESCUDO_MAIN.getCoinType(), R.drawable.cryptoescudo);
 //        COINS_ICONS.put(CoinID.URO_MAIN.getCoinType(), R.drawable.uro);
         COINS_ICONS.put(CoinID.MAZACOIN_MAIN.getCoinType(), R.drawable.mazacoin);
         COINS_ICONS.put(CoinID.STARTCOIN_MAIN.getCoinType(), R.drawable.startcoin);
@@ -211,16 +228,20 @@ public class Constants {
         COINS_BLOCK_EXPLORERS.put(CoinID.RUBYCOIN_MAIN.getCoinType(), "https://chainz.cryptoid.info/rby/tx.dws?%s");
         COINS_BLOCK_EXPLORERS.put(CoinID.NAMECOIN_MAIN.getCoinType(), "https://explorer.namecoin.info/tx/%s");
         COINS_BLOCK_EXPLORERS.put(CoinID.FEATHERCOIN_MAIN.getCoinType(), "http://explorer.feathercoin.com/tx/%s");
+        COINS_BLOCK_EXPLORERS.put(CoinID.SHADOWCASH_MAIN.getCoinType(),  "http://shadowchain.info/tx/%s");
 //      COINS_BLOCK_EXPLORERS.put(CoinID.URO_MAIN.getCoinType(), "https://chainz.cryptoid.info/uro/tx.dws?%s");
         COINS_BLOCK_EXPLORERS.put(CoinID.MAZACOIN_MAIN.getCoinType(), "https://mazacha.in/tx/%s");
         COINS_BLOCK_EXPLORERS.put(CoinID.STARTCOIN_MAIN.getCoinType(), "http://explorer.startcoin.org/tx/%s");
+        COINS_BLOCK_EXPLORERS.put(CoinID.CANADAECOIN_MAIN.getCoinType(), "http://explorer.canadaecoin.ca/tx/%s");
         COINS_BLOCK_EXPLORERS.put(CoinID.DIGITALCOIN_MAIN.getCoinType(), "https://chainz.cryptoid.info/dgc/tx.dws?%s");
+        COINS_BLOCK_EXPLORERS.put(CoinID.PARKBYTE_MAIN.getCoinType(), "https://chainz.cryptoid.info/pkb/tx.dws?%s");
         COINS_BLOCK_EXPLORERS.put(CoinID.CANNACOIN_MAIN.getCoinType(), "https://chainz.cryptoid.info/ccn/tx.dws?%s");
         COINS_BLOCK_EXPLORERS.put(CoinID.DIGIBYTE_MAIN.getCoinType(), "https://digiexplorer.info/tx/%s");
         COINS_BLOCK_EXPLORERS.put(CoinID.NEOSCOIN_MAIN.getCoinType(), "http://explorer.infernopool.com/tx/%s");
         COINS_BLOCK_EXPLORERS.put(CoinID.VERTCOIN_MAIN.getCoinType(), "https://bitinfocharts.com/vertcoin/tx/%s");
         COINS_BLOCK_EXPLORERS.put(CoinID.JUMBUCKS_MAIN.getCoinType(), "http://explorer.getjumbucks.com/tx/%s");
         COINS_BLOCK_EXPLORERS.put(CoinID.VPNCOIN_MAIN.getCoinType(), "https://blockexperts.com/vpn/tx/%s");
+        COINS_BLOCK_EXPLORERS.put(CoinID.CRYPTOESCUDO_MAIN.getCoinType(), "http://explorador.cryptoescudo.net/tx/%s");
     }
 
     public static final CoinType DEFAULT_COIN = BitcoinMain.get();
@@ -237,6 +258,7 @@ public class Constants {
             LitecoinMain.get(),
             NuBitsMain.get(),
             MazacoinMain.get(),
+            CanadaeCoinMain.get(),
             StartcoinMain.get(),
             PeercoinMain.get(),
             DashMain.get(),
@@ -254,6 +276,9 @@ public class Constants {
             JumbucksMain.get(),
             NeoscoinMain.get(),
             CannacoinMain.get(),
+            ShadowCashMain.get(),
+            ParkbyteMain.get(),
+            CryptoescudoMain.get(),
             BitcoinTest.get(),
             LitecoinTest.get(),
             DogecoinTest.get()

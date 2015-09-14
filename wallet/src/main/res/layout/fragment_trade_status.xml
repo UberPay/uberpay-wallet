@@ -116,7 +116,7 @@
                         style="@style/NormalText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        tools:text="Waiting for trade..." />
+                        tools:text="Waiting for Coin Swap..." />
                 </LinearLayout>
 
                 <LinearLayout

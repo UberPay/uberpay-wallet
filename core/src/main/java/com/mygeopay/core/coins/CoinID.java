@@ -34,14 +34,18 @@ public enum CoinID {
     STARTCOIN_MAIN(StartcoinMain.get()),
     MONACOIN_MAIN(MonacoinMain.get()),
     FEATHERCOIN_MAIN(FeathercoinMain.get()),
+    CANADAECOIN_MAIN(CanadaeCoinMain.get()),
     RUBYCOIN_MAIN(RubycoinMain.get()),
 //    URO_MAIN(UroMain.get()),
     DIGITALCOIN_MAIN(DigitalcoinMain.get()),
+    PARKBYTE_MAIN(ParkbyteMain.get()),
     CANNACOIN_MAIN(CannacoinMain.get()),
     DIGIBYTE_MAIN(DigibyteMain.get()),
     NEOSCOIN_MAIN(NeoscoinMain.get()),
     VERTCOIN_MAIN(VertcoinMain.get()),
     JUMBUCKS_MAIN(JumbucksMain.get()),
+    SHADOWCASH_MAIN(ShadowCashMain.get()),
+    CRYPTOESCUDO_MAIN(CryptoescudoMain.get()),
     VPNCOIN_MAIN(VpncoinMain.get()),
     ;
 

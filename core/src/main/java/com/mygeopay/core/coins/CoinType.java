@@ -1,6 +1,7 @@
 package com.mygeopay.core.coins;
 
 
+import com.google.common.base.Charsets;
 import com.mygeopay.core.util.MonetaryFormat;
 
 import org.bitcoinj.core.Address;
@@ -14,6 +15,9 @@ import java.io.Serializable;
 import java.math.BigInteger;
 import java.util.List;
 
+
+import javax.annotation.Nullable;
+import javax.xml.soap.MessageFactory;
 
 import static com.google.common.base.Preconditions.checkNotNull;
 
@@ -35,6 +39,7 @@ abstract public class CoinType extends NetworkParameters implements ValueType, S
     protected Value softDustLimit;
     protected SoftDustPolicy softDustPolicy;
     protected FeePolicy feePolicy = FeePolicy.FEE_PER_KB;
+    protected byte[] signedMessageHeader;
 
     private transient MonetaryFormat friendlyFormat;
     private transient MonetaryFormat plainFormat;
@@ -44,6 +49,8 @@ abstract public class CoinType extends NetworkParameters implements ValueType, S
     public String getName() {
         return checkNotNull(name, "A coin failed to set a name");
     }
+
+    public boolean isTestnet() { return id.endsWith("test");}
 
     @Override
     public String getSymbol() {
@@ -98,6 +105,22 @@ abstract public class CoinType extends NetworkParameters implements ValueType, S
     public FeePolicy getFeePolicy() {
         return checkNotNull(feePolicy, "A coin failed to set a fee policy");
     }
+
+    public byte[] getSignedMessageHeader() {
+        return checkNotNull(signedMessageHeader, "A coin failed to set signed message header bytes");
+    }
+
+    public boolean canSignVerifyMessages() {
+        return signedMessageHeader != null;
+    }
+    public boolean canHandleMessages() {
+        return getMessagesFactory() != null;
+    }
+
+    @Nullable
+    public MessageFactory getMessagesFactory() { return null; }
+
+    protected static byte[] toBytes(String str) { return str.getBytes(Charsets.UTF_8);}
 
     public List<ChildNumber> getBip44Path(int account) {
         String path = String.format(BIP_44_KEY_PATH, bip44Index, account);
