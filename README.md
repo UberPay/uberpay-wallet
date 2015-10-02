@@ -42,7 +42,12 @@ Coins Pending for inclusion:
 
 ## Version history
 
-New version 1.6.09
+New version v1.7.02b
+
+- Added Viacoin
+- Added more Languages structure
+
+Version 1.6.09
 
 - Added Parkbyte Coin
 - Added CESC Portuguese (alpha phase DO NOT SEND COINS to an UberPay CREATED CESC wallet Crypto Coin (electrum servers not stable)
