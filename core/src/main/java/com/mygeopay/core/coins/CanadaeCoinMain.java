@@ -17,7 +17,7 @@ public class CanadaeCoinMain extends CoinType {
         name = "CDN (β)";
         symbol = "CDN";
         uriScheme = "canadaecoin";
-        bip44Index = 34;
+        bip44Index = 34; // BIP0044 COIN TYPE 0x80000022
         unitExponent = 8;
         feePerKb = value(100000);
         minNonDust = value(100000);

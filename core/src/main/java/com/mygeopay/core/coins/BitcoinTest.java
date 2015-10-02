@@ -9,8 +9,8 @@ public class BitcoinTest extends CoinType {
     private BitcoinTest() {
         id = "bitcoin.test";
 
-        addressHeader = 111;
-        p2shHeader = 196;
+        addressHeader = 111; // public key address
+        p2shHeader = 196;   // script address
         acceptableAddressCodes = new int[] { addressHeader, p2shHeader };
         spendableCoinbaseDepth = 100;
         dumpedPrivateKeyHeader = 239;

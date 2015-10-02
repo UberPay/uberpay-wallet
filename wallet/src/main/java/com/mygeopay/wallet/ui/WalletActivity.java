@@ -508,6 +508,9 @@ final public class WalletActivity extends BaseWalletActivity implements
         } else if (id == R.id.action_refresh_wallet) {
             refreshWallet();
             return true;
+        } else if (id == R.id.action_balance) {
+            refreshWallet();
+            return true;
         } else if (id == R.id.action_about) {
             startActivity(new Intent(WalletActivity.this, AboutActivity.class));
             return true;

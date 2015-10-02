@@ -47,7 +47,7 @@
     <string name="unlocking_wallet_working">ウォレットのロックを解除しています&#8230;</string>
     <string name="unlocking_wallet_error_title">ウォレットのロックを解除できませんでした</string>
     <string name="unlocking_wallet_error_detail">パスワードは正しいですか？パスワードが正しく入力されていることをご確認ください。何度やってもこのエラーが表示されてしまう場合には、復元フレーズを用いた復旧をお試しください。</string>
-    <string name="powered_by">Powered by</string>
+    <string name="powered_by">協力を受けています</string>
     <!-- Nav drawer -->
     <string name="navigation_drawer_open">ナビゲーション・ドロワーを開く</string>
     <string name="navigation_drawer_close">ナビゲーション・ドロワーを閉じる</string>
@@ -169,7 +169,6 @@
     </plurals>
     <!-- About Activity -->
     <string name="title_activity_about">Uberpayについて</string>
-    <string name="app_name_long">UberPay for Android</string>
     <string name="about_licence">オープンソース・プロジェクト\nhttp://uberpay.io\nソースコードはGNU General Public License 3のもとでライセンスされています</string>
     <string name="about_credits_nubits">サーバのインフラはNuBits - 世界初の安定したデジタル通貨 - の寄付により成り立っています\nhttps://nubits.com/</string>
     <string name="about_credits_translations">翻訳提供者:</string>
@@ -274,18 +273,18 @@
     <!-- ShapeShift -->
     <string name="about_shapeshift_title">ShapeShift.ioについて</string>
     <string name="about_shapeshift_message">ShapeShift.ioは、Bitcoinとオルトコインの変換サービスを提供する、即時オルトコイン両替所です。Bitcoinの生態系の中で、Bitcoinと数多のオルトコインの変換を行う、最も高速で、最も効率的なプラットフォーム（ウェブおよびAPI経由で利用可能）の代表格です。アカウントの作成は必要ありません。</string>
-    <string name="account_private_key_label">Public Key</string>
-    <string name="account_description_label">Description</string>
-    <string name="account_extended_private_key_label">Extended public key</string>
-    <string name="account_extended_public_key_label">Extended public key</string>
-    <string name="account_public_key_warning">The private key allows you to send coins from this account. It is not necessary to backup this key as it is derived from your <i>recovery phrase</i></string>
-    <string name="account_public_key_label">Public key</string>
-    <string name="account_private_key_warning">Sharing your public key will allow anybody to view your balance and transaction history.</string>
-    <string name="action_account_details">Account details</string>
-    <string name="action_sign_verify_message">Sign/verify message</string>
-    <string name="address_not_found_error">The provided address could not be found in this account.</string>
+    <string name="account_private_key_label">秘密キー</string>
+    <string name="account_description_label">説明</string>
+    <string name="account_extended_private_key_label">秘密キーを拡張</string>
+    <string name="account_extended_public_key_label">公開キーを拡張</string>
+    <string name="account_public_key_warning">秘密キーを使用して、このアカウントからコインを送信できます。それから派生した、このキーをバックアップする必要はありません、 </string>
+    <string name="account_public_key_label">公開キー</string>
+    <string name="account_private_key_warning">あなたの公開鍵を共有あなたの残高や取引履歴を表示するのには誰かになります。</string>
+    <string name="action_account_details">アカウントの詳細</string>
+    <string name="action_sign_verify_message">メッセージを確認します。</string>
+    <string name="address_not_found_error">このアカウントで指定されたアドレスが見つかりませんでした。</string>
     <string name="button_sign">Sign</string>
-    <string name="button_verify">Verify</string>
+    <string name="button_verify">確認します。</string>
     <string name="message_signed">Message signed</string>
     <string name="message_to_sign_label">message</string>
     <string name="message_verification_failed">Message verification failed</string>
@@ -307,4 +306,6 @@
     <string name="tx_message_public_add">Add private message</string>
     <string name="tx_message_public_remove">Remove private message</string>
     <string name="tx_message_subject">subject</string>
+    <string name="app_name_long">人造人間のための UberPay</string>
+    <string name="action_balance">財布のバランス</string>
 </resources>

@@ -9,8 +9,8 @@ public class BitcoinMain extends CoinType {
     private BitcoinMain() {
         id = "bitcoin.main";
 
-        addressHeader = 0;
-        p2shHeader = 5;
+        addressHeader = 0; // public key address
+        p2shHeader = 5;    // script address
         acceptableAddressCodes = new int[] { addressHeader, p2shHeader };
         spendableCoinbaseDepth = 100;
         dumpedPrivateKeyHeader = 128;

@@ -13,9 +13,10 @@ public class DigitalcoinMain extends CoinType {
         p2shHeader = 5;
         acceptableAddressCodes = new int[] { addressHeader, p2shHeader };
         spendableCoinbaseDepth = 5;
+        dumpedPrivateKeyHeader = 158;
 
         family = BitFamily.get();
-        name = "DGC";
+        name = "DGC (β)";
         symbol = "DGC";
         uriScheme = "digitalcoin";
         bip44Index = 18;

@@ -271,18 +271,18 @@
     <!-- ShapeShift -->
     <string name="about_shapeshift_title">关于shapeshift.io</string>
     <string name="about_shapeshift_message">shapeshift.io是一个即时加密货币交易所，提供比特币与竞争币的即时兑换。此平台（可通过网页及API交易）采用了比特币与竞争币之间最快且最有效的兑换方式，无需注册即可使用。</string>
-    <string name="account_private_key_label">Public Key</string>
-    <string name="account_description_label">Description</string>
-    <string name="account_extended_private_key_label">Extended private key</string>
-    <string name="account_extended_public_key_label">Extended public key</string>
-    <string name="account_public_key_warning">The private key allows you to send coins from this account. It is not necessary to backup this key as it is derived from your <i>recovery phrase</i></string>
-    <string name="account_public_key_label">Public key</string>
-    <string name="account_private_key_warning">Sharing your public key will allow anybody to view your balance and transaction history.</string>
-    <string name="action_account_details">Account details</string>
-    <string name="action_sign_verify_message">Sign/verify message</string>
-    <string name="address_not_found_error">The provided address could not be found in this account.</string>
+    <string name="account_private_key_label">专用密钥</string>
+    <string name="account_description_label">描述</string>
+    <string name="account_extended_private_key_label">扩展的私钥</string>
+    <string name="account_extended_public_key_label">扩展的公钥</string>
+    <string name="account_public_key_warning">私有密钥允许您从该帐户发送硬币。它是不必要备份此密钥，因为它来自你 </string>
+    <string name="account_public_key_label">公共密钥</string>
+    <string name="account_private_key_warning">共享您的公钥将允许任何人查看你的余额和交易历史记录。</string>
+    <string name="action_account_details">帐户的详细信息</string>
+    <string name="action_sign_verify_message">验证消息</string>
+    <string name="address_not_found_error">此帐户中找不到所提供的地址。</string>
     <string name="button_sign">Sign</string>
-    <string name="button_verify">Verify</string>
+    <string name="button_verify">验证</string>
     <string name="message_signed">Message signed</string>
     <string name="message_to_sign_label">message</string>
     <string name="message_verification_failed">Message verification failed</string>
@@ -304,4 +304,5 @@
     <string name="tx_message_public_add">Add private message</string>
     <string name="tx_message_public_remove">Remove private message</string>
     <string name="tx_message_subject">subject</string>
+    <string name="action_balance">钱包平衡</string>
 </resources>

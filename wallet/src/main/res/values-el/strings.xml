@@ -171,7 +171,7 @@
     </plurals>
     <!-- About Activity -->
     <string name="title_activity_about">Σχετικά με το Uberpay</string>
-    <string name="app_name_long">UberPay για το λειτουργικό Android</string>
+    <string name="app_name_long">UberPay για το Android</string>
     <string name="about_licence">Ένα πρόγραμμα ανοιχτού λογισμικού\nhttp://uberpay.io\nΟ πηγαίος κώδικας διατίθεται βάσει της άδειας GNU General Public License 3</string>
     <string name="about_credits_nubits">Οι κεντρικοί εξυπηρετητές είναι μια προσφορά της NuBits\nhttps://nubits.com/</string>
     <string name="about_credits_translations">Μεταφράσεις από τους:</string>
@@ -310,4 +310,5 @@
     <string name="tx_message_public_remove">Remove private message</string>
     <string name="tx_message_subject">subject</string>
     <string name="touch_to_decrypt_wallet">Touch to unlock</string>
+    <string name="action_balance">Υπόλοιπο Πορτοφολιού</string>
 </resources>

@@ -6,7 +6,7 @@
     <string name="action_scan_qr_code">Scan</string>
     <string name="action_share">Share</string>
     <string name="action_copy">Copy</string>
-    <string name="action_edit_label">Edit label</string>
+    <string name="action_edit_label">Edit Label</string>
     <string name="action_empty_wallet">Empty wallet</string>
     <string name="action_settings">Settings</string>
     <string name="action_about">About</string>
@@ -57,7 +57,7 @@
     <string name="navigation_drawer_services">Services</string>
     <string name="navigation_drawer_wallet">Wallet</string>
     <!-- SendOutput widget -->
-    <string name="fee">Transaction fee</string>
+    <string name="fee">Network Fee</string>
     <string name="send">Send</string>
     <string name="trade">Coin Swap</string>
     <string name="receive">Receive</string>
@@ -65,12 +65,12 @@
     <string name="welcome_text">Welcome to UberPay Wallet</string>
     <string name="create_wallet">Create a new wallet</string>
     <string name="restore_wallet">Restore a wallet</string>
-    <string name="test_wallet">Test wallet</string>
+    <string name="test_wallet">Test Wallet</string>
     <!-- Intro -->
     <string name="test_wallet_warning_title">Create a test wallet?</string>
     <string name="test_wallet_warning_message">If you create a new test wallet, your existing wallet will be lost unless you backed up you <i>recovery phrase</i>.</string>
     <string name="incompatible_device_warning_title">Incompatible device</string>
-    <string name="incompatible_device_warning_message">This device cannot perform certain cryptographic functions due to software or hardware bugs.\nThis could be solved with an update from the device manufacturer.\n\nContact us if you have any questions: support@geopay.me</string>
+    <string name="incompatible_device_warning_message">\nThis could be solved with an update from the device manufacturer.\n\nContact us if you have any questions: support@geopay.me</string>
     <!-- Recovery fragment -->
     <string name="seed_info">This is your <i>recovery phrase</i>, which is used to generate the keys for your wallet. Please write it down on a paper and keep it in a secure place, as you would with paper money. Anyone with access to it has access to the wallet\'s funds.\nIf you lose your recovery phrase, your wallet cannot be recovered.</string>
     <string name="seed_title">Your recovery phrase</string>
@@ -92,7 +92,7 @@
     <string name="wallet_update_title">New version available</string>
     <string name="wallet_update_message">A new version of Uberpay is available, it contains new features and fixes.</string>
     <string name="pay_with">Send with</string>
-    <string name="exchange_and_pay_title">Swap and send</string>
+    <string name="exchange_and_pay_title">Swap and Send</string>
     <!-- PayToDialog-->
     <string name="ambiguous_address_title">Ambiguous address</string>
     <string name="ambiguous_address_message">Please select the correct coin type</string>
@@ -172,6 +172,8 @@
         <item quantity="one">%d second</item>
         <item quantity="other">%d seconds</item>
     </plurals>
+    <!-- Coin Balance Activity -->
+    <string name="action_balance">Wallet Balance</string>
     <!-- About Activity -->
     <string name="title_activity_about">About UberPay</string>
     <string name="app_name_long">UberPay for Android</string>
@@ -246,19 +248,18 @@
     <string name="trade_info_rates">Coin Swap rates include transaction fees by ShapeShift.io\nBy using UberPay\'s Swap Coin feature, you accept\nShapeShift.io\'s Terms and Conditions</string>
     <string name="trade_from_coin_label">Swap-Out&#8230;</string>
     <string name="trade_to_coin_label">Swap-In</string>
-    <string name="trade_warn_no_account_found">You will be prompted to add a %1$s monedero</string>
+    <string name="trade_warn_no_account_found">You will be prompted to add a %1$s wallet</string>
     <string name="trade_warn_no_connection_title">No connection</string>
     <string name="trade_warn_no_connection_message">Internet connection is needed to swap coins.</string>
-    <string name="trade_error">Coin Swap error</string>
+    <string name="trade_error">Coin Swap Error</string>
     <string name="trade_error_no_supported_source_accounts">No supported accounts found</string>
     <string name="trade_error_service_not_available">Service temporary unavailable, please try again in a minute</string>
     <string name="trade_error_market_info">Service temporary unavailable.\nNo information about %1$s - %2$s pair</string>
     <string name="trade_error_sign_tx_message">An error occurred while signing and broadcasting transaction.\n\nTechnical details:\n\n<b>%1$s</b></string>
-    <string name="trade_error_max_limit">The supplied amount exceeds the limit of %1$s. Please use a smaller amount.</string>
-    <string name="trade_error_min_limit">The minimum amount is at least %1$s</string>
+    <string name="trade_error_max_limit">The amount entered exceeds the limit of %1$s. Please use a smaller amount.</string>
+    <string name="trade_error_min_limit">The minimum amount is %1$s</string>
     <!-- Exchange Status -->
     <string name="title_activity_exchange_status">Coin Swap Status</string>
-    <string name="trade_status_message">Your order will complete shortly. You can exit this screen without affecting the coin swap.</string>
     <string name="trade_status_complete_message">Your order completed successfully.</string>
     <string name="trade_status_label">Status</string>
     <string name="trade_status_waiting_deposit">Waiting for deposit&#8230;</string>
@@ -287,7 +288,6 @@
     <string name="address_not_found_error">The provided address could not be found in this account.</string>
     <string name="action_sign_verify_message">Verify Message</string>
     <string name="action_account_details">Account Details</string>
-    <string name="account_description_label">Description</string>
     <string name="account_private_key_label">Private Key</string>
     <string name="account_extended_private_key_label">Extended private key</string>
     <string name="account_extended_public_key_label">Extended public key</string>
@@ -315,4 +315,6 @@
     <string name="tx_message_public_add">Add private message</string>
     <string name="tx_message_public_remove">Remove private message</string>
     <string name="tx_message_subject">subject</string>
+    <string name="account_description_label">Description</string>
+    <string name="trade_status_message">Your order will complete shortly. You can exit this screen without affecting the coin swap.</string>
 </resources>

@@ -32,7 +32,9 @@ import com.mygeopay.core.coins.RubycoinMain;
 import com.mygeopay.core.coins.UroMain;
 import com.mygeopay.core.coins.NeoscoinMain;
 import com.mygeopay.core.coins.JumbucksMain;
+import com.mygeopay.core.coins.VcoinMain;
 import com.mygeopay.core.coins.VertcoinMain;
+import com.mygeopay.core.coins.ViacoinMain;
 import com.mygeopay.core.coins.VpncoinMain;
 import com.mygeopay.core.network.CoinAddress;
 import com.mygeopay.stratumj.ServerAddress;
@@ -158,6 +160,9 @@ public class Constants {
                                                     new ServerAddress("sdc-cce-2.coinomi.net", 5026)),
             new CoinAddress(ParkbyteMain.get(),     new ServerAddress("pkb-cce-1.coinomi.net", 5035),
                                                     new ServerAddress("pkb-cce-2.coinomi.net", 5035)),
+            new CoinAddress(VcoinMain.get(),        new ServerAddress("vcn.btcnetwork.info", 50001)),
+            new CoinAddress(ViacoinMain.get(),      new ServerAddress("vialectrum.viacoin.net", 50001),
+                                                    new ServerAddress("server.vialectrum.org", 50001)),
             // 192.99.35.69:9247 # node1.startcoin.org
             // 37.59.54.5:9247 # node2.startcoin.org
             // 5024 primecoin
@@ -209,6 +214,8 @@ public class Constants {
         COINS_ICONS.put(CoinID.VERTCOIN_MAIN.getCoinType(), R.drawable.vertcoin);
         COINS_ICONS.put(CoinID.JUMBUCKS_MAIN.getCoinType(), R.drawable.jumbucks);
         COINS_ICONS.put(CoinID.VPNCOIN_MAIN.getCoinType(), R.drawable.vpncoin);
+        COINS_ICONS.put(CoinID.VCOIN_MAIN.getCoinType(),  R.drawable.vcoin);
+        COINS_ICONS.put(CoinID.VIACOIN_MAIN.getCoinType(), R.drawable.viacoin);
 
         COINS_BLOCK_EXPLORERS = new HashMap<CoinType, String>();
         COINS_BLOCK_EXPLORERS.put(CoinID.BITCOIN_MAIN.getCoinType(), "https://blockchain.info/tx/%s");
@@ -242,6 +249,8 @@ public class Constants {
         COINS_BLOCK_EXPLORERS.put(CoinID.JUMBUCKS_MAIN.getCoinType(), "http://explorer.getjumbucks.com/tx/%s");
         COINS_BLOCK_EXPLORERS.put(CoinID.VPNCOIN_MAIN.getCoinType(), "https://blockexperts.com/vpn/tx/%s");
         COINS_BLOCK_EXPLORERS.put(CoinID.CRYPTOESCUDO_MAIN.getCoinType(), "http://explorador.cryptoescudo.net/tx/%s");
+        COINS_BLOCK_EXPLORERS.put(CoinID.VCOIN_MAIN.getCoinType(), "https://chainz.cryptoid.info/vcn/tx.dws?%s");
+        COINS_BLOCK_EXPLORERS.put(CoinID.VIACOIN_MAIN.getCoinType(), "http://explorer.viacoin.org/tx/");
     }
 
     public static final CoinType DEFAULT_COIN = BitcoinMain.get();
@@ -256,10 +265,10 @@ public class Constants {
             BitcoinMain.get(),
             DogecoinMain.get(),
             LitecoinMain.get(),
-            NuBitsMain.get(),
+            ViacoinMain.get(),
             MazacoinMain.get(),
             CanadaeCoinMain.get(),
-            StartcoinMain.get(),
+/*            StartcoinMain.get(), */
             PeercoinMain.get(),
             DashMain.get(),
             NamecoinMain.get(),
@@ -267,18 +276,20 @@ public class Constants {
             MonacoinMain.get(),
             NuSharesMain.get(),
             VpncoinMain.get(),
+            ReddcoinMain.get(),
             VertcoinMain.get(),
             FeathercoinMain.get(),
             RubycoinMain.get(),
-            ReddcoinMain.get(),
             DigibyteMain.get(),
             DigitalcoinMain.get(),
             JumbucksMain.get(),
             NeoscoinMain.get(),
             CannacoinMain.get(),
             ShadowCashMain.get(),
+            NuBitsMain.get(),
+/*            VcoinMain.get(), */
             ParkbyteMain.get(),
-            CryptoescudoMain.get(),
+/*            CryptoescudoMain.get(), */
             BitcoinTest.get(),
             LitecoinTest.get(),
             DogecoinTest.get()

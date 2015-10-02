@@ -9,8 +9,8 @@ public class LitecoinMain extends CoinType {
     private LitecoinMain() {
         id = "litecoin.main";
 
-        addressHeader = 48;
-        p2shHeader = 5;
+        addressHeader = 48; // public key address
+        p2shHeader = 5;    // script address
         acceptableAddressCodes = new int[] { addressHeader, p2shHeader };
         spendableCoinbaseDepth = 100;
         dumpedPrivateKeyHeader = 176;
