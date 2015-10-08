@@ -17,6 +17,7 @@ public class BitcoinMain extends CoinType {
 
         family = BitFamily.get();
         name = "Bitcoin";
+        fullname = "Bitcoin";
         symbol = "BTC";
         uriScheme = "bitcoin";
         bip44Index = 0;

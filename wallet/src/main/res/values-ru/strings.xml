@@ -63,7 +63,7 @@
     <string name="trade">обмен</string>
     <string name="receive">получить</string>
     <!-- Welcome fragment -->
-    <string name="welcome_text">Добро пожаловать в Coinomi</string>
+    <string name="welcome_text">Добро пожаловать в UberPay</string>
     <string name="create_wallet">Создать новый кошелёк</string>
     <string name="restore_wallet">Восстановить кошелёк</string>
     <string name="test_wallet">Тестовый кошелёк</string>

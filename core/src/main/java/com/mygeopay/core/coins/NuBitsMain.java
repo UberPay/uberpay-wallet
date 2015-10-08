@@ -16,6 +16,7 @@ public class NuBitsMain extends CoinType {
 
         family = NubitsFamily.get();
         name = "NBT";
+        fullname = "NuBits";
         symbol = "NBT";
         uriScheme = "nu";
         bip44Index = 12;

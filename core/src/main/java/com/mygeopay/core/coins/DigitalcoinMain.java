@@ -17,6 +17,7 @@ public class DigitalcoinMain extends CoinType {
 
         family = BitFamily.get();
         name = "DGC (β)";
+        fullname = "Digitalcoin";
         symbol = "DGC";
         uriScheme = "digitalcoin";
         bip44Index = 18;

@@ -17,6 +17,7 @@ public class NeoscoinTest extends CoinType {
 
         family = BitFamily.get();
         name = "NEOSτ";
+        fullname = "NEOS Testnet";
         symbol = "NEOSt";
         uriScheme = "neoscoin";
         bip44Index = 1;

@@ -250,7 +250,8 @@ final public class WalletActivity extends BaseWalletActivity implements
         if (account != null && mViewPager != null && !account.getId().equals(currentAccountId)) {
             currentAccountId = account.getId();
             CoinType type = account.getCoinType();
-            mTitle = type.getName();
+            // TODO
+            mTitle = type.getFullname();
             AppSectionsPagerAdapter adapter = new AppSectionsPagerAdapter(this, account);
             mViewPager.setAdapter(adapter);
             mViewPager.setCurrentItem(BALANCE);

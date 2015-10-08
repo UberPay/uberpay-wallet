@@ -79,12 +79,16 @@
                 <data android:scheme="peercoin" />
                 <data android:scheme="mazacoin" />
                 <data android:scheme="startcoin" />
+                <data android:scheme="viacoin" />
                 <data android:scheme="dash" />
                 <data android:scheme="nu" />
                 <data android:scheme="blackcoin" />
                 <data android:scheme="monacoin" />
+                <data android:scheme="novacoin" />
                 <data android:scheme="reddcoin" />
                 <data android:scheme="rubycoin" />
+                <data android:scheme="clamcoin"/>
+                <data android:scheme="dogecoindark"/>
                 <data android:scheme="digibyte" />
                 <data android:scheme="feathercoin" />
                 <data android:scheme="digitalcoin" />
@@ -121,7 +125,7 @@
         <activity
             android:name="com.mygeopay.wallet.ui.ScanActivity"
             android:configChanges="orientation|keyboard|keyboardHidden"
-            android:screenOrientation="landscape"
+            android:screenOrientation="portrait"
             android:stateNotNeeded="true"
             android:theme="@style/AppThemeNoTitleBar"
             android:windowSoftInputMode="stateAlwaysHidden" />

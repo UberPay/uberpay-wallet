@@ -16,6 +16,7 @@ public class DashMain extends CoinType {
 
         family = BitFamily.get();
         name = "DASH";
+        fullname = "DASH";
         symbol = "DASH";
         uriScheme = "dash"; // TODO add multi uri, darkcoin
         bip44Index = 5; //  chain_index = 5

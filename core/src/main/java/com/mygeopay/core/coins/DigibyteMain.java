@@ -17,6 +17,7 @@ public class DigibyteMain extends CoinType {
 
         family = BitFamily.get();
         name = "DGB (β)";
+        fullname = "DigiByte";
         symbol = "DGB";
         uriScheme = "digibyte";
         bip44Index = 20;

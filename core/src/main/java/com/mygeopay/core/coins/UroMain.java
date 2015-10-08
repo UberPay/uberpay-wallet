@@ -18,6 +18,7 @@ public class UroMain extends CoinType {
 
         family = BitFamily.get();
         name = "URO";
+        fullname = "Urocoin";
         symbol = "URO";
         uriScheme = "uro";
         bip44Index = 17;

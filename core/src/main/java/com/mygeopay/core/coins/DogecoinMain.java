@@ -16,6 +16,7 @@ public class DogecoinMain extends CoinType {
 
         family = BitFamily.get();
         name = "DOGE";
+        fullname = "Dogecoin";
         symbol = "DOGE";
         uriScheme = "dogecoin";
         bip44Index = 3;

@@ -18,6 +18,7 @@ public class CannacoinMain extends CoinType {
 
         family = ReddcoinMain.get();
         name = "CCN";
+        fullname = "Cannacoin";
         symbol = "CCN";
         uriScheme = "cannacoin";
         bip44Index = 19;

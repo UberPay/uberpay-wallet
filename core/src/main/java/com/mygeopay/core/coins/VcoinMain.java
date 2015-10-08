@@ -18,6 +18,7 @@ public class VcoinMain extends CoinType {
 
         family = BitFamily.get();
         name = "VCN (α)";
+        fullname = "VCoin";
         symbol = "VCN";
         uriScheme = "vcoin";
         bip44Index = 37;  // TODO BIP0044 Coin Type ? = 0x80000025

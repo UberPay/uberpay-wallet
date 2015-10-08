@@ -16,6 +16,7 @@ public class NamecoinMain extends CoinType {
 
         family = BitFamily.get();
         name = "NMC (β)";
+        fullname ="Namecoin"; // TODO Change the Title to reflect fullname when accessing coin
         symbol = "NMC";
         uriScheme = "namecoin";
         bip44Index = 7;

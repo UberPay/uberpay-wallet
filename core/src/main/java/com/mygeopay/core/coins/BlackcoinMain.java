@@ -17,6 +17,7 @@ public class BlackcoinMain extends CoinType {
 
         family = PeerFamily.get();
         name = "BLK";
+        fullname ="Blackcoin";
         symbol = "BLK";
         uriScheme = "blackcoin";
         bip44Index = 10;

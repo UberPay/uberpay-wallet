@@ -17,6 +17,7 @@ public class NeoscoinMain extends CoinType {
 
         family = BitFamily.get();
         name = "NEOS (β)";
+        fullname = "Neoscoin";
         symbol = "NEOS";
         uriScheme = "neoscoin";
         bip44Index = 25;

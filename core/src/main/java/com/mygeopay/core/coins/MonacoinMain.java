@@ -16,6 +16,7 @@ public class MonacoinMain extends CoinType {
 
         family = BitFamily.get();
         name = "MONA";
+        fullname = "Monacoin";
         symbol = "MONA";
         uriScheme = "monacoin";
         bip44Index = 22;

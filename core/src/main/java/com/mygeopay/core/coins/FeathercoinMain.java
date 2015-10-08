@@ -17,6 +17,7 @@ public class FeathercoinMain extends CoinType {
 
         family = BitFamily.get();
         name = "FTC";
+        fullname = "Feathercoin";
         symbol = "FTC";
         uriScheme = "feathercoin";
         bip44Index = 8;

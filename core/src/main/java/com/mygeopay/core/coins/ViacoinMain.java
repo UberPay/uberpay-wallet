@@ -19,6 +19,7 @@ public class ViacoinMain extends CoinType {
 
         family = BitFamily.get();
         name = "VIA (β)";
+        fullname = "Viacoin";
         symbol = "VIA";
         uriScheme = "viacoin";
         bip44Index = 14; // BIP0044 COIN TYPE 0x8000000e

@@ -16,6 +16,7 @@ public class ParkbyteMain extends CoinType {
 
         family = PeerFamily.get();
         name = "PKB";
+        fullname ="ParkByte";
         symbol = "PKB";
         uriScheme = "parkbyte";
         bip44Index = 36;

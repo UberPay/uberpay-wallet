@@ -17,6 +17,7 @@ public class StartcoinMain extends CoinType {
 
         family = BitFamily.get();
         name = "START (α)";
+        fullname = "Startcoin";
         symbol = "START";
         uriScheme = "startcoin";
         bip44Index = 253;

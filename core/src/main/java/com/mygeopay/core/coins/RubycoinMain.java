@@ -19,6 +19,7 @@ public class RubycoinMain extends CoinType {
 
         family = PeerFamily.get();
         name = "RBY";
+        fullname = "Rubycoin";
         symbol = "RBY";
         uriScheme = "rubycoin";
         bip44Index = 16;

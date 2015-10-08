@@ -21,6 +21,7 @@ public class ReddcoinMain extends CoinType {
 
         family = ReddFamily.get();
         name = "RDD";
+        fullname = "Reddcoin";
         symbol = "RDD";
         uriScheme = "reddcoin";
         bip44Index = 4;

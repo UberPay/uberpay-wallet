@@ -16,6 +16,7 @@ public class NuSharesMain extends CoinType {
 
         family = NubitsFamily.get();
         name = "NSR";
+        fullname = "NuShares";
         symbol = "NSR";
         uriScheme = "nu";
         bip44Index = 11;

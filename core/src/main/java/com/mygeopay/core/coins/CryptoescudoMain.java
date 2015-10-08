@@ -16,6 +16,7 @@ public class CryptoescudoMain extends CoinType {
         dumpedPrivateKeyHeader = 156; // 128 + addressHeader[28] = 156
 
         name = "CESC (α)"; // A Portuguese Cryptocoin
+        fullname = "CryptoEscudo";
         symbol = "CESC";
         uriScheme = "cryptoescudo";
         bip44Index = 111; // Need confirmation in Satoshi Labs

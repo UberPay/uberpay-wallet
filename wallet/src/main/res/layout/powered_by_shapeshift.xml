@@ -3,7 +3,7 @@
     android:id="@+id/powered_by_shapeshift"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:clickable="true"
+    android:clickable="false"
     style="@style/SmallHelpText"
     android:drawableEnd="@drawable/shapeshift"
     android:drawableRight="@drawable/shapeshift"

@@ -16,6 +16,7 @@ public class VertcoinMain extends CoinType {
 
         family = BitFamily.get();
         name = "VTC (β)";
+        fullname = "VertCoin";
         symbol = "VTC";
         uriScheme = "vertcoin";
         bip44Index = 28;

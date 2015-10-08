@@ -7,18 +7,21 @@ import com.mygeopay.core.coins.BitcoinTest;
 import com.mygeopay.core.coins.BlackcoinMain;
 import com.mygeopay.core.coins.CanadaeCoinMain;
 import com.mygeopay.core.coins.CannacoinMain;
+import com.mygeopay.core.coins.ClamcoinMain;
 import com.mygeopay.core.coins.CoinID;
 import com.mygeopay.core.coins.CoinType;
 import com.mygeopay.core.coins.CryptoescudoMain;
 import com.mygeopay.core.coins.DashMain;
 import com.mygeopay.core.coins.DigibyteMain;
 import com.mygeopay.core.coins.DigitalcoinMain;
+import com.mygeopay.core.coins.DogecoinDarkMain;
 import com.mygeopay.core.coins.DogecoinMain;
 import com.mygeopay.core.coins.DogecoinTest;
 import com.mygeopay.core.coins.FeathercoinMain;
 import com.mygeopay.core.coins.LitecoinMain;
 import com.mygeopay.core.coins.LitecoinTest;
 import com.mygeopay.core.coins.MazacoinMain;
+import com.mygeopay.core.coins.NovacoinMain;
 import com.mygeopay.core.coins.ParkbyteMain;
 import com.mygeopay.core.coins.ShadowCashMain;
 import com.mygeopay.core.coins.StartcoinMain;
@@ -154,6 +157,7 @@ public class Constants {
             new CoinAddress(CryptoescudoMain.get(), new ServerAddress("electrum1.cryptoescudo.org", 50001),
                                                     new ServerAddress("electrum2.cryptoescudo.org", 50001),
                                                     new ServerAddress("electrum3.cryptoescudo.org", 50001)),
+            // TODO Correct Electrum URL for CRYPTOESCUDO
             new CoinAddress(StartcoinMain.get(),    new ServerAddress("node1.startcoin.org", 9247),
                                                     new ServerAddress("node2.startcoin.org", 9247)),
             new CoinAddress(ShadowCashMain.get(),   new ServerAddress("sdc-cce-1.coinomi.net", 5026),
@@ -161,6 +165,7 @@ public class Constants {
             new CoinAddress(ParkbyteMain.get(),     new ServerAddress("pkb-cce-1.coinomi.net", 5035),
                                                     new ServerAddress("pkb-cce-2.coinomi.net", 5035)),
             new CoinAddress(VcoinMain.get(),        new ServerAddress("vcn.btcnetwork.info", 50001)),
+            // TODO Correct Electrum URL for VCOIN
             new CoinAddress(ViacoinMain.get(),      new ServerAddress("vialectrum.viacoin.net", 50001),
                                                     new ServerAddress("server.vialectrum.org", 50001)),
             // 192.99.35.69:9247 # node1.startcoin.org
@@ -174,8 +179,18 @@ public class Constants {
                                                     new ServerAddress("vtc-cce-2.coinomi.net", 5028)),
             new CoinAddress(JumbucksMain.get(),     new ServerAddress("jbs-cce-1.coinomi.net", 5029),
                                                     new ServerAddress("jbs-cce-2.coinomi.net", 5029)),
-             new CoinAddress(CanadaeCoinMain.get(),  new ServerAddress("cdn-cce-1.coinomi.net", 5033),
+            new CoinAddress(CanadaeCoinMain.get(),  new ServerAddress("cdn-cce-1.coinomi.net", 5033),
                                                     new ServerAddress("cdn-cce-2.coinomi.net", 5033)),
+            new CoinAddress(ClamcoinMain.get(),     new ServerAddress("clam.el.0.btcnetwork.info", 50001)),
+            // TODO Correct electrum URL for CLAM
+            new CoinAddress(DogecoinDarkMain.get(), new ServerAddress("electrum-doged.space", 50001),
+                                                    new ServerAddress("electrum-doged.space", 50002),
+                                                    new ServerAddress("electrum-doged.space", 8081),
+                                                    new ServerAddress("electrum-doged.space", 8082)),
+            // TODO Correct electrum URL from DOGED
+            new CoinAddress(NovacoinMain.get(),     new ServerAddress("nvc-cce-1.coinomi.net", 5034),
+                                                    new ServerAddress("nvc-cce-2.coinomi.net", 5034)),
+
             new CoinAddress(VpncoinMain.get(),      new ServerAddress("vpn-cce-1.coinomi.net", 5032),
                                                     new ServerAddress("vpn-cce-2.coinomi.net", 5032))
     );
@@ -188,6 +203,7 @@ public class Constants {
         COINS_ICONS.put(CoinID.BITCOIN_TEST.getCoinType(), R.drawable.bitcoin_test);
         COINS_ICONS.put(CoinID.DOGECOIN_MAIN.getCoinType(), R.drawable.dogecoin);
         COINS_ICONS.put(CoinID.DOGECOIN_TEST.getCoinType(), R.drawable.dogecoin_test);
+        COINS_ICONS.put(CoinID.DOGECOINDARK_MAIN.getCoinType(), R.drawable.doged);
         COINS_ICONS.put(CoinID.LITECOIN_MAIN.getCoinType(), R.drawable.litecoin);
         COINS_ICONS.put(CoinID.LITECOIN_TEST.getCoinType(), R.drawable.litecoin_test);
         COINS_ICONS.put(CoinID.PEERCOIN_MAIN.getCoinType(), R.drawable.peercoin);
@@ -202,6 +218,8 @@ public class Constants {
         COINS_ICONS.put(CoinID.FEATHERCOIN_MAIN.getCoinType(), R.drawable.feathercoin);
         COINS_ICONS.put(CoinID.CANADAECOIN_MAIN.getCoinType(), R.drawable.canadaecoin);
         COINS_ICONS.put(CoinID.SHADOWCASH_MAIN.getCoinType(), R.drawable.shadowcash);
+        COINS_ICONS.put(CoinID.CLAMCOIN_MAIN.getCoinType(), R.drawable.clam);
+        // TODO verify CLAM coin values
         COINS_ICONS.put(CoinID.PARKBYTE_MAIN.getCoinType(), R.drawable.parkbyte);
         COINS_ICONS.put(CoinID.CRYPTOESCUDO_MAIN.getCoinType(), R.drawable.cryptoescudo);
 //        COINS_ICONS.put(CoinID.URO_MAIN.getCoinType(), R.drawable.uro);
@@ -215,6 +233,7 @@ public class Constants {
         COINS_ICONS.put(CoinID.JUMBUCKS_MAIN.getCoinType(), R.drawable.jumbucks);
         COINS_ICONS.put(CoinID.VPNCOIN_MAIN.getCoinType(), R.drawable.vpncoin);
         COINS_ICONS.put(CoinID.VCOIN_MAIN.getCoinType(),  R.drawable.vcoin);
+        COINS_ICONS.put(CoinID.NOVACOIN_MAIN.getCoinType(), R.drawable.novacoin);
         COINS_ICONS.put(CoinID.VIACOIN_MAIN.getCoinType(), R.drawable.viacoin);
 
         COINS_BLOCK_EXPLORERS = new HashMap<CoinType, String>();
@@ -230,6 +249,7 @@ public class Constants {
         COINS_BLOCK_EXPLORERS.put(CoinID.NUBITS_MAIN.getCoinType(), "http://blockexplorer.nu/transactions/%s");
         COINS_BLOCK_EXPLORERS.put(CoinID.REDDCOIN_MAIN.getCoinType(), "http://live.reddcoin.com/tx/%s");
         COINS_BLOCK_EXPLORERS.put(CoinID.BLACKCOIN_MAIN.getCoinType(), "https://chainz.cryptoid.info/blk/tx.dws?%s.htm");
+        COINS_BLOCK_EXPLORERS.put(CoinID.CLAMCOIN_MAIN.getCoinType(), "http://clamsight.com/tx/%s");
         // TODO find a non Japanese block explorer
         COINS_BLOCK_EXPLORERS.put(CoinID.MONACOIN_MAIN.getCoinType(), "http://abe.monash.pw:3000/tx/%s");
         COINS_BLOCK_EXPLORERS.put(CoinID.RUBYCOIN_MAIN.getCoinType(), "https://chainz.cryptoid.info/rby/tx.dws?%s");
@@ -250,6 +270,8 @@ public class Constants {
         COINS_BLOCK_EXPLORERS.put(CoinID.VPNCOIN_MAIN.getCoinType(), "https://blockexperts.com/vpn/tx/%s");
         COINS_BLOCK_EXPLORERS.put(CoinID.CRYPTOESCUDO_MAIN.getCoinType(), "http://explorador.cryptoescudo.net/tx/%s");
         COINS_BLOCK_EXPLORERS.put(CoinID.VCOIN_MAIN.getCoinType(), "https://chainz.cryptoid.info/vcn/tx.dws?%s");
+        COINS_BLOCK_EXPLORERS.put(CoinID.DOGECOINDARK_MAIN.getCoinType(), "https://www.blockexperts.com/doged/tx/%s");
+        COINS_BLOCK_EXPLORERS.put(CoinID.NOVACOIN_MAIN.getCoinType(), "http://explorer.novaco.in/tx/%s");
         COINS_BLOCK_EXPLORERS.put(CoinID.VIACOIN_MAIN.getCoinType(), "http://explorer.viacoin.org/tx/");
     }
 
@@ -265,15 +287,18 @@ public class Constants {
             BitcoinMain.get(),
             DogecoinMain.get(),
             LitecoinMain.get(),
+     /*       DogecoinDarkMain.get(), */
             ViacoinMain.get(),
             MazacoinMain.get(),
             CanadaeCoinMain.get(),
-/*            StartcoinMain.get(), */
+     /*       StartcoinMain.get(), */
             PeercoinMain.get(),
             DashMain.get(),
             NamecoinMain.get(),
             BlackcoinMain.get(),
+/*            ClamcoinMain.get(), */
             MonacoinMain.get(),
+            NovacoinMain.get(),
             NuSharesMain.get(),
             VpncoinMain.get(),
             ReddcoinMain.get(),

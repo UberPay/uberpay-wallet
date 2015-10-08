@@ -19,8 +19,9 @@ public class PeercoinTest extends CoinType {
 
         family = PeerFamily.get();
         name = "PPCτ";
+        fullname ="PEER Testnet";
         symbol = "PPCTEST";
-        uriScheme = "peercoin"; // TODO verify, could be ppcoin?
+        uriScheme = "peercoin"; //
         bip44Index = 1;
         unitExponent = 6;
         feePerKb = value(10000); // 0.01PPC, careful Peercoin has 1000000 units per coin

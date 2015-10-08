@@ -30,6 +30,7 @@ abstract public class CoinType extends NetworkParameters implements ValueType, S
     private static final String BIP_44_KEY_PATH = "44H/%dH/%dH";
 
     protected String name;
+    protected String fullname;
     protected String symbol;
     protected String uriScheme;
     protected Integer bip44Index;
@@ -49,6 +50,8 @@ abstract public class CoinType extends NetworkParameters implements ValueType, S
     public String getName() {
         return checkNotNull(name, "A coin failed to set a name");
     }
+
+    public String getFullname() {return checkNotNull(fullname, "A coin failed to set a name");}
 
     public boolean isTestnet() { return id.endsWith("test");}
 

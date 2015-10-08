@@ -17,6 +17,7 @@ public class LitecoinMain extends CoinType {
 
         family = BitFamily.get();
         name = "LTC";
+        fullname = "Litecoin";
         symbol = "LTC";
         uriScheme = "litecoin";
         bip44Index = 2;

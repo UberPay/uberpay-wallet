@@ -13,8 +13,8 @@ public class CanadaeCoinMain extends CoinType {
         p2shHeader = 5;
         acceptableAddressCodes = new int[] { addressHeader, p2shHeader };
         spendableCoinbaseDepth = 120; // COINBASE_MATURITY_NEW 
-
         name = "CDN (β)";
+        fullname = "Canada eCoin";
         symbol = "CDN";
         uriScheme = "canadaecoin";
         bip44Index = 34; // BIP0044 COIN TYPE 0x80000022

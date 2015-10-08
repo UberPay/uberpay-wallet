@@ -19,6 +19,7 @@ public class PeercoinMain extends CoinType {
 
         family = PeerFamily.get();
         name = "PPC";
+        fullname = "Peercoin";
         symbol = "PPC";
         uriScheme = "peercoin"; // TODO verify, could be ppcoin?
         bip44Index = 6;

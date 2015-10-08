@@ -16,7 +16,8 @@ public class ShadowCashMain extends CoinType {
         spendableCoinbaseDepth = 500;
 
         family = PeerFamily.get();
-        name = "SDC (β)"; // TODO The original name is "ShadowCash"
+        name = "SDC (β)"; // The original name is "ShadowCash"
+        fullname = "ShadowCash";
         symbol = "SDC";
         uriScheme = "shadowcash";
         bip44Index = 35;

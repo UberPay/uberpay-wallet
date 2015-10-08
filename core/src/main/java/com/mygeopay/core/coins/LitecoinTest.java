@@ -16,6 +16,7 @@ public class LitecoinTest extends CoinType {
 
         family = BitFamily.get();
         name = "LTCτ";
+        fullname = "LTC Testnet";
         symbol = "LTCt";
         uriScheme = "litecoin";
         bip44Index = 1;

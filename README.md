@@ -6,8 +6,16 @@ Our goal is to a develop and consumer friendly multicoin wallet that will suppor
 
 Coins Pending for inclusion:
 
-- StartCoin(pending electrum node)
 - MaxCoin
+
+Pending electrum node
+
+- DogecoinDark (DOGED)
+- Clamcoin (CLAM)
+- Starcoin (START)
+- VCoin (VCN)
+- CryptoEscudo (CESC)
+
 
 ## Merchant Testnet POS (Point Of Sale)
 
@@ -28,21 +36,29 @@ Coins Pending for inclusion:
 
 * Electrum-server support (Provided by Coinomi.com)
 * Coinomi core support https://github.com/Coinomi
-* A beautiful vector icon
+* Vector icon
 * Entry to the [BIP44 registry](https://github.com/satoshilabs/docs/blob/master/slips/slip-0044.rst) that is maintained by Satoshi labs
 
 ## Pending Features
 
 - ShapeShift.io Terms & Conditions Acceptace Feature
-- Account Summary
+- Account Summary (Wallet Balance Summary)
 - Integration with StartChat https://play.google.com/store/apps/details?id=com.wStartChat
 - Geopay.me's Gold/Silver Coin Swap Service (More to be announced)
 
-- Splash page implementation under review
+- Splash page implementation pre-alpha phase
+
 
 ## Version history
 
-New version v1.7.02b
+New Version v1.7.02.2
+
+- Added Novacoin
+- Corrected Russian Language Pack
+- Now wallets show the actual coin full name, instead of the coin 3 letter code
+
+
+Version v1.7.02b
 
 - Added Viacoin
 - Added more Languages structure

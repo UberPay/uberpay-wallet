@@ -18,6 +18,7 @@ public class MazacoinMain extends CoinType {
 
         family = BitFamily.get();
         name = "MZC";
+        fullname = "Mazacoin";
         symbol = "MZC";
         uriScheme = "mazacoin";
         bip44Index = 13;
