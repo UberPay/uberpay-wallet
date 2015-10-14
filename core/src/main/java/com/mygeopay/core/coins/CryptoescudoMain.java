@@ -1,5 +1,7 @@
 package com.mygeopay.core.coins;
 
+import com.mygeopay.core.coins.families.BitFamily;
+
 import org.bitcoinj.core.Coin;
 
 /**
@@ -15,11 +17,12 @@ public class CryptoescudoMain extends CoinType {
         spendableCoinbaseDepth = 40; // COINBASE_MATURITY = 40 - cryptoescudo/src/main.h
         dumpedPrivateKeyHeader = 156; // 128 + addressHeader[28] = 156
 
+        family = BitFamily.get();
         name = "CESC (α)"; // A Portuguese Cryptocoin
         fullname = "CryptoEscudo";
         symbol = "CESC";
         uriScheme = "cryptoescudo";
-        bip44Index = 111; // Need confirmation in Satoshi Labs
+        bip44Index = 111; // TODO Need confirmation in Satoshi Labs
         unitExponent = 8;
         feePerKb = value(0); // 0 Zerado para testes normal 100 000
         minNonDust = value(1000); // 0.00001 CESC mininput

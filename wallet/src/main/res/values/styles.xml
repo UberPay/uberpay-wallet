@@ -183,5 +183,10 @@
     <style name="ExchangeRowAmount" parent="Amount">
         <item name="android:textSize">@dimen/exchange_row_text_size_amount</item>
     </style>
+    <!-- Navigation Buttons (Arrows) -->
+    <style name="ActionButtons">
+        <!--item name="android:textSize">@dimen/exchange_row_text_size_amount</item> -->
+        <item name="android:background">@drawable/send_green_circle</item>
+    </style>
 
 </resources>

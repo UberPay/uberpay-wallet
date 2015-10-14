@@ -169,12 +169,16 @@
                 android:gravity="bottom">
                 <Button
                     android:id="@+id/button_exit"
-                    style="@style/ExchangeRowSymbol"
+                    style="@style/ActionButtons"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentRight="true"
-                    android:text="@string/button_return" />
+                    android:paddingLeft="14dp"
+                    android:paddingBottom="3dp"
+                    android:paddingRight="0dp"
+                    android:paddingTop="1dp"
+                    android:drawableLeft="@drawable/return_arrow" />
 
                 <include
                     android:layout_width="wrap_content"

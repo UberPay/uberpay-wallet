@@ -1,6 +1,5 @@
 package com.mygeopay.core.coins;
 
-import com.mygeopay.core.coins.families.BitFamily;
 import com.mygeopay.core.coins.families.PeerFamily;
 
 /**

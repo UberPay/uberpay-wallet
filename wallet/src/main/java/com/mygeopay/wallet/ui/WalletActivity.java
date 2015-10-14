@@ -250,7 +250,7 @@ final public class WalletActivity extends BaseWalletActivity implements
         if (account != null && mViewPager != null && !account.getId().equals(currentAccountId)) {
             currentAccountId = account.getId();
             CoinType type = account.getCoinType();
-            // TODO
+            // TODO display fullname for coins changed mTitle from getName to getFullname
             mTitle = type.getFullname();
             AppSectionsPagerAdapter adapter = new AppSectionsPagerAdapter(this, account);
             mViewPager.setAdapter(adapter);
@@ -306,6 +306,8 @@ final public class WalletActivity extends BaseWalletActivity implements
         builder.setMessage(R.string.wallet_update_message);
 
         // Disable market link for now
+        // http://developer.android.com/distribute/tools/promote/linking.html
+        // TODO Create MarketIntent
 //        if (pm.resolveActivity(marketIntent, 0) != null)
 //        {
 //            builder.setPositiveButton("Play Store", new DialogInterface.OnClickListener() {

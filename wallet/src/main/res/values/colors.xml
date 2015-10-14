@@ -72,6 +72,8 @@
     <color name="scan_result_view">#b0000000</color>
     <color name="scan_result_dots">#c099cc00</color>
 
+    <!-- send buttons -->
+    <color name="send_button">#F3F3F3</color>
     <!-- progress bar -->
     <integer-array name="progress_bar_colors">
         <item>@color/primary_600</item>

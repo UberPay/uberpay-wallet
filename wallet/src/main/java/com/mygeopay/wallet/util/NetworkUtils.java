@@ -21,6 +21,7 @@ public class NetworkUtils {
         if (httpClient == null) {
             httpClient = new OkHttpClient();
             httpClient.setConnectionSpecs(Collections.singletonList(ConnectionSpec.MODERN_TLS));
+            // TODO HTC 300 Crashed due to Network fail - possibly increase timeout rate to 7000 ms
             httpClient.setConnectTimeout(Constants.HTTP_TIMEOUT_MS, TimeUnit.MILLISECONDS);
             // Setup cache
             File cacheDir = new File(context.getCacheDir(), Constants.HTTP_CACHE_DIR);

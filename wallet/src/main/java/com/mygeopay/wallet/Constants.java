@@ -5,6 +5,7 @@ import android.text.format.DateUtils;
 import com.mygeopay.core.coins.BitcoinMain;
 import com.mygeopay.core.coins.BitcoinTest;
 import com.mygeopay.core.coins.BlackcoinMain;
+import com.mygeopay.core.coins.BatacoinMain;
 import com.mygeopay.core.coins.CanadaeCoinMain;
 import com.mygeopay.core.coins.CannacoinMain;
 import com.mygeopay.core.coins.ClamcoinMain;
@@ -183,14 +184,15 @@ public class Constants {
                                                     new ServerAddress("cdn-cce-2.coinomi.net", 5033)),
             new CoinAddress(ClamcoinMain.get(),     new ServerAddress("clam.el.0.btcnetwork.info", 50001)),
             // TODO Correct electrum URL for CLAM
-            new CoinAddress(DogecoinDarkMain.get(), new ServerAddress("electrum-doged.space", 50001),
-                                                    new ServerAddress("electrum-doged.space", 50002),
-                                                    new ServerAddress("electrum-doged.space", 8081),
-                                                    new ServerAddress("electrum-doged.space", 8082)),
+            new CoinAddress(DogecoinDarkMain.get(), new ServerAddress("104.236.133.57", 50001),
+            // new CoinAddress(DogecoinDarkTest.get(), new ServerAddress("electrum-doged.space", 50002),
+                                                    new ServerAddress("doged.el.0.btcnetwork.info", 50001)),
             // TODO Correct electrum URL from DOGED
             new CoinAddress(NovacoinMain.get(),     new ServerAddress("nvc-cce-1.coinomi.net", 5034),
                                                     new ServerAddress("nvc-cce-2.coinomi.net", 5034)),
-
+            //
+            new CoinAddress(BatacoinMain.get(),      new ServerAddress("104.236.239.154", 50001)),
+            // electrum.bta.xyz
             new CoinAddress(VpncoinMain.get(),      new ServerAddress("vpn-cce-1.coinomi.net", 5032),
                                                     new ServerAddress("vpn-cce-2.coinomi.net", 5032))
     );
@@ -204,6 +206,7 @@ public class Constants {
         COINS_ICONS.put(CoinID.DOGECOIN_MAIN.getCoinType(), R.drawable.dogecoin);
         COINS_ICONS.put(CoinID.DOGECOIN_TEST.getCoinType(), R.drawable.dogecoin_test);
         COINS_ICONS.put(CoinID.DOGECOINDARK_MAIN.getCoinType(), R.drawable.doged);
+        COINS_ICONS.put(CoinID.BATACOIN_MAIN.getCoinType(), R.drawable.bta);
         COINS_ICONS.put(CoinID.LITECOIN_MAIN.getCoinType(), R.drawable.litecoin);
         COINS_ICONS.put(CoinID.LITECOIN_TEST.getCoinType(), R.drawable.litecoin_test);
         COINS_ICONS.put(CoinID.PEERCOIN_MAIN.getCoinType(), R.drawable.peercoin);
@@ -271,6 +274,7 @@ public class Constants {
         COINS_BLOCK_EXPLORERS.put(CoinID.CRYPTOESCUDO_MAIN.getCoinType(), "http://explorador.cryptoescudo.net/tx/%s");
         COINS_BLOCK_EXPLORERS.put(CoinID.VCOIN_MAIN.getCoinType(), "https://chainz.cryptoid.info/vcn/tx.dws?%s");
         COINS_BLOCK_EXPLORERS.put(CoinID.DOGECOINDARK_MAIN.getCoinType(), "https://www.blockexperts.com/doged/tx/%s");
+        COINS_BLOCK_EXPLORERS.put(CoinID.BATACOIN_MAIN.getCoinType(), "https://chainz.cryptoid.info/bta/tx.dws?%s");
         COINS_BLOCK_EXPLORERS.put(CoinID.NOVACOIN_MAIN.getCoinType(), "http://explorer.novaco.in/tx/%s");
         COINS_BLOCK_EXPLORERS.put(CoinID.VIACOIN_MAIN.getCoinType(), "http://explorer.viacoin.org/tx/");
     }
@@ -287,7 +291,8 @@ public class Constants {
             BitcoinMain.get(),
             DogecoinMain.get(),
             LitecoinMain.get(),
-     /*       DogecoinDarkMain.get(), */
+/*            DogecoinDarkMain.get(), */
+/*            BatacoinMain.get(), */
             ViacoinMain.get(),
             MazacoinMain.get(),
             CanadaeCoinMain.get(),

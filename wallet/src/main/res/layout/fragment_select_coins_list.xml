@@ -16,7 +16,7 @@
 
     <Button
         android:id="@+id/button_next"
-        style="@style/ExchangeRowSymbol"
+        style="@style/ActionButtons"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
@@ -25,6 +25,10 @@
         android:layout_marginLeft="@dimen/activity_horizontal_margin"
         android:layout_marginEnd="@dimen/activity_horizontal_margin"
         android:layout_marginRight="@dimen/activity_horizontal_margin"
-        android:text="@string/button_finish"
+        android:paddingLeft="14dp"
+        android:paddingBottom="3dp"
+        android:paddingRight="0dp"
+        android:paddingTop="1dp"
+        android:drawableLeft="@drawable/confirm_arrow"
         android:layout_gravity="end" />
 </LinearLayout>

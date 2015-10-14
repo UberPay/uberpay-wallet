@@ -62,7 +62,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:contentDescription="@string/scan_qr_code"
-                        android:src="@drawable/qr_code" />
+                        android:src="@drawable/qr_code_pay" />
 
                 </LinearLayout>
 

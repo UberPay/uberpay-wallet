@@ -41,6 +41,7 @@
     <!-- SendOutput Widget -->
     <dimen name="send_output_amount_text_size">24sp</dimen>
     <dimen name="send_output_type_text_size">24sp</dimen>
+    <dimen name="action_buttons">54dp</dimen>
 
     <!-- IntroActivity -->
     <dimen name="intro_button_width">224dp</dimen>

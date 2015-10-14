@@ -52,7 +52,9 @@
         android:hardwareAccelerated="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme"
+        android:largeHeap="@bool/largeheap">
+
         <activity
             android:name="com.mygeopay.wallet.ui.WalletActivity"
             android:label="@string/app_name"
@@ -76,7 +78,9 @@
                 <data android:scheme="bitcoin" />
                 <data android:scheme="litecoin" />
                 <data android:scheme="dogecoin" />
+                <data android:scheme="dogecoindark"/>
                 <data android:scheme="peercoin" />
+                <data android:scheme="batacoin" />
                 <data android:scheme="mazacoin" />
                 <data android:scheme="startcoin" />
                 <data android:scheme="viacoin" />
@@ -88,7 +92,6 @@
                 <data android:scheme="reddcoin" />
                 <data android:scheme="rubycoin" />
                 <data android:scheme="clamcoin"/>
-                <data android:scheme="dogecoindark"/>
                 <data android:scheme="digibyte" />
                 <data android:scheme="feathercoin" />
                 <data android:scheme="digitalcoin" />
@@ -125,7 +128,7 @@
         <activity
             android:name="com.mygeopay.wallet.ui.ScanActivity"
             android:configChanges="orientation|keyboard|keyboardHidden"
-            android:screenOrientation="portrait"
+            android:screenOrientation="landscape"
             android:stateNotNeeded="true"
             android:theme="@style/AppThemeNoTitleBar"
             android:windowSoftInputMode="stateAlwaysHidden" />

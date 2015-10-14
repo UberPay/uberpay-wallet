@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+
+    <solid
+        android:color="@color/send_button"/>
+
+    <size
+        android:width="@dimen/action_buttons"
+        android:height="@dimen/action_buttons"/>
+</shape>

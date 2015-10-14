@@ -51,7 +51,13 @@ Pending electrum node
 
 ## Version history
 
-New Version v1.7.02.2
+New Version v1.7.02.4
+
+- Added Hindi Language Pack
+- Improved UI
+
+
+Version v1.7.02.2
 
 - Added Novacoin
 - Corrected Russian Language Pack
