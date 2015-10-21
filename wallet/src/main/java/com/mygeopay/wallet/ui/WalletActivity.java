@@ -512,6 +512,7 @@ final public class WalletActivity extends BaseWalletActivity implements
             refreshWallet();
             return true;
         } else if (id == R.id.action_balance) {
+            //TODO Add Individual coin balances
             refreshWallet();
             return true;
         } else if (id == R.id.action_about) {

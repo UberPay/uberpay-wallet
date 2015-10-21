@@ -79,6 +79,7 @@
                 <data android:scheme="litecoin" />
                 <data android:scheme="dogecoin" />
                 <data android:scheme="dogecoindark"/>
+                <data android:scheme="stepscoin"/>
                 <data android:scheme="peercoin" />
                 <data android:scheme="batacoin" />
                 <data android:scheme="mazacoin" />

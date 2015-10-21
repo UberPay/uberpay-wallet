@@ -2,6 +2,7 @@ package com.mygeopay.core.coins;
 
 import com.mygeopay.core.coins.families.BitFamily;
 
+
 /**
  * @author John L. Jegutanis
  */

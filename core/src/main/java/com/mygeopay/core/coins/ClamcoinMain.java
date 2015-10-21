@@ -18,7 +18,7 @@ public class ClamcoinMain extends CoinType {
         name = "CLAM (α)";
         fullname = "Clam";
         symbol = "CLAM";
-        uriScheme = "clamcoin";
+        uriScheme = "clam";
         bip44Index = 23;
         unitExponent = 8;
         feePerKb = value(10000);

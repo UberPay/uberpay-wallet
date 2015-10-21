@@ -12,9 +12,9 @@ android {
     defaultConfig {
         applicationId 'com.mygeopay.wallet'
         minSdkVersion 11
-        targetSdkVersion 21
-        versionCode 54
-        versionName 'v1.7.02.4'
+        targetSdkVersion 22
+        versionCode 56
+        versionName 'v1.7.02.6'
     }
     buildTypes {
         release {

@@ -51,7 +51,18 @@ Pending electrum node
 
 ## Version history
 
-New Version v1.7.02.4
+New Version v1.7.02.6
+
+- Added STEPS Coin
+
+
+Version v1.7.02.5
+
+- Added Italian Language Pack
+- Improved UI
+
+
+Version v1.7.02.4
 
 - Added Hindi Language Pack
 - Improved UI

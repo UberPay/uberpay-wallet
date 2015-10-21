@@ -33,6 +33,7 @@ import com.mygeopay.core.coins.NuSharesMain;
 import com.mygeopay.core.coins.PeercoinMain;
 import com.mygeopay.core.coins.ReddcoinMain;
 import com.mygeopay.core.coins.RubycoinMain;
+import com.mygeopay.core.coins.StepscoinMain;
 import com.mygeopay.core.coins.UroMain;
 import com.mygeopay.core.coins.NeoscoinMain;
 import com.mygeopay.core.coins.JumbucksMain;
@@ -57,7 +58,7 @@ import java.util.concurrent.TimeUnit;
  */
 public class Constants {
 
-    public static final int SEED_ENTROPY_DEFAULT = 160;
+    public static final int SEED_ENTROPY_DEFAULT = 192;
     public static final int SEED_ENTROPY_EXTRA = 256;
 
     public static final String ARG_SEED = "seed";
@@ -82,7 +83,7 @@ public class Constants {
     public static final String ARG_URI = "test_wallet";
 
     public static final String WALLET_FILENAME_PROTOBUF = "wallet";
-    public static final long WALLET_WRITE_DELAY = 3;
+    public static final long WALLET_WRITE_DELAY = 5;
     public static final TimeUnit WALLET_WRITE_DELAY_UNIT = TimeUnit.SECONDS;
 
     public static final long STOP_SERVICE_AFTER_IDLE_SECS = 30 * 60; // 30 mins
@@ -184,7 +185,7 @@ public class Constants {
                                                     new ServerAddress("cdn-cce-2.coinomi.net", 5033)),
             new CoinAddress(ClamcoinMain.get(),     new ServerAddress("clam.el.0.btcnetwork.info", 50001)),
             // TODO Correct electrum URL for CLAM
-            new CoinAddress(DogecoinDarkMain.get(), new ServerAddress("104.236.133.57", 50001),
+            new CoinAddress(DogecoinDarkMain.get(), new ServerAddress("electrum-doged.space", 50001),
             // new CoinAddress(DogecoinDarkTest.get(), new ServerAddress("electrum-doged.space", 50002),
                                                     new ServerAddress("doged.el.0.btcnetwork.info", 50001)),
             // TODO Correct electrum URL from DOGED
@@ -192,6 +193,8 @@ public class Constants {
                                                     new ServerAddress("nvc-cce-2.coinomi.net", 5034)),
             //
             new CoinAddress(BatacoinMain.get(),      new ServerAddress("104.236.239.154", 50001)),
+            //
+            new CoinAddress(StepscoinMain.get(),      new ServerAddress("192.241.216.229", 50001)),
             // electrum.bta.xyz
             new CoinAddress(VpncoinMain.get(),      new ServerAddress("vpn-cce-1.coinomi.net", 5032),
                                                     new ServerAddress("vpn-cce-2.coinomi.net", 5032))
@@ -238,6 +241,7 @@ public class Constants {
         COINS_ICONS.put(CoinID.VCOIN_MAIN.getCoinType(),  R.drawable.vcoin);
         COINS_ICONS.put(CoinID.NOVACOIN_MAIN.getCoinType(), R.drawable.novacoin);
         COINS_ICONS.put(CoinID.VIACOIN_MAIN.getCoinType(), R.drawable.viacoin);
+        COINS_ICONS.put(CoinID.STEPSCOIN_MAIN.getCoinType(), R.drawable.steps);
 
         COINS_BLOCK_EXPLORERS = new HashMap<CoinType, String>();
         COINS_BLOCK_EXPLORERS.put(CoinID.BITCOIN_MAIN.getCoinType(), "https://blockchain.info/tx/%s");
@@ -276,7 +280,8 @@ public class Constants {
         COINS_BLOCK_EXPLORERS.put(CoinID.DOGECOINDARK_MAIN.getCoinType(), "https://www.blockexperts.com/doged/tx/%s");
         COINS_BLOCK_EXPLORERS.put(CoinID.BATACOIN_MAIN.getCoinType(), "https://chainz.cryptoid.info/bta/tx.dws?%s");
         COINS_BLOCK_EXPLORERS.put(CoinID.NOVACOIN_MAIN.getCoinType(), "http://explorer.novaco.in/tx/%s");
-        COINS_BLOCK_EXPLORERS.put(CoinID.VIACOIN_MAIN.getCoinType(), "http://explorer.viacoin.org/tx/");
+        COINS_BLOCK_EXPLORERS.put(CoinID.VIACOIN_MAIN.getCoinType(), "http://explorer.viacoin.org/tx/%s");
+        COINS_BLOCK_EXPLORERS.put(CoinID.STEPSCOIN_MAIN.getCoinType(), "http://chain.altcoinsteps.com/tx/%s");
     }
 
     public static final CoinType DEFAULT_COIN = BitcoinMain.get();
@@ -296,7 +301,7 @@ public class Constants {
             ViacoinMain.get(),
             MazacoinMain.get(),
             CanadaeCoinMain.get(),
-     /*       StartcoinMain.get(), */
+/*            StartcoinMain.get(), */
             PeercoinMain.get(),
             DashMain.get(),
             NamecoinMain.get(),
@@ -316,6 +321,7 @@ public class Constants {
             NeoscoinMain.get(),
             CannacoinMain.get(),
             ShadowCashMain.get(),
+            StepscoinMain.get(),
             NuBitsMain.get(),
 /*            VcoinMain.get(), */
             ParkbyteMain.get(),

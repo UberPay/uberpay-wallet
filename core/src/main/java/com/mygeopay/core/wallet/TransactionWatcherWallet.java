@@ -998,7 +998,7 @@ abstract public class TransactionWatcherWallet implements WalletAccount {
     }
 
     public void restoreWalletTransactions(ArrayList<WalletTransaction> wtxs) {
-        // FIXME There is a very rare bug that doesn't properly persist tx connections, so do a sanity check by reconnecting transactions
+        // FIXME There is a very rare bug that doesn't properly persist tx connections, need to do a sanity check by reconnecting transactions
         lock.lock();
         try {
             for (WalletTransaction wtx : wtxs) {

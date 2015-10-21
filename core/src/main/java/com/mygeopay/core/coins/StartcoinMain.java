@@ -20,7 +20,7 @@ public class StartcoinMain extends CoinType {
         fullname = "Startcoin";
         symbol = "START";
         uriScheme = "startcoin";
-        bip44Index = 253;
+        bip44Index = 38;
         unitExponent = 8;
         feePerKb = value(100000);
         minNonDust = value(1000); // 0.00001 MAZACOIN mininput

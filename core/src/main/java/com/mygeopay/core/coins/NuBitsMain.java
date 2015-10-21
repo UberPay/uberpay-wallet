@@ -21,10 +21,11 @@ public class NuBitsMain extends CoinType {
         uriScheme = "nu";
         bip44Index = 12;
         unitExponent = 4;
-        feePerKb = value(100); // 0.01NBT, careful NuBits has 10000 units per coin
+        feePerKb = value(200); // 0.01NBT, careful NuBits has 10000 units per coin
         minNonDust = value(100); // 0.01NBT
         softDustLimit = minNonDust;
         softDustPolicy = SoftDustPolicy.NO_POLICY;
+        signedMessageHeader = toBytes("Nu Signed Message:\n");
     }
 
     private static NuBitsMain instance = new NuBitsMain();
