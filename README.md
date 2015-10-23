@@ -10,7 +10,6 @@ Coins Pending for inclusion:
 
 Pending electrum node
 
-- DogecoinDark (DOGED)
 - Clamcoin (CLAM)
 - Starcoin (START)
 - VCoin (VCN)
@@ -45,13 +44,18 @@ Pending electrum node
 - Account Summary (Wallet Balance Summary)
 - Integration with StartChat https://play.google.com/store/apps/details?id=com.wStartChat
 - Geopay.me's Gold/Silver Coin Swap Service (More to be announced)
+- Upgrade Crypto Exchange Rates Ticker to include more coins
 
 - Splash page implementation pre-alpha phase
 
 
 ## Version history
 
-New Version v1.7.02.6
+New Version v1.7.02.7
+
+- Added DogecoinDark (DOGED)
+
+Version v1.7.02.6
 
 - Added STEPS Coin
 

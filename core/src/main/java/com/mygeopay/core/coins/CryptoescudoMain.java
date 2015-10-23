@@ -24,9 +24,9 @@ public class CryptoescudoMain extends CoinType {
         uriScheme = "cryptoescudo";
         bip44Index = 111; // TODO Need confirmation in Satoshi Labs
         unitExponent = 8;
-        feePerKb = value(0); // 0 Zerado para testes normal 100 000
+        feePerKb = value(100000000L); // 0 Zerado para testes normal 100 000
         minNonDust = value(1000); // 0.00001 CESC mininput
-        softDustLimit = value(0); // 0 CESC
+        softDustLimit = value(100000000L); // 0 CESC
         softDustPolicy = SoftDustPolicy.BASE_FEE_FOR_EACH_SOFT_DUST_TXO;
     }
 

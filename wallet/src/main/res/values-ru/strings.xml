@@ -180,7 +180,7 @@
         <item quantity="many">%d секунд</item>
     </plurals>
     <!-- About Activity -->
-    <string name="title_activity_about">UberPay</string>
+    <string name="title_activity_about"> О UberPay</string>
     <string name="app_name_long">UberPay для Android</string>
     <string name="about_licence">Программа с открытым исходным кодом\nhttps://github.com/UberPay/uberpay-wallet\nИсходный код открыт на основе лицензии GNU General Public License 3</string>
     <string name="about_credits_nubits">Инфраструктура серверов предоставлена NuBits - Первой Всемирной Стабильной Цифровой Валютой \nhttps://nubits.com/</string>

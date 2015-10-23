@@ -183,7 +183,7 @@ public class Constants {
                                                     new ServerAddress("jbs-cce-2.coinomi.net", 5029)),
             new CoinAddress(CanadaeCoinMain.get(),  new ServerAddress("cdn-cce-1.coinomi.net", 5033),
                                                     new ServerAddress("cdn-cce-2.coinomi.net", 5033)),
-            new CoinAddress(ClamcoinMain.get(),     new ServerAddress("clam.el.0.btcnetwork.info", 50001)),
+            //new CoinAddress(ClamcoinMain.get(),     new ServerAddress("clam.el.0.btcnetwork.info", 50001)),
             // TODO Correct electrum URL for CLAM
             new CoinAddress(DogecoinDarkMain.get(), new ServerAddress("electrum-doged.space", 50001),
             // new CoinAddress(DogecoinDarkTest.get(), new ServerAddress("electrum-doged.space", 50002),
@@ -192,9 +192,10 @@ public class Constants {
             new CoinAddress(NovacoinMain.get(),     new ServerAddress("nvc-cce-1.coinomi.net", 5034),
                                                     new ServerAddress("nvc-cce-2.coinomi.net", 5034)),
             //
-            new CoinAddress(BatacoinMain.get(),      new ServerAddress("104.236.239.154", 50001)),
+            new CoinAddress(BatacoinMain.get(),     new ServerAddress("104.236.239.154", 50001)),
             //
-            new CoinAddress(StepscoinMain.get(),      new ServerAddress("192.241.216.229", 50001)),
+            new CoinAddress(StepscoinMain.get(),    new ServerAddress("192.241.216.229", 50001),
+                                                    new ServerAddress("192.241.216.229", 50002)),
             // electrum.bta.xyz
             new CoinAddress(VpncoinMain.get(),      new ServerAddress("vpn-cce-1.coinomi.net", 5032),
                                                     new ServerAddress("vpn-cce-2.coinomi.net", 5032))
@@ -296,7 +297,7 @@ public class Constants {
             BitcoinMain.get(),
             DogecoinMain.get(),
             LitecoinMain.get(),
-/*            DogecoinDarkMain.get(), */
+            DogecoinDarkMain.get(),
 /*            BatacoinMain.get(), */
             ViacoinMain.get(),
             MazacoinMain.get(),

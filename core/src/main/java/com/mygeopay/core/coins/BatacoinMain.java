@@ -1,6 +1,7 @@
 package com.mygeopay.core.coins;
 
 import com.mygeopay.core.coins.families.BitFamily;
+import com.mygeopay.core.coins.families.PeerFamily;
 
 
 /**
@@ -21,7 +22,7 @@ public class BatacoinMain extends CoinType {
         fullname = "Batacoin";
         symbol = "BTA";
         uriScheme = "batacoin";
-        bip44Index = 2;
+        bip44Index = 112;
         unitExponent = 8;
         feePerKb = value(1000);
         minNonDust = value(0); // 0.00000 Not used

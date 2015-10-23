@@ -16,18 +16,18 @@ public class DogecoinDarkMain extends CoinType {
         p2shHeader = 33;
         acceptableAddressCodes = new int[] { addressHeader, p2shHeader };
         dumpedPrivateKeyHeader = 158;
-        spendableCoinbaseDepth = 100; // COINBASE_MATURITY_NEW
+        spendableCoinbaseDepth = 500; // COINBASE_MATURITY_NEW
 
-        family = BitFamily.get();
+        family = PeerFamily.get();
         name = "DOGED (α)";
         fullname = "DogecoinDark";
         symbol = "DOGED";
         uriScheme = "dogecoindark";
         bip44Index = 77;
-        unitExponent = 8;
-        feePerKb = value(10000000);
-        minNonDust = value(1000000);
-        softDustLimit = value(10000000); // TODO Verify values 1 DOGED
+        unitExponent = 6; // value displays correct digits [2.014602] / [0.02146] only when 6 not 8 ??
+        feePerKb = value(100000L);
+        minNonDust = value(1000);
+        softDustLimit = value(1000000L); // TODO Verify values 1 DOGED
         softDustPolicy = SoftDustPolicy.BASE_FEE_FOR_EACH_SOFT_DUST_TXO;
     }
 
