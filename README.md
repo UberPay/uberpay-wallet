@@ -14,6 +14,8 @@ Pending electrum node
 - Starcoin (START)
 - VCoin (VCN)
 - CryptoEscudo (CESC)
+- BataCoin (BTA)
+- NeuCoin
 
 
 ## Merchant Testnet POS (Point Of Sale)
