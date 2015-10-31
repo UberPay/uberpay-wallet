@@ -21,8 +21,8 @@ public class FairCoinMain extends CoinType {
         uriScheme = "faircoin";
         bip44Index = 114;
         unitExponent = 6;
-        feePerKb = value(10000); // 0.01PPC, careful Peercoin has 1000000 units per coin
-        minNonDust = value(10000); // 0.01PPC
+        feePerKb = value(1000); // 0.001 FAIR
+        minNonDust = value(1000); // 0.001 FAIR
         softDustLimit = minNonDust;
         softDustPolicy = SoftDustPolicy.NO_POLICY;
     }
