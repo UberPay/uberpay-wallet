@@ -10,7 +10,6 @@ Coins Pending for inclusion:
 
 Pending electrum node
 
-- Bolivarcoin (BOLI)
 - Clamcoin (CLAMS)
 - Starcoin (START)
 - VCoin (VCN)
@@ -52,7 +51,11 @@ Pending electrum node
 
 ## Version history
 
-New Version v1.7.02.9
+Version v1.7.02.10
+
+- Bolicoin (BOLI - Bolivar)
+
+Version v1.7.02.9
 
 - OKCash
 - FAIRCoin
