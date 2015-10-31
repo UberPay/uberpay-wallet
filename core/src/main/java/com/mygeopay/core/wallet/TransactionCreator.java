@@ -140,6 +140,9 @@ public class TransactionCreator {
             if (req.ensureMinRequiredFee && req.emptyWallet) {
                 final Coin baseFee = req.fee == null ? Coin.ZERO : req.fee;
                 final Coin feePerKb = req.feePerKb == null ? Coin.ZERO : req.feePerKb;
+                // If txfee is low (exp LTC 0.0014) it displays an error, A better way is needed to catch low fee value
+                // prompt user LTC fee = 0.001
+                // TODO a better option to catch (low balance - fee) error
                 Transaction tx = req.tx;
                 if (!adjustOutputDownwardsForFee(tx, bestCoinSelection, baseFee, feePerKb))
                     throw new org.bitcoinj.core.Wallet.CouldNotAdjustDownwards();

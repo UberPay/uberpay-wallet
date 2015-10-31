@@ -17,7 +17,7 @@ public class MazacoinMain extends CoinType {
         dumpedPrivateKeyHeader = 224;
 
         family = BitFamily.get();
-        name = "MZC";
+        name = "MZC (β)";
         fullname = "Mazacoin";
         symbol = "MZC";
         uriScheme = "mazacoin";

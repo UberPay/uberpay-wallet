@@ -23,8 +23,9 @@ public class ClamcoinMain extends CoinType {
         unitExponent = 8;
         feePerKb = value(10000);
         minNonDust = value(1);
-        softDustLimit = value(10000000); // TODO Verify values
+        softDustLimit = value(1000000); // TODO Verify values
         softDustPolicy = SoftDustPolicy.BASE_FEE_FOR_EACH_SOFT_DUST_TXO;
+        signedMessageHeader = toBytes("Clam Signed Message:\n");
     }
 
     private static ClamcoinMain instance = new ClamcoinMain();
