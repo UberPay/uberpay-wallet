@@ -10,7 +10,8 @@ Coins Pending for inclusion:
 
 Pending electrum node
 
-- Clamcoin (CLAM)
+- Bolivarcoin (BOLI)
+- Clamcoin (CLAMS)
 - Starcoin (START)
 - VCoin (VCN)
 - CryptoEscudo (CESC)
@@ -51,7 +52,13 @@ Pending electrum node
 
 ## Version history
 
-New Version v1.7.02.7
+New Version v1.7.02.9
+
+- OKCash
+- FAIRCoin
+- GCRCoin (Global Currency Reserve)
+
+Version v1.7.02.7
 
 - Added DogecoinDark (DOGED)
 
