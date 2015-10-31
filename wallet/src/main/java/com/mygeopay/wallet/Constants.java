@@ -196,7 +196,7 @@ public class Constants {
             new CoinAddress(DogecoinDarkMain.get(), new ServerAddress("electrum-doged.space", 50001),
             // SSL
             // new CoinAddress(DogecoinDarkTest.get(), new ServerAddress("electrum-doged.space", 50002),
-                                                    new ServerAddress("doged.el.0.btcnetwork.info", 50001)),
+                                                    new ServerAddress("doged.el.0.btcnetwork.info", 50001)), // 104.236.133.57
             // TODO Correct electrum URL from DOGED
             new CoinAddress(NovacoinMain.get(),     new ServerAddress("nvc-cce-1.coinomi.net", 5034),
                                                     new ServerAddress("nvc-cce-2.coinomi.net", 5034)),
@@ -208,7 +208,7 @@ public class Constants {
             //
             new CoinAddress(StepscoinMain.get(),    new ServerAddress("192.241.216.229", 50001)),
             //                                        new ServerAddress("192.241.216.229", 50002)),
-            new CoinAddress(BolicoinMain.get(),  new ServerAddress("boli.el.0.btcnetwork.info", 50001)),
+            new CoinAddress(BolicoinMain.get(),  new ServerAddress("electrum-boli.xyz", 50001)),
             // TODO pending BOLI Electrum test
             //
             new CoinAddress(VpncoinMain.get(),      new ServerAddress("vpn-cce-1.coinomi.net", 5032),
