@@ -55,7 +55,7 @@ Pending electrum node
 
 New Version v1.7.02.13
 
-- Update Faircloin Server links
+- Update Faircoin Server links
 
 Verssion v1.7.02.12
 
