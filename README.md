@@ -10,11 +10,12 @@ Coins Pending for inclusion:
 
 Pending electrum node
 
-- Bolivarcoin (BOLI)
 - Clamcoin (CLAMS)
 - Starcoin (START)
 - VCoin (VCN)
 - CryptoEscudo (CESC)
+- BataCoin (BTA)
+- NeuCoin
 
 
 ## Merchant Testnet POS (Point Of Sale)
@@ -52,7 +53,19 @@ Pending electrum node
 
 ## Version history
 
-New Version v1.7.02.9
+New Version v1.7.02.13
+
+- Update Faircoin Server links
+
+Verssion v1.7.02.12
+
+- Minor Server Port updates
+
+Version v1.7.02.10
+
+- Bolicoin (BOLI - Bolivar)
+
+Version v1.7.02.9
 
 - OKCash
 - FAIRCoin
