@@ -1,11 +1,11 @@
 package com.mygeopay.core.coins;
 
-import com.mygeopay.core.coins.families.BitFamily;
+
 import com.mygeopay.core.coins.families.PeerFamily;
 
 
 /**
- * @author John L. Jegutanis
+ * @author Geopay.me
  */
 public class BatacoinMain extends CoinType {
     private BatacoinMain() {
@@ -17,16 +17,16 @@ public class BatacoinMain extends CoinType {
         spendableCoinbaseDepth = 60;
         dumpedPrivateKeyHeader = 153;
 
-        family = BitFamily.get();
-        name = "BATA (β)";
-        fullname = "Batacoin";
+        family = PeerFamily.get();
+        name = "BATA (α)";
+        fullname = "Bata Money";
         symbol = "BTA";
-        uriScheme = "batacoin";
+        uriScheme = "batacoin"; // TODO confirm batacoin uriScheme
         bip44Index = 112;
         unitExponent = 8;
-        feePerKb = value(1000);
-        minNonDust = value(0); // 0.00000 Not used
-        softDustLimit = value(1); // 0.001 LTC
+        feePerKb = value(100000);
+        minNonDust = value(1000); // 0.00001 Not used
+        softDustLimit = value(100000); // 0.001 LTC
         softDustPolicy = SoftDustPolicy.BASE_FEE_FOR_EACH_SOFT_DUST_TXO;
     }
 

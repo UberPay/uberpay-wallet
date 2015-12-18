@@ -22,20 +22,14 @@ public enum CoinID {
     BOLICOIN_MAIN(BolicoinMain.get()),
     LITECOIN_MAIN(LitecoinMain.get()),
     BATACOIN_MAIN(BatacoinMain.get()),
-    BOLIVAR_MAIN(BolivarcoinMain.get()),
     STEPSCOIN_MAIN(StepscoinMain.get()),
     LITECOIN_TEST(LitecoinTest.get()),
     DOGECOIN_MAIN(DogecoinMain.get()),
     DOGECOIN_TEST(DogecoinTest.get()),
     DOGECOINDARK_MAIN(DogecoinDarkMain.get()),
-<<<<<<< Updated upstream
     GCRCOIN_MAIN(GcrCoinMain.get()),
-=======
-    FAIRCOIN_MAIN(FaircoinMain.get()),
->>>>>>> Stashed changes
     REDDCOIN_MAIN(ReddcoinMain.get()),
     PEERCOIN_MAIN(PeercoinMain.get()),
-    NEUCOIN_MAIN(NeucoinMain.get()),
     DASH_MAIN(DashMain.get()),
     NUSHARES_MAIN(NuSharesMain.get()),
     NUBITS_MAIN(NuBitsMain.get()),
@@ -62,12 +56,8 @@ public enum CoinID {
     VPNCOIN_MAIN(VpncoinMain.get()),
     VCOIN_MAIN(VcoinMain.get()),
     VIACOIN_MAIN(ViacoinMain.get()),
-<<<<<<< Updated upstream
     OKCASHCOIN_MAIN(OkCashMain.get()),
     FAIRCOIN_MAIN(FairCoinMain.get()),
-=======
-    OKCASH_MAIN(OkCashMain.get()),
->>>>>>> Stashed changes
     ;
 
     private static List<CoinType> types;

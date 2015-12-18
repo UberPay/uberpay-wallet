@@ -19,7 +19,7 @@ public class BolicoinMain extends CoinType {
         name = "BOLI (α)";
         fullname = "Bolivar";
         symbol = "BOLI";
-        uriScheme = "bolicoin";
+        uriScheme = "bolicoin"; // TODO conform Bolicoin uriScheme
         bip44Index = 114;
         unitExponent = 8;
         feePerKb = value(10000);

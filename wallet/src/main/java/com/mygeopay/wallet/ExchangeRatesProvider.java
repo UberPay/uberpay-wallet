@@ -76,6 +76,7 @@ public class ExchangeRatesProvider extends ContentProvider {
         @Override
         public String toString() {
             return getClass().getSimpleName() + '[' + rate.value1 + " ~ " + rate.value2 + ']';
+            // TODO Add feature to display 0.00 value for coins with no currency return
         }
     }
 
@@ -103,6 +104,12 @@ public class ExchangeRatesProvider extends ContentProvider {
     private static final String TO_LOCAL_URL = BASE_URL + "/to-local/%s";
     private static final String TO_CRYPTO_URL = BASE_URL + "/to-crypto/%s";
     private static final String COINOMI_SOURCE = "coinomi.com";
+
+    private static final String UBERPAY_BASE_URL = "https://ticker.geodex.info/simple";
+    private static final String UBER_TO_LOCAL_URL = UBERPAY_BASE_URL + "/uber-local/%s";
+    private static final String UBER_TO_CRYPTO_URL = UBERPAY_BASE_URL + "/uber-crypto/%s";
+    private static final String UBERPAY_SOURCE = "geodex.info";
+    // TODO Add alternative exchange for altcoins
 
     private static final Logger log = LoggerFactory.getLogger(ExchangeRatesProvider.class);
 
@@ -202,7 +209,7 @@ public class ExchangeRatesProvider extends ContentProvider {
 
         final boolean offline = uri.getQueryParameter(QUERY_PARAM_OFFLINE) != null;
         long lastUpdated;
-
+// TODO Add rate values for other Altcoins
         final String symbol;
         final boolean isLocalToCrypto;
 
@@ -217,7 +224,7 @@ public class ExchangeRatesProvider extends ContentProvider {
         } else {
             throw new IllegalArgumentException("Unrecognized URI path: " + uri);
         }
-
+// TODO Add rate values for other Altcoins
         if (!offline && (lastUpdated == 0 || now - lastUpdated > Constants.RATE_UPDATE_FREQ_MS)) {
             URL url;
             try {

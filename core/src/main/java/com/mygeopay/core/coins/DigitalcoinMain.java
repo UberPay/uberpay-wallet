@@ -1,6 +1,5 @@
 package com.mygeopay.core.coins;
 
-import com.mygeopay.core.coins.families.BitFamily;
 
 /**
  * @author FuzzyHobbit
@@ -15,7 +14,6 @@ public class DigitalcoinMain extends CoinType {
         spendableCoinbaseDepth = 5;
         dumpedPrivateKeyHeader = 158;
 
-        family = BitFamily.get();
         name = "DGC (β)";
         fullname = "Digitalcoin";
         symbol = "DGC";

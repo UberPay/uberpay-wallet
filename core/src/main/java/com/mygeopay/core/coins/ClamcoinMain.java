@@ -1,6 +1,6 @@
 package com.mygeopay.core.coins;
 
-import com.mygeopay.core.coins.families.PeerFamily;
+import com.mygeopay.core.coins.families.ClamsFamily;
 
 /**
  * @author Geopay.me
@@ -12,13 +12,14 @@ public class ClamcoinMain extends CoinType {
         addressHeader = 137;
         p2shHeader = 5;
         acceptableAddressCodes = new int[] { addressHeader, p2shHeader };
-        spendableCoinbaseDepth = 265; // COINBASE_MATURITY_NEW
+        spendableCoinbaseDepth = 500;
+        transactionVersion =2;
 
-        family = PeerFamily.get();
+        family = ClamsFamily.get();
         name = "CLAM (α)";
         fullname = "Clam";
         symbol = "CLAM";
-        uriScheme = "clam";
+        uriScheme = "clams";
         bip44Index = 23;
         unitExponent = 8;
         feePerKb = value(10000);

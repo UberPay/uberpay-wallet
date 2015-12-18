@@ -3,14 +3,14 @@ package com.mygeopay.core.coins;
 import com.mygeopay.core.coins.families.PeerFamily;
 
 /**
- * @author Adonis Valamontes
+ * @author Thomas König
  */
-public class FaircoinMain extends CoinType {
-    private FaircoinMain() {
+public class FairCoinMain extends CoinType {
+    private FairCoinMain() {
         id = "faircoin.main";
 
         addressHeader = 95;
-        p2shHeader = 36;
+        p2shHeader = 37;
         acceptableAddressCodes = new int[] { addressHeader, p2shHeader };
         spendableCoinbaseDepth = 500;
 
@@ -18,17 +18,17 @@ public class FaircoinMain extends CoinType {
         name = "FAIR (α)";
         fullname = "FairCoin";
         symbol = "FAIR";
-        uriScheme = "faircoin"; //
+        uriScheme = "faircoin";
         bip44Index = 114;
         unitExponent = 6;
-        feePerKb = value(10000); // 0.01
-        minNonDust = value(10000); // 0.01
+        feePerKb = value(10000); // 0.01PPC, careful Peercoin has 1000000 units per coin
+        minNonDust = value(10000); // 0.01PPC
         softDustLimit = minNonDust;
         softDustPolicy = SoftDustPolicy.NO_POLICY;
     }
 
-    private static FaircoinMain instance = new FaircoinMain();
-    public static synchronized FaircoinMain get() {
+    private static FairCoinMain instance = new FairCoinMain();
+    public static synchronized FairCoinMain get() {
         return instance;
     }
 }

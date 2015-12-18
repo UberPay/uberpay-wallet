@@ -8,19 +8,13 @@ android {
         exclude 'META-INF/NOTICE'
     }
     compileSdkVersion 21
-    buildToolsVersion '21.1.2'
+    buildToolsVersion "21.1.2"
     defaultConfig {
         applicationId 'com.mygeopay.wallet'
         minSdkVersion 11
-<<<<<<< Updated upstream
         targetSdkVersion 22
         versionCode 60
         versionName 'v1.7.02.10'
-=======
-        targetSdkVersion 21
-        versionCode 58
-        versionName 'v1.7.02.8b'
->>>>>>> Stashed changes
     }
     buildTypes {
         release {

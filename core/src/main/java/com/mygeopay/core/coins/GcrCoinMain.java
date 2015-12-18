@@ -4,7 +4,7 @@ import com.mygeopay.core.coins.families.PeerFamily;
 
 public class GcrCoinMain extends CoinType {
     private GcrCoinMain() {
-        id = "gcr.main";
+        id = "gcrcoin.main";
 
         addressHeader = 38;
         p2shHeader = 97;
