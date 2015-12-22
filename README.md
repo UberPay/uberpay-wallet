@@ -13,7 +13,6 @@ Pending electrum node
 - Clamcoin (CLAMS)
 - Starcoin (START)
 - VCoin (VCN)
-- CryptoEscudo (CESC)
 - BataCoin (BTA)
 - NeuCoin
 
