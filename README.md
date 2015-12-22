@@ -53,7 +53,12 @@ Pending electrum node
 
 ## Version history
 
-New Version v1.7.02.13
+New Version v1.7.02.18
+
+- Added CryptoEscudo & PakCoin 
+- Updated Portuguese Language Pack
+
+Version v1.7.02.13
 
 - Update Faircoin Server links
 
