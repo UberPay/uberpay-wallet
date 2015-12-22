@@ -1,14 +1,14 @@
 package com.mygeopay.stratumj;
 
-import com.mygeopay.stratumj.messages.BaseMessage;
-import com.mygeopay.stratumj.messages.CallMessage;
-import com.mygeopay.stratumj.messages.MessageException;
-import com.mygeopay.stratumj.messages.ResultMessage;
 import com.google.common.annotations.VisibleForTesting;
 import com.google.common.collect.ImmutableList;
 import com.google.common.util.concurrent.AbstractExecutionThreadService;
 import com.google.common.util.concurrent.ListenableFuture;
 import com.google.common.util.concurrent.SettableFuture;
+import com.mygeopay.stratumj.messages.BaseMessage;
+import com.mygeopay.stratumj.messages.CallMessage;
+import com.mygeopay.stratumj.messages.MessageException;
+import com.mygeopay.stratumj.messages.ResultMessage;
 
 import org.json.JSONException;
 import org.slf4j.Logger;
@@ -19,7 +19,6 @@ import java.io.DataOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.Socket;
-import java.net.SocketException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;

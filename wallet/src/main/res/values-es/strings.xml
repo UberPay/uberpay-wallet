@@ -99,7 +99,7 @@
     <string name="sent_to">Enviado a</string>
     <string name="received_with">Recibido de</string>
     <string name="get_tx_info_error">No se pudo obtener información de la transacción</string>
-    <string name="disconnected_label">No hay conexión</string>
+    <string name="disconnected_label">Wallet Status Offline</string>
     <string name="no_wallet_pocket_selected">¿No tienes cuenta la cartera seleccionada</string>
     <string name="get_tx_broadcast_error">Error de transacción de radiodifusión</string>
     <!-- Receive fragment -->
@@ -243,7 +243,7 @@
     <string name="trade_from_coin_label">Swap-Out&#8230;</string>
     <string name="trade_to_coin_label">Swap-In</string>
     <string name="trade_warn_no_account_found">Se le pedirá para agregar un %1$s monedero</string>
-    <string name="trade_warn_no_connection_title">No hay conexión</string>
+    <string name="trade_warn_no_connection_title">Estado Monedero Desconectado</string>
     <string name="trade_warn_no_connection_message">Conexión a Internet es necesario para intercambiar monedas.</string>
     <string name="trade_error">Error de intercambio de moneda</string>
     <string name="trade_error_no_supported_source_accounts">Sin cuentas compatibles encontradas</string>

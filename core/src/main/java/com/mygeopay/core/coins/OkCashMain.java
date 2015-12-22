@@ -15,7 +15,11 @@ public class OkCashMain extends CoinType {
         spendableCoinbaseDepth = 500;
 
         family = PeerFamily.get();
+<<<<<<< Updated upstream
         name = "OK (α)";
+=======
+        name = "OK (β)";
+>>>>>>> Stashed changes
         fullname = "OKCash";
         symbol = "OK";
         uriScheme = "okcash"; //

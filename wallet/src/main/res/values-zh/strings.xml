@@ -99,7 +99,7 @@
     <string name="sent_to">发送至</string>
     <string name="received_with">接收</string>
     <string name="get_tx_info_error">无法获取交易信息</string>
-    <string name="disconnected_label">无法联网</string>
+    <string name="disconnected_label">Wallet Status Offline</string>
     <string name="no_wallet_pocket_selected">尚未选择钱包帐号</string>
     <string name="get_tx_broadcast_error">广播交易时出错</string>
     <!-- Receive fragment -->
@@ -237,7 +237,7 @@
     <string name="trade_from_coin_label">兑换</string>
     <string name="trade_to_coin_label">接收</string>
     <string name="trade_warn_no_account_found">你会被提示添加一个 %1$s 钱包</string>
-    <string name="trade_warn_no_connection_title">没有互联网联接</string>
+    <string name="trade_warn_no_connection_title">钱包脱机状态</string>
     <string name="trade_warn_no_connection_message">兑换币需要联网。</string>
     <string name="trade_error">兑换出错</string>
     <string name="trade_error_no_supported_source_accounts">没有找到支持的帐户</string>

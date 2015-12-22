@@ -103,7 +103,7 @@
     <string name="sent_to">Отправили</string>
     <string name="received_with">Получили от</string>
     <string name="get_tx_info_error">Невозможно получить информацию о транзакции</string>
-    <string name="disconnected_label">Отсутствует подключение</string>
+    <string name="disconnected_label">Wallet Status Offline</string>
     <string name="no_wallet_pocket_selected">Кошелёк не выбран</string>
     <string name="get_tx_broadcast_error">Ошибка при передаче транзакции</string>
     <!-- Receive fragment -->
@@ -256,7 +256,7 @@
     <string name="trade_from_coin_label">обменять</string>
     <string name="trade_to_coin_label">получить</string>
     <string name="trade_warn_no_account_found">Вам будет предложено добавить %1$s кошелёк</string>
-    <string name="trade_warn_no_connection_title">Отсутствует подключение</string>
+    <string name="trade_warn_no_connection_title">Бумажник Статус на форуме</string>
     <string name="trade_warn_no_connection_message">Необходимо подключение к сети интернет для обмена валюты.</string>
     <string name="trade_error">Ошибка при обмене</string>
     <string name="trade_error_no_supported_source_accounts">Не найдено поддерживаемых кошельков</string>

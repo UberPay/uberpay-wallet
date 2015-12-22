@@ -99,7 +99,7 @@
     <string name="sent_to">Sent to</string>
     <string name="received_with">Received from</string>
     <string name="get_tx_info_error">Could not get transaction information</string>
-    <string name="disconnected_label">No connection</string>
+    <string name="disconnected_label">Wallet Status Offline</string>
     <string name="no_wallet_pocket_selected">No wallet account selected</string>
     <string name="get_tx_broadcast_error">Error broadcasting transaction</string>
     <!-- Receive fragment -->
@@ -244,7 +244,7 @@
     <string name="trade_from_coin_label">Swap-Out&#8230;</string>
     <string name="trade_to_coin_label">Swap-In</string>
     <string name="trade_warn_no_account_found">You will be prompted to add a %1$s wallet</string>
-    <string name="trade_warn_no_connection_title">No connection</string>
+    <string name="trade_warn_no_connection_title">Brieftasche Status Offline</string>
     <string name="trade_warn_no_connection_message">Internet connection is needed to swap coins.</string>
     <string name="trade_error">Coin Swap Error</string>
     <string name="trade_error_no_supported_source_accounts">No supported accounts found</string>

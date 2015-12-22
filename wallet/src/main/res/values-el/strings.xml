@@ -99,7 +99,7 @@
     <string name="sent_to">Απεστάλησαν στο</string>
     <string name="received_with">Παρελήφθησαν από</string>
     <string name="get_tx_info_error">Δεν μπόρεσαν να ανακτηθούν περαιτέρω πληροφορίες γι αυτή τη συναλλαγή</string>
-    <string name="disconnected_label">Μη διαθέσιμη σύνδεσή</string>
+    <string name="disconnected_label">Μη διαθέσιμη Πορτοφόλι</string>
     <string name="no_wallet_pocket_selected">Δεν έχει επιλεχθεί λογαριασμός</string>
     <string name="get_tx_broadcast_error">Σφάλμα κατά τη μετάδοση της συναλλαγής</string>
     <!-- Receive fragment -->

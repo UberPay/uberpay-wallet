@@ -6,7 +6,7 @@ import com.mygeopay.core.coins.families.PeerFamily;
 import org.bitcoinj.core.Coin;
 
 /**
- * @author John L. Jegutanis
+ * @author Geopay.me
  */
 public class DogecoinDarkMain extends CoinType {
     private DogecoinDarkMain() {
@@ -19,7 +19,7 @@ public class DogecoinDarkMain extends CoinType {
         spendableCoinbaseDepth = 500; // COINBASE_MATURITY_NEW
 
         family = PeerFamily.get();
-        name = "DOGED (α)";
+        name = "DOGED (β)";
         fullname = "DogecoinDark";
         symbol = "DOGED";
         uriScheme = "dogecoindark";

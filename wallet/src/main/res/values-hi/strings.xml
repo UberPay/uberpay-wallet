@@ -99,7 +99,7 @@
     <string name="sent_to">करने के लिए भेजा</string>
     <string name="received_with">से प्राप्त</string>
     <string name="get_tx_info_error">लेन-देन जानकारी प्राप्त नहीं कर सका</string>
-    <string name="disconnected_label">कोई कनेक्शन नहीं</string>
+    <string name="disconnected_label">Wallet Status Offline</string>
     <string name="no_wallet_pocket_selected">चयनित कोई वॉलेट खाते</string>
     <string name="get_tx_broadcast_error">त्रुटि प्रसारण लेन-देन</string>
     <!-- Receive fragment -->
@@ -242,7 +242,7 @@
     <string name="trade_from_coin_label">स्वैप-आउट&#8230;</string>
     <string name="trade_to_coin_label">स्वैप में</string>
     <string name="trade_warn_no_account_found">आप जोड़ने के लिए संकेत दिया जाएगा एक %1$s बटुआ</string>
-    <string name="trade_warn_no_connection_title">कोई कनेक्शन नहीं</string>
+    <string name="trade_warn_no_connection_title">वॉलेट स्थिति ऑफलाइन</string>
     <string name="trade_warn_no_connection_message">सिक्के स्वैप करने के लिए इंटरनेट कनेक्शन की जरूरत है।</string>
     <string name="trade_error">सिक्का स्वैप त्रुटि</string>
     <string name="trade_error_no_supported_source_accounts">समर्थित खातों पाया कोई</string>

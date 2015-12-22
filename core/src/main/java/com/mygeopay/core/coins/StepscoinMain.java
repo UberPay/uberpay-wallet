@@ -4,7 +4,7 @@ import com.mygeopay.core.coins.families.BitFamily;
 import com.mygeopay.core.coins.families.PeerFamily;
 
 /**
- * @author John L. Jegutanis
+ * @author Geopay.me
  */
 public class StepscoinMain extends CoinType {
     private StepscoinMain() {

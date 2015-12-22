@@ -103,7 +103,7 @@
     <string name="sent_to">Invia a</string>
     <string name="received_with">Ricevuto con</string>
     <string name="get_tx_info_error">Non è stato possibile avere informazioni sulla transazione</string>
-    <string name="disconnected_label">Connessione assente</string>
+    <string name="disconnected_label">Wallet Status Offline</string>
     <string name="no_wallet_pocket_selected">Nessun conto del portafoglio selezionato</string>
     <string name="get_tx_broadcast_error">Errore nell\'emittente della transazione</string>
     <!-- Receive fragment -->
@@ -250,7 +250,7 @@
     <string name="trade_from_coin_label">Swap-Out&#8230;</string>
     <string name="trade_to_coin_label">ricevi</string>
     <string name="trade_warn_no_account_found">Verrà richiesto di aggiungere un %1$s portafoglio</string>
-    <string name="trade_warn_no_connection_title">Nessuna connessione</string>
+    <string name="trade_warn_no_connection_title">Portafoglio Stato Offline</string>
     <string name="trade_warn_no_connection_message">Per lo scambio di monete è necessaria ina connessione internet.</string>
     <string name="trade_error">Errore nello scambio</string>
     <string name="trade_error_no_supported_source_accounts">Non sono stati trovati conti supportati</string>

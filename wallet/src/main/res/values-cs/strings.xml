@@ -3,10 +3,10 @@
     <string name="action_scan_qr_code">Scan</string>
     <string name="action_share">Share</string>
     <string name="action_copy">Copy</string>
-    <string name="action_edit_label">Редактиране на етикет</string>
+    <string name="action_edit_label">Edit Label</string>
     <string name="action_empty_wallet">Empty wallet</string>
     <string name="action_settings">Settings</string>
-    <string name="action_about">За</string>
+    <string name="action_about">About</string>
     <string name="action_refresh">Refresh</string>
     <string name="action_exchange_history">Coin Swap history</string>
     <string name="action_new_address">New address</string>
@@ -25,7 +25,7 @@
     <string name="button_cancel">Cancel</string>
     <string name="button_dismiss">Dismiss</string>
     <string name="button_delete">Delete</string>
-    <string name="button_add">Добавяне</string>
+    <string name="button_add">Add</string>
     <string name="button_save">Save</string>
     <string name="button_remove">Remove</string>
     <string name="button_edit">Edit</string>
@@ -35,13 +35,13 @@
     <string name="button_download">Download</string>
     <string name="button_agree">Agree</string>
     <string name="button_disagree">Disagree</string>
-    <string name="button_add_coins">+ Монети</string>
+    <string name="button_add_coins">+ Coins</string>
     <string name="scan_qr_code">Scan QR code</string>
     <string name="erase_address">Erase address</string>
     <string name="copied_to_clipboard">Copied to clipboard</string>
-    <string name="wallet_title_request">ИЗТЕГЛЯНЕ</string>
-    <string name="wallet_title_balance">БАЛАНС</string>
-    <string name="wallet_title_send">ИЗПРАТИ</string>
+    <string name="wallet_title_request">RECEIVE</string>
+    <string name="wallet_title_balance">BALANCE</string>
+    <string name="wallet_title_send">SEND</string>
     <string name="wallet_locked_message">Your wallet is locked</string>
     <string name="unlock_wallet_title">Unlock your wallet</string>
     <string name="unlocking_wallet_working">Unlocking your wallet&#8230;</string>
@@ -59,7 +59,7 @@
     <string name="trade">Coin Swap</string>
     <string name="receive">Receive</string>
     <!-- Welcome fragment -->
-    <string name="welcome_text">Добре дошли в UberPay портфейл</string>
+    <string name="welcome_text">Welcome to UberPay Wallet</string>
     <string name="create_wallet">Create a new wallet</string>
     <string name="restore_wallet">Restore a wallet</string>
     <string name="test_wallet">Test Wallet</string>
@@ -122,7 +122,7 @@
     <string name="send_coins_error_dust">The sending amount is too small and will be rejected by the network</string>
     <string name="send_coins_error">Could not send coins: %1$s</string>
     <string name="pay_to_label">Pay to</string>
-    <string name="amount_to_send_label">Сума</string>
+    <string name="amount_to_send_label">Amount</string>
     <string name="scan_error">There was a problem scanning: %1$s</string>
     <string name="unsupported_coin">Coin is not supported: %1$s</string>
     <string name="address_error">The provided address is not valid.</string>
@@ -169,9 +169,11 @@
         <item quantity="one">%d second</item>
         <item quantity="other">%d seconds</item>
     </plurals>
+    <!-- Coin Balance Activity -->
+    <string name="action_balance">Wallet Balance</string>
     <!-- About Activity -->
     <string name="title_activity_about">About UberPay</string>
-    <string name="app_name_long">UberPay за андроид</string>
+    <string name="app_name_long">UberPay for Android</string>
     <string name="about_licence">Project UberPay (beta)\nhttp://uberpay.io\nSource code licensed under GNU General Public License 3</string>
     <string name="about_credits_nubits">Server infrastructure donated by NuBits - The World\'s First Stable Digital Currency\nhttps://nubits.com/</string>
     <string name="about_credits_translations">Translations provided by:</string>
@@ -242,9 +244,9 @@
     <string name="trade_from_coin_label">Swap-Out&#8230;</string>
     <string name="trade_to_coin_label">Swap-In</string>
     <string name="trade_warn_no_account_found">You will be prompted to add a %1$s wallet</string>
-    <string name="trade_warn_no_connection_title">Портфейл състояние офлайн</string>
+    <string name="trade_warn_no_connection_title">Peněženka Stav Offline</string>
     <string name="trade_warn_no_connection_message">Internet connection is needed to swap coins.</string>
-    <string name="trade_error">Coin Swap error</string>
+    <string name="trade_error">Coin Swap Error</string>
     <string name="trade_error_no_supported_source_accounts">No supported accounts found</string>
     <string name="trade_error_service_not_available">Service temporary unavailable, please try again in a minute</string>
     <string name="trade_error_market_info">Service temporary unavailable.\nNo information about %1$s - %2$s pair</string>
@@ -254,7 +256,7 @@
     <!-- Exchange Status -->
     <string name="title_activity_exchange_status">Coin Swap Status</string>
     <string name="trade_status_complete_message">Your order completed successfully.</string>
-    <string name="trade_status_label">Статус</string>
+    <string name="trade_status_label">Status</string>
     <string name="trade_status_waiting_deposit">Waiting for deposit&#8230;</string>
     <string name="trade_status_received_deposit">Received deposit of %1$s</string>
     <string name="trade_status_waiting_trade">Waiting for Coin Swap&#8230;</string>
@@ -310,5 +312,4 @@
     <string name="tx_message_subject">subject</string>
     <string name="account_description_label">Description</string>
     <string name="trade_status_message">Your order will complete shortly. You can exit this screen without affecting the coin swap.</string>
-    <string name="action_balance">Портфейл Почивка</string>
 </resources>

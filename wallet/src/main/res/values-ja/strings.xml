@@ -99,7 +99,7 @@
     <string name="sent_to">送り先</string>
     <string name="received_with">受け取り元</string>
     <string name="get_tx_info_error">トランザクションの情報を取得できませんでした</string>
-    <string name="disconnected_label">接続なし</string>
+    <string name="disconnected_label">Wallet Status Offline</string>
     <string name="no_wallet_pocket_selected">ウォレットのアカウントが選択されていません</string>
     <string name="get_tx_broadcast_error">トランザクションのブロードキャストに失敗しました</string>
     <!-- Receive fragment -->
@@ -239,7 +239,7 @@
     <string name="trade_from_coin_label">支払うコイン</string>
     <string name="trade_to_coin_label">受け取るコイン</string>
     <string name="trade_warn_no_account_found">%1$s のウォレットを追加する手続を開始します</string>
-    <string name="trade_warn_no_connection_title">接続がありません</string>
+    <string name="trade_warn_no_connection_title">ウォレット状況オフライン</string>
     <string name="trade_warn_no_connection_message">コインを両替するためにはインターネット接続が必要です。</string>
     <string name="trade_error">両替エラー</string>
     <string name="trade_error_no_supported_source_accounts">サポートされているアカウントがみつかりません</string>

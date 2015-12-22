@@ -3,7 +3,7 @@ package com.mygeopay.core.coins;
 import com.mygeopay.core.coins.families.PeerFamily;
 
 /**
- * @author John L. Jegutanis
+ * @author Geopay.me
  */
 public class ClamcoinMain extends CoinType {
     private ClamcoinMain() {

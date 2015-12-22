@@ -5,7 +5,7 @@ import com.mygeopay.core.coins.families.BitFamily;
 import org.bitcoinj.core.Coin;
 
 /**
- * @author John L. Jegutanis
+ * @author Geopay.me
  */
 public class CryptoescudoMain extends CoinType {
     private CryptoescudoMain() {
