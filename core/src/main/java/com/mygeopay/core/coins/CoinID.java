@@ -17,6 +17,7 @@ import java.util.Set;
  * @author Adonis Valamontes
  */
 public enum CoinID {
+    ASIACOIN_MAIN(AsiacoinMain.get()),
     BITCOIN_MAIN(BitcoinMain.get()),
     BITCOIN_TEST(BitcoinTest.get()),
     BOLICOIN_MAIN(BolicoinMain.get()),

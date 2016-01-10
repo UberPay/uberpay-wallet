@@ -19,11 +19,14 @@ import com.mygeopay.core.coins.DigitalcoinMain;
 import com.mygeopay.core.coins.DogecoinDarkMain;
 import com.mygeopay.core.coins.DogecoinMain;
 import com.mygeopay.core.coins.DogecoinTest;
+import com.mygeopay.core.coins.EuropecoinMain;
 import com.mygeopay.core.coins.FairCoinMain;
 import com.mygeopay.core.coins.FeathercoinMain;
 import com.mygeopay.core.coins.GcrCoinMain;
+import com.mygeopay.core.coins.GroestlCoinMain;
 import com.mygeopay.core.coins.LitecoinMain;
 import com.mygeopay.core.coins.LitecoinTest;
+import com.mygeopay.core.coins.PakcoinMain;
 import com.mygeopay.core.coins.MazacoinMain;
 import com.mygeopay.core.coins.NovacoinMain;
 import com.mygeopay.core.coins.ParkbyteMain;
@@ -130,6 +133,9 @@ public class Constants {
                                                     new ServerAddress("ltc-cce-2.coinomi.net", 5002)),
             new CoinAddress(LitecoinTest.get(),     new ServerAddress("ltc-testnet-cce-1.coinomi.net", 15002),
                                                     new ServerAddress("ltc-testnet-cce-2.coinomi.net", 15002)),
+            // Pakcoin Server (alpha)
+            new CoinAddress(PakcoinMain.get(),      new ServerAddress("electrum.pakcoin.org", 50001)),
+            //
             new CoinAddress(PeercoinMain.get(),     new ServerAddress("ppc-cce-1.coinomi.net", 5004),
                                                     new ServerAddress("ppc-cce-2.coinomi.net", 5004)),
             new CoinAddress(NuSharesMain.get(),     new ServerAddress("nsr-cce-1.coinomi.net", 5011),
@@ -160,9 +166,10 @@ public class Constants {
                                                     new ServerAddress("dgb-cce-2.coinomi.net", 5023)),
             new CoinAddress(MazacoinMain.get(),     new ServerAddress("tate.cryptoadhd.com", 50001),
                                                     new ServerAddress("tate.maza.club", 50001)),
-            new CoinAddress(CryptoescudoMain.get(), new ServerAddress("electrum1.cryptoescudo.com.br", 50001),
-                                                    new ServerAddress("electrum1.cryptoescudo.org", 50001)),
-            // TODO Correct Electrum URL for CRYPTOESCUDO
+            new CoinAddress(CryptoescudoMain.get(), new ServerAddress("electrum1.cryptoescudo.pt", 50001),
+                                                    new ServerAddress("electrum2.cryptoescudo.pt", 50001),
+                                                    new ServerAddress("electrum3.cryptoescudo.pt", 50001)),
+            // TODO alpha stage Electrum URL for CRYPTOESCUDO
             new CoinAddress(StartcoinMain.get(),    new ServerAddress("node1.startcoin.org", 9247),
                                                     new ServerAddress("node2.startcoin.org", 9247)),
             new CoinAddress(ShadowCashMain.get(),   new ServerAddress("sdc-cce-1.coinomi.net", 5026),
@@ -197,24 +204,27 @@ public class Constants {
             // SSL
             // new CoinAddress(DogecoinDarkTest.get(), new ServerAddress("electrum-doged.space", 50002),
                                                     new ServerAddress("doged.el.0.btcnetwork.info", 50001)), // 104.236.133.57
-            // TODO Correct electrum URL from DOGED
+            //
             new CoinAddress(NovacoinMain.get(),     new ServerAddress("nvc-cce-1.coinomi.net", 5034),
                                                     new ServerAddress("nvc-cce-2.coinomi.net", 5034)),
             //
             new CoinAddress(GcrCoinMain.get(),      new ServerAddress("gcr-cce-1.coinomi.net", 5038),
                                                     new ServerAddress("gcr-cce-2.coinomi.net", 5038)),
             //
-            new CoinAddress(BatacoinMain.get(),     new ServerAddress("104.236.239.154", 50001)),
+            new CoinAddress(BatacoinMain.get(),     new ServerAddress("electrum-bta.xyz", 50001)),
             //
             new CoinAddress(StepscoinMain.get(),    new ServerAddress("192.241.216.229", 50001)),
             //                                        new ServerAddress("192.241.216.229", 50002)),
             new CoinAddress(BolicoinMain.get(),  new ServerAddress("electrum-boli.xyz", 50001)),
-            // TODO pending BOLI Electrum test
             //
+            new CoinAddress(EuropecoinMain.get(),  new ServerAddress("electrum-boli.xyz", 50001)),
+            // TODO Test ERC Electrum Server
             new CoinAddress(VpncoinMain.get(),      new ServerAddress("vpn-cce-1.coinomi.net", 5032),
                                                     new ServerAddress("vpn-cce-2.coinomi.net", 5032)),
+            new CoinAddress(GroestlCoinMain.get(),  new ServerAddress("electrum2.groestlcoin.org", 50001),
+                                                    new ServerAddress("electrum1.groestlcoin.org", 50001)),
             // FairCoin
-             new CoinAddress(FairCoinMain.get(),     new ServerAddress("electrum.fair.to", 51001))
+             new CoinAddress(FairCoinMain.get(),     new ServerAddress("fairlectrum.fair-coin.org", 9251))
             // SSL
             // new CoinAddress(FairCoinMain.get(),     new ServerAddress("electrum.fair.to", 51002))
     );
@@ -232,6 +242,7 @@ public class Constants {
         COINS_ICONS.put(CoinID.BATACOIN_MAIN.getCoinType(), R.drawable.bta);
         COINS_ICONS.put(CoinID.LITECOIN_MAIN.getCoinType(), R.drawable.litecoin);
         COINS_ICONS.put(CoinID.LITECOIN_TEST.getCoinType(), R.drawable.litecoin_test);
+        COINS_ICONS.put(CoinID.PAKCOIN_MAIN.getCoinType(), R.drawable.pakcoin);
         COINS_ICONS.put(CoinID.PEERCOIN_MAIN.getCoinType(), R.drawable.peercoin);
         COINS_ICONS.put(CoinID.DASH_MAIN.getCoinType(), R.drawable.dash);
         COINS_ICONS.put(CoinID.REDDCOIN_MAIN.getCoinType(), R.drawable.reddcoin);
@@ -259,6 +270,8 @@ public class Constants {
         COINS_ICONS.put(CoinID.JUMBUCKS_MAIN.getCoinType(), R.drawable.jumbucks);
         COINS_ICONS.put(CoinID.VPNCOIN_MAIN.getCoinType(), R.drawable.vpncoin);
         COINS_ICONS.put(CoinID.VCOIN_MAIN.getCoinType(),  R.drawable.vcoin);
+        COINS_ICONS.put(CoinID.EUROPECOIN_MAIN.getCoinType(),  R.drawable.europecoin);
+        COINS_ICONS.put(CoinID.GROESTLCOIN_MAIN.getCoinType(), R.drawable.groestlcoin);
         COINS_ICONS.put(CoinID.NOVACOIN_MAIN.getCoinType(), R.drawable.novacoin);
         COINS_ICONS.put(CoinID.VIACOIN_MAIN.getCoinType(), R.drawable.viacoin);
         COINS_ICONS.put(CoinID.BOLICOIN_MAIN.getCoinType(), R.drawable.bolivar);
@@ -307,6 +320,8 @@ public class Constants {
         COINS_BLOCK_EXPLORERS.put(CoinID.OKCASHCOIN_MAIN.getCoinType(), "https://chainz.cryptoid.info/ok/tx.dws?%s");
         COINS_BLOCK_EXPLORERS.put(CoinID.FAIRCOIN_MAIN.getCoinType(), "https://chain.fair-coin.org/tx/%s");
         COINS_BLOCK_EXPLORERS.put(CoinID.BOLICOIN_MAIN.getCoinType(),  "https://chainz.cryptoid.info/boli/tx.dws?%s");
+        COINS_BLOCK_EXPLORERS.put(CoinID.EUROPECOIN_MAIN.getCoinType(), "http://http://erc.explorer.bitnodes.net/tx/%s");
+        COINS_BLOCK_EXPLORERS.put(CoinID.GROESTLCOIN_MAIN.getCoinType(), "https://chainz.cryptoid.info/grs/tx.dws?%s");
     }
 
     public static final CoinType DEFAULT_COIN = BitcoinMain.get();
@@ -322,20 +337,23 @@ public class Constants {
             DogecoinMain.get(),
             LitecoinMain.get(),
             DogecoinDarkMain.get(),
-/*            BatacoinMain.get(), */
+            BatacoinMain.get(),
+/*            EuropecoinMain.get(), */
             FairCoinMain.get(),
             ViacoinMain.get(),
             MazacoinMain.get(),
-/*            BolicoinMain.get(), */
+            BolicoinMain.get(),
             CanadaeCoinMain.get(),
             OkCashMain.get(),
 /*            StartcoinMain.get(), */
+            PakcoinMain.get(),
             PeercoinMain.get(),
             DashMain.get(),
             NamecoinMain.get(),
             BlackcoinMain.get(),
             ClamcoinMain.get(),
             MonacoinMain.get(),
+/*            GroestlCoinMain.get(), */
             NovacoinMain.get(),
             NuSharesMain.get(),
             VpncoinMain.get(),
@@ -350,12 +368,11 @@ public class Constants {
             CannacoinMain.get(),
             ShadowCashMain.get(),
             StepscoinMain.get(),
-
             NuBitsMain.get(),
 /*            VcoinMain.get(), */
             ParkbyteMain.get(),
             GcrCoinMain.get(),
-/*            CryptoescudoMain.get(), */
+            CryptoescudoMain.get(),
             BitcoinTest.get(),
             LitecoinTest.get(),
             DogecoinTest.get()
