@@ -28,6 +28,8 @@ public enum CoinID {
     DOGECOIN_MAIN(DogecoinMain.get()),
     DOGECOIN_TEST(DogecoinTest.get()),
     DOGECOINDARK_MAIN(DogecoinDarkMain.get()),
+    EUROPECOIN_MAIN(EuropecoinMain.get()),
+    GROESTLCOIN_MAIN(GroestlCoinMain.get()),
     GCRCOIN_MAIN(GcrCoinMain.get()),
     REDDCOIN_MAIN(ReddcoinMain.get()),
     PEERCOIN_MAIN(PeercoinMain.get()),
@@ -59,6 +61,7 @@ public enum CoinID {
     VIACOIN_MAIN(ViacoinMain.get()),
     OKCASHCOIN_MAIN(OkCashMain.get()),
     FAIRCOIN_MAIN(FairCoinMain.get()),
+    PAKCOIN_MAIN(PakcoinMain.get()),
     ;
 
     private static List<CoinType> types;
