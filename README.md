@@ -52,7 +52,7 @@ Pending electrum node
 
 ## Version history
 
-New Version v1.7.02.20
+New Version v1.7.02.22
 
 - Added AsiaCoin
 
