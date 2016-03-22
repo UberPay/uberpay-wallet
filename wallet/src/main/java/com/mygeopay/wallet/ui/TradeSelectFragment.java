@@ -546,7 +546,7 @@ public class TradeSelectFragment extends Fragment {
                 if (entry.accountOrCoinType instanceof WalletAccount) {
                     WalletAccount newSource = (WalletAccount) entry.accountOrCoinType;
                     // If same account selected, do nothing
-                    if (newSource.equals(sourceAccount)) return;
+                    if (newSource.isEquals(sourceAccount)) return;
                     // If new source and destination are the same, swap accounts
                     if (destinationAccount != null && destinationAccount.isType(newSource)) {
                         // Swap accounts
@@ -578,7 +578,7 @@ public class TradeSelectFragment extends Fragment {
                 if (entry.accountOrCoinType instanceof WalletAccount) {
                     WalletAccount newDestination = (WalletAccount) entry.accountOrCoinType;
                     // If same account selected, do nothing
-                    if (newDestination.equals(destinationAccount)) return;
+                    if (newDestination.isEquals(destinationAccount)) return;
                     // If new destination and source are the same, swap accounts
                     if (destinationAccount != null && sourceAccount.isType(newDestination)) {
                         // Swap accounts

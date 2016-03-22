@@ -108,7 +108,7 @@ public class WalletPocketHD extends AbstractWallet {
 
 
     @Override
-    public boolean equals(WalletAccount other) {
+    public boolean isEquals(WalletAccount other) {
         return other != null &&
                 getId().equals(other.getId()) &&
                 getCoinType().equals(other.getCoinType());

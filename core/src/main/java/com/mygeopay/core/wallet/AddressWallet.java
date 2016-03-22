@@ -82,7 +82,7 @@ public class AddressWallet extends AbstractWallet {
     }
 
     @Override
-    public boolean equals(WalletAccount otherAccount) {
+    public boolean isEquals(WalletAccount otherAccount) {
         return false;
     }
 

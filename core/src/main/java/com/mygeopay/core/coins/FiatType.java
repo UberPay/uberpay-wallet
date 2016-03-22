@@ -99,7 +99,7 @@ public class FiatType implements ValueType {
     }
 
     @Override
-    public boolean equals(ValueType o) {
+    public boolean isEquals(ValueType o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         return currencyCode.equals(o.getSymbol());
