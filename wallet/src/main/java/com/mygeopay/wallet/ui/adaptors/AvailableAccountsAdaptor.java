@@ -105,7 +105,7 @@ public class AvailableAccountsAdaptor extends BaseAdapter {
     private static List<Entry> createEntries(final List<WalletAccount> accounts,
                                                       final List<CoinType> validTypes,
                                                       final boolean includeTypes) {
-        final ArrayList<CoinType> typesToAdd = Lists.newArrayList(validTypes);
+        final List<CoinType> typesToAdd = Lists.newArrayList(validTypes);
 
         final ImmutableList.Builder<Entry> listBuilder = ImmutableList.builder();
         for (WalletAccount account : accounts) {
