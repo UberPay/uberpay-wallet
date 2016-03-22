@@ -10,7 +10,7 @@ public class ShapeShiftEmail  extends ShapeShiftBase {
     public final Status status;
     public final String message;
 
-    public static enum Status {
+    public enum Status {
         SUCCESS, UNKNOWN
     }
 
