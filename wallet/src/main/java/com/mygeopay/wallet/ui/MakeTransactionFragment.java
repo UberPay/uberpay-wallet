@@ -240,7 +240,7 @@ public class MakeTransactionFragment extends Fragment {
                         .create().show();
             }
         });
-        poweredByShapeShift.setVisibility((isExchangeNeeded() ? View.VISIBLE : View.GONE));
+        poweredByShapeShift.setVisibility(isExchangeNeeded() ? View.VISIBLE : View.GONE);
 
         return view;
     }
