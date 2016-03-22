@@ -379,12 +379,12 @@ public class CoinServiceImpl extends Service implements CoinService {
 
             if (clients != null)
             {
-                log.info("broadcasting transaction " + tx.getHashAsString());
+                log.info("broadcasting transaction " + tx == null ? null : tx.getHashAsString());
                 broadcastTransaction(tx);
             }
             else
             {
-                log.info("client not available, not broadcasting transaction " + tx.getHashAsString());
+                log.info("client not available, not broadcasting transaction " + tx == null ? null : tx.getHashAsString());
             }
         }
 
