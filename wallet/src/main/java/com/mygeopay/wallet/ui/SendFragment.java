@@ -204,7 +204,7 @@ public class SendFragment extends Fragment {
             }
             if (pocket == null) {
                 List<WalletAccount> accounts = application.getAllAccounts();
-                if (accounts.size() > 0) pocket = accounts.get(0);
+                if (!accounts.isEmpty()) pocket = accounts.get(0);
             }
             checkNotNull(pocket, "No account selected");
         } else {

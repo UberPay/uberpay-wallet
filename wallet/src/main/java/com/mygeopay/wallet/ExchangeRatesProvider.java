@@ -382,7 +382,7 @@ public class ExchangeRatesProvider extends ContentProvider {
             log.warn("problem parsing exchange rates: {}", e.getMessage());
         }
 
-        if (rates.size() == 0) {
+        if (rates.isEmpty()) {
             return null;
         } else {
             return rates;

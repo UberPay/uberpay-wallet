@@ -200,8 +200,8 @@ public class TransactionCreator {
             Transaction tx = req.tx;
             List<TransactionInput> inputs = tx.getInputs();
             List<TransactionOutput> outputs = tx.getOutputs();
-            checkState(inputs.size() > 0);
-            checkState(outputs.size() > 0);
+            checkState(!inputs.isEmpty());
+            checkState(!outputs.isEmpty());
 
             KeyBag maybeDecryptingKeyBag = new DecryptingKeyBag(account, req.aesKey);
 
@@ -341,7 +341,7 @@ public class TransactionCreator {
                 valueMissing = valueNeeded.subtract(selection.valueGathered);
                 break;
             }
-            checkState(selection.gathered.size() > 0 || originalInputs.size() > 0);
+            checkState(!selection.gathered.isEmpty() || !originalInputs.isEmpty());
 
             // We keep track of an upper bound on transaction size to calculate fees that need to be added.
             // Note that the difference between the upper bound and lower bound is usually small enough that it

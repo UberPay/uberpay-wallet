@@ -186,7 +186,7 @@ public class BalanceFragment extends Fragment implements LoaderCallbacks<List<Tr
 
         emptyPocketMessage = header.findViewById(R.id.history_empty);
         // Hide empty message if have some transaction history
-        if (pocket.getTransactions(false).size() > 0) {
+        if (!pocket.getTransactions(false).isEmpty()) {
             emptyPocketMessage.setVisibility(View.GONE);
         }
 

@@ -388,7 +388,7 @@ public class TradeSelectFragment extends Fragment {
         List<CoinType> sourceTypes = sourceAdapter.getTypes();
 
         // No supported source accounts found
-        if (sourceTypes.size() == 0) {
+        if (sourceTypes.isEmpty()) {
             new AlertDialog.Builder(getActivity())
                     .setTitle(R.string.trade_error)
                     .setMessage(R.string.trade_error_no_supported_source_accounts)

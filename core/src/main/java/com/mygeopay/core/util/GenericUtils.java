@@ -157,11 +157,11 @@ public class GenericUtils {
         }
 
         // Remove final zeroes if requested
-        while (removeFinalZeroes && formatedValue.length() > 0 &&
+        while (removeFinalZeroes && !formatedValue.isEmpty() &&
                 formatedValue.contains(".") && formatedValue.endsWith("0")) {
             formatedValue = formatedValue.substring(0, formatedValue.length() - 1);
         }
-        if (removeFinalZeroes && formatedValue.length() > 0 && formatedValue.endsWith(".")) {
+        if (removeFinalZeroes && !formatedValue.isEmpty() && formatedValue.endsWith(".")) {
             formatedValue = formatedValue.substring(0, formatedValue.length() - 1);
         }
 
@@ -204,7 +204,7 @@ public class GenericUtils {
             }
         }
         List<CoinType> possibleTypes = builder.build();
-        if (possibleTypes.size() == 0) {
+        if (possibleTypes.isEmpty()) {
             throw new AddressFormatException("Unsupported address: " + addressStr);
         }
         return builder.build();
