@@ -58,6 +58,14 @@ public class AvailableAccountsAdaptor extends BaseAdapter {
             return result;
         }
 
+        @Override
+        public int hashCode() {
+            int result = this.iconRes;
+            result = 31 * result + (this.title != null ? this.title.hashCode() : 0);
+            result = 31 * result + (this.accountOrCoinType != null ? this.accountOrCoinType.hashCode() : 0);
+            return result;
+        }
+
         public CoinType getType() {
             if (accountOrCoinType instanceof CoinType) {
                 return (CoinType) accountOrCoinType;
