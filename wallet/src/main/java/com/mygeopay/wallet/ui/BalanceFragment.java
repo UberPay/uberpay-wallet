@@ -267,15 +267,13 @@ public class BalanceFragment extends Fragment implements LoaderCallbacks<List<Tr
     }
 
     private void checkEmptyPocketMessage() {
-        if (emptyPocketMessage.isShown()) {
-            if (!pocket.isNew()) {
-                handler.post(new Runnable() {
+        if (emptyPocketMessage.isShown() && !pocket.isNew()) {
+            handler.post(new Runnable() {
                     @Override
                     public void run() {
                         emptyPocketMessage.setVisibility(View.GONE);
                     }
                 });
-            }
         }
     }
 

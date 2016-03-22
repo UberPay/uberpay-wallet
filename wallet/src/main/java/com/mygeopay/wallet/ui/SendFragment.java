@@ -490,31 +490,29 @@ public class SendFragment extends Fragment {
                     Toast.makeText(getActivity(), error, Toast.LENGTH_LONG).show();
                 }
             }
-        } else if (requestCode == SIGN_TRANSACTION) {
-            if (resultCode == Activity.RESULT_OK) {
-                Exception error = (Exception) intent.getSerializableExtra(Constants.ARG_ERROR);
+        } else if (requestCode == SIGN_TRANSACTION && resultCode == Activity.RESULT_OK) {
+            Exception error = (Exception) intent.getSerializableExtra(Constants.ARG_ERROR);
 
-                if (error == null) {
-                    Toast.makeText(getActivity(), R.string.sending_msg, Toast.LENGTH_SHORT).show();
-                    if (listener != null) listener.onTransactionBroadcastSuccess(pocket, null);
+            if (error == null) {
+                Toast.makeText(getActivity(), R.string.sending_msg, Toast.LENGTH_SHORT).show();
+                if (listener != null) listener.onTransactionBroadcastSuccess(pocket, null);
+            } else {
+                if (error instanceof InsufficientMoneyException) {
+                    Toast.makeText(getActivity(), R.string.amount_error_not_enough_money_plain, Toast.LENGTH_LONG).show();
+                } else if (error instanceof NoSuchPocketException) {
+                    Toast.makeText(getActivity(), R.string.no_such_pocket_error, Toast.LENGTH_LONG).show();
+                } else if (error instanceof KeyCrypterException) {
+                    Toast.makeText(getActivity(), R.string.password_failed, Toast.LENGTH_LONG).show();
+                } else if (error instanceof IOException) {
+                    Toast.makeText(getActivity(), R.string.send_coins_error_network, Toast.LENGTH_LONG).show();
+                } else if (error instanceof Wallet.DustySendRequested) {
+                    Toast.makeText(getActivity(), R.string.send_coins_error_dust, Toast.LENGTH_LONG).show();
                 } else {
-                    if (error instanceof InsufficientMoneyException) {
-                        Toast.makeText(getActivity(), R.string.amount_error_not_enough_money_plain, Toast.LENGTH_LONG).show();
-                    } else if (error instanceof NoSuchPocketException) {
-                        Toast.makeText(getActivity(), R.string.no_such_pocket_error, Toast.LENGTH_LONG).show();
-                    } else if (error instanceof KeyCrypterException) {
-                        Toast.makeText(getActivity(), R.string.password_failed, Toast.LENGTH_LONG).show();
-                    } else if (error instanceof IOException) {
-                        Toast.makeText(getActivity(), R.string.send_coins_error_network, Toast.LENGTH_LONG).show();
-                    } else if (error instanceof Wallet.DustySendRequested) {
-                        Toast.makeText(getActivity(), R.string.send_coins_error_dust, Toast.LENGTH_LONG).show();
-                    } else {
-                        log.error("An unknown error occurred while sending coins", error);
-                        String errorMessage = getString(R.string.send_coins_error, error.getMessage());
-                        Toast.makeText(getActivity(), errorMessage, Toast.LENGTH_LONG).show();
-                    }
-                    if (listener != null) listener.onTransactionBroadcastFailure(pocket, null);
+                    log.error("An unknown error occurred while sending coins", error);
+                    String errorMessage = getString(R.string.send_coins_error, error.getMessage());
+                    Toast.makeText(getActivity(), errorMessage, Toast.LENGTH_LONG).show();
                 }
+                if (listener != null) listener.onTransactionBroadcastFailure(pocket, null);
             }
         }
     }
