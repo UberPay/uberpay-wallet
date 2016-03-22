@@ -126,8 +126,8 @@ public class ServerClient implements BlockchainConnection {
 
     public ServerClient(CoinAddress coinAddress, ConnectivityHelper connectivityHelper) {
         this.connectivityHelper = connectivityHelper;
-        eventListeners = new CopyOnWriteArrayList<ListenerRegistration<ConnectionEventListener>>();
-        failedAddresses = new HashSet<ServerAddress>();
+        eventListeners = new CopyOnWriteArrayList<>();
+        failedAddresses = new HashSet<>();
         type = coinAddress.getType();
         addresses = ImmutableList.copyOf(coinAddress.getAddresses());
 
@@ -245,7 +245,7 @@ public class ServerClient implements BlockchainConnection {
      */
     private void addEventListener(ConnectionEventListener listener, Executor executor) {
         boolean isNew = !ListenerRegistration.removeFromList(listener, eventListeners);
-        eventListeners.add(new ListenerRegistration<ConnectionEventListener>(listener, executor));
+        eventListeners.add(new ListenerRegistration<>(listener, executor));
         if (isNew && isConnected()) {
             broadcastOnConnection();
         }

@@ -27,7 +27,7 @@ public class CoinExchangeListAdapter extends BaseAdapter {
                                    @Nullable List<ExchangeRate> rates) {
         this.context = context;
         this.coins = coins;
-        this.rates = new HashMap<String, ExchangeRate>(coins.size());
+        this.rates = new HashMap<>(coins.size());
         setExchangeRates(rates);
     }
 

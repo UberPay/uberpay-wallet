@@ -104,7 +104,7 @@ public class CoinURI {
     /**
      * Contains all the parameters in the order in which they were processed
      */
-    private final Map<String, Object> parameterMap = new LinkedHashMap<String, Object>();
+    private final Map<String, Object> parameterMap = new LinkedHashMap<>();
 
     /**
      * Constructs a new CoinURI from the given string. Can be for any network.

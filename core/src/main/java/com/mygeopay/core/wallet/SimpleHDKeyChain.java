@@ -304,7 +304,7 @@ public class SimpleHDKeyChain implements EncryptableKeyChain, KeyBag {
             // and calculate the full lookahead zone there, so network requests will always use the right amount.
             List<DeterministicKey> lookahead = maybeLookAhead(parentKey, index, 0, 0);
             simpleKeyChain.importKeys(lookahead);
-            List<DeterministicKey> keys = new ArrayList<DeterministicKey>(numberOfKeys);
+            List<DeterministicKey> keys = new ArrayList<>(numberOfKeys);
             for (int i = 0; i < numberOfKeys; i++) {
                 ImmutableList<ChildNumber> path = HDUtils.append(parentKey.getPath(),
                         new ChildNumber(index - numberOfKeys + i, false));
@@ -858,12 +858,12 @@ public class SimpleHDKeyChain implements EncryptableKeyChain, KeyBag {
         final int needed = issued + lookaheadSize + lookaheadThreshold - numChildren;
 
         if (needed <= lookaheadThreshold)
-            return new ArrayList<DeterministicKey>();
+            return new ArrayList<>();
 
         log.info("{} keys needed for {} = {} issued + {} lookahead size + {} lookahead threshold - {} num children",
                 needed, parent.getPathAsString(), issued, lookaheadSize, lookaheadThreshold, numChildren);
 
-        List<DeterministicKey> result  = new ArrayList<DeterministicKey>(needed);
+        List<DeterministicKey> result  = new ArrayList<>(needed);
         long now = System.currentTimeMillis();
         int nextChild = numChildren;
         for (int i = 0; i < needed; i++) {
@@ -886,7 +886,7 @@ public class SimpleHDKeyChain implements EncryptableKeyChain, KeyBag {
         try {
             maybeLookAhead();
             int treeSize = externalKey.getPath().size();
-            ArrayList<DeterministicKey> issuedKeys = new ArrayList<DeterministicKey>();
+            ArrayList<DeterministicKey> issuedKeys = new ArrayList<>();
             for (ECKey key : simpleKeyChain.getKeys()) {
                 DeterministicKey detkey = (DeterministicKey) key;
                 DeterministicKey parent = detkey.getParent();
@@ -934,7 +934,7 @@ public class SimpleHDKeyChain implements EncryptableKeyChain, KeyBag {
         List<ECKey> keys = simpleKeyChain.getKeys();
         if (!includeLookahead) {
             int treeSize = internalKey.getPath().size();
-            List<ECKey> issuedKeys = new LinkedList<ECKey>();
+            List<ECKey> issuedKeys = new LinkedList<>();
             for (ECKey key : keys) {
                 DeterministicKey detkey = (DeterministicKey) key;
                 DeterministicKey parent = detkey.getParent();

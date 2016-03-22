@@ -27,7 +27,7 @@ public class SimpleKeyChain extends BasicKeyChain {
     }
 
     Map<ECKey, Protos.Key.Builder> toEditableProtobufs() {
-        Map<ECKey, Protos.Key.Builder> result = new LinkedHashMap<ECKey, Protos.Key.Builder>();
+        Map<ECKey, Protos.Key.Builder> result = new LinkedHashMap<>();
         for (ECKey ecKey : getKeys()) {
             Protos.Key.Builder protoKey = serializeKey(ecKey);
             result.put(ecKey, protoKey);

@@ -44,7 +44,7 @@ public class TransactionAmountVisualizerAdapter extends BaseAdapter {
         pocket = walletPocket;
         type = pocket.getCoinType();
         symbol = type.getSymbol();
-        outputs = new ArrayList<TransactionOutput>();
+        outputs = new ArrayList<>();
     }
 
     public void setTransaction(Transaction tx) {

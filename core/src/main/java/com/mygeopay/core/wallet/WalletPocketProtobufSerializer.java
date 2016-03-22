@@ -66,7 +66,7 @@ public class WalletPocketProtobufSerializer {
     private static final Logger log = LoggerFactory.getLogger(WalletPocketProtobufSerializer.class);
 
     // Used for de-serialization
-    protected Map<ByteString, Transaction> txMap = new HashMap<ByteString, Transaction>();
+    protected Map<ByteString, Transaction> txMap = new HashMap<>();
 
     public static Protos.WalletPocket toProtobuf(WalletPocketHD pocket) {
 
@@ -284,7 +284,7 @@ public class WalletPocketProtobufSerializer {
             }
 
             // Update transaction outputs to point to inputs that spend them
-            ArrayList<WalletTransaction> wtxs = new ArrayList<WalletTransaction>(walletProto.getTransactionList().size());
+            ArrayList<WalletTransaction> wtxs = new ArrayList<>(walletProto.getTransactionList().size());
             for (Protos.Transaction txProto : walletProto.getTransactionList()) {
                 wtxs.add(connectTransactionOutputs(txProto));
             }

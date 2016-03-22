@@ -20,7 +20,7 @@ final public class AddressStatus {
     @Nullable final String status;
 
     HashSet<ServerClient.HistoryTx> historyTransactions;
-    HashSet<Sha256Hash> allTransactions = new HashSet<Sha256Hash>();
+    HashSet<Sha256Hash> allTransactions = new HashSet<>();
 
     public AddressStatus(Address address, @Nullable String status) {
         this.address = address;

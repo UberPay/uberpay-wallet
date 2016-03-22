@@ -134,7 +134,7 @@ public class SelectCoinsFragment extends Fragment {
         return new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ArrayList<String> ids = new ArrayList<String>();
+                ArrayList<String> ids = new ArrayList<>();
                 SparseBooleanArray selected = coinList.getCheckedItemPositions();
                 for (int i = 0; i < selected.size(); i++) {
                     if (selected.valueAt(i)) {
@@ -211,7 +211,7 @@ public class SelectCoinsFragment extends Fragment {
         @Override
         public void onLoadFinished(final Loader<Cursor> loader, final Cursor data) {
             if (data != null && data.getCount() > 0) {
-                List<ExchangeRate> rates = new ArrayList<ExchangeRate>(data.getCount());
+                List<ExchangeRate> rates = new ArrayList<>(data.getCount());
 
                 data.moveToFirst();
                 do {

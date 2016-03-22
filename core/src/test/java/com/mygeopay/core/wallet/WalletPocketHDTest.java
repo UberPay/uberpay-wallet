@@ -87,7 +87,7 @@ public class WalletPocketHDTest {
 
     @Test
     public void issuedKeys() throws Bip44KeyLookAheadExceededException {
-        LinkedList<Address> issuedAddresses = new LinkedList<Address>();
+        LinkedList<Address> issuedAddresses = new LinkedList<>();
         assertEquals(0, pocket.getIssuedReceiveAddresses().size());
         assertEquals(0, pocket.keys.getNumIssuedExternalKeys());
 
@@ -410,7 +410,7 @@ public class WalletPocketHDTest {
     }
 
     HashMap<Address, AddressStatus> getDummyStatuses() throws AddressFormatException {
-        HashMap<Address, AddressStatus> status = new HashMap<Address, AddressStatus>(40);
+        HashMap<Address, AddressStatus> status = new HashMap<>(40);
 
         for (int i = 0; i < addresses.size(); i++) {
             Address address = new Address(type, addresses.get(i));
@@ -432,7 +432,7 @@ public class WalletPocketHDTest {
 //    }
 
     private HashMap<Address, ArrayList<HistoryTx>> getDummyHistoryTXs() throws AddressFormatException, JSONException {
-        HashMap<Address, ArrayList<HistoryTx>> htxs = new HashMap<Address, ArrayList<HistoryTx>>(40);
+        HashMap<Address, ArrayList<HistoryTx>> htxs = new HashMap<>(40);
 
         for (int i = 0; i < statuses.length; i++) {
             List<HistoryTx> utxList = (List<HistoryTx>) HistoryTx.fromArray(new JSONArray(unspent[i]));
@@ -443,7 +443,7 @@ public class WalletPocketHDTest {
     }
 
     private HashMap<Sha256Hash, byte[]> getDummyRawTXs() throws AddressFormatException, JSONException {
-        HashMap<Sha256Hash, byte[]> rawTxs = new HashMap<Sha256Hash, byte[]>();
+        HashMap<Sha256Hash, byte[]> rawTxs = new HashMap<>();
 
         for (int i = 0; i < txs.length; i++) {
             String[] txEntry = txs[i];

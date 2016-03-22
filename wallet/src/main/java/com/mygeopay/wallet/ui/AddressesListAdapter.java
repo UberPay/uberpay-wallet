@@ -56,10 +56,10 @@ public class AddressesListAdapter extends BaseAdapter {
     private final Resources res;
 
     private final AbstractWallet pocket;
-    private final List<Address> addresses = new ArrayList<Address>();
-    private final Set<Address> usedAddresses = new HashSet<Address>();
+    private final List<Address> addresses = new ArrayList<>();
+    private final Set<Address> usedAddresses = new HashSet<>();
 
-    private final Map<String, String> labelCache = new HashMap<String, String>();
+    private final Map<String, String> labelCache = new HashMap<>();
     private final static Object CACHE_NULL_MARKER = "";
 
     public AddressesListAdapter(final Context context, @Nonnull final AbstractWallet walletPocket) {

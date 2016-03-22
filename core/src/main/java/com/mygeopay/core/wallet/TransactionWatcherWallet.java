@@ -122,17 +122,17 @@ abstract public class TransactionWatcherWallet implements WalletAccount {
     // Constructor
     public TransactionWatcherWallet(CoinType coinType) {
         this.coinType = coinType;
-        addressesStatus = new HashMap<Address, String>();
-        addressesSubscribed = new ArrayList<Address>();
-        addressesPendingSubscription = new ArrayList<Address>();
-        statusPendingUpdates = new HashMap<Address, AddressStatus>();
-        fetchingTransactions = new HashSet<Sha256Hash>();
-        unspent = new HashMap<Sha256Hash, Transaction>();
-        spent = new HashMap<Sha256Hash, Transaction>();
-        pending = new HashMap<Sha256Hash, Transaction>();
-        dead = new HashMap<Sha256Hash, Transaction>();
-        transactions = new HashMap<Sha256Hash, Transaction>();
-        listeners = new CopyOnWriteArrayList<ListenerRegistration<WalletAccountEventListener>>();
+        addressesStatus = new HashMap<>();
+        addressesSubscribed = new ArrayList<>();
+        addressesPendingSubscription = new ArrayList<>();
+        statusPendingUpdates = new HashMap<>();
+        fetchingTransactions = new HashSet<>();
+        unspent = new HashMap<>();
+        spent = new HashMap<>();
+        pending = new HashMap<>();
+        dead = new HashMap<>();
+        transactions = new HashMap<>();
+        listeners = new CopyOnWriteArrayList<>();
     }
 
     @Override
@@ -188,7 +188,7 @@ abstract public class TransactionWatcherWallet implements WalletAccount {
     public Set<Transaction> getTransactions(boolean includeDead) {
         lock.lock();
         try {
-            Set<Transaction> all = new HashSet<Transaction>();
+            Set<Transaction> all = new HashSet<>();
             all.addAll(unspent.values());
             all.addAll(spent.values());
             all.addAll(pending.values());
@@ -206,7 +206,7 @@ abstract public class TransactionWatcherWallet implements WalletAccount {
     public Iterable<WalletTransaction> getWalletTransactions() {
         lock.lock();
         try {
-            Set<WalletTransaction> all = new HashSet<WalletTransaction>();
+            Set<WalletTransaction> all = new HashSet<>();
             addWalletTransactionsToSet(all, WalletTransaction.Pool.UNSPENT, unspent.values());
             addWalletTransactionsToSet(all, WalletTransaction.Pool.SPENT, spent.values());
             addWalletTransactionsToSet(all, WalletTransaction.Pool.DEAD, dead.values());
@@ -350,7 +350,7 @@ abstract public class TransactionWatcherWallet implements WalletAccount {
     public HashMap<Sha256Hash, Transaction> getTransactions(HashSet<Sha256Hash> hashes) {
         lock.lock();
         try {
-            HashMap<Sha256Hash, Transaction> txs = new HashMap<Sha256Hash, Transaction>();
+            HashMap<Sha256Hash, Transaction> txs = new HashMap<>();
             for (Sha256Hash hash : hashes) {
                 if (transactions.containsKey(hash)) {
                     txs.put(hash, transactions.get(hash));
@@ -597,7 +597,7 @@ abstract public class TransactionWatcherWallet implements WalletAccount {
     public List<AddressStatus> getAllAddressStatus() {
         lock.lock();
         try {
-            ArrayList<AddressStatus> statuses = new ArrayList<AddressStatus>(addressesStatus.size());
+            ArrayList<AddressStatus> statuses = new ArrayList<>(addressesStatus.size());
             for (Map.Entry<Address, String> status : addressesStatus.entrySet()) {
                 statuses.add(new AddressStatus(status.getKey(), status.getValue()));
             }

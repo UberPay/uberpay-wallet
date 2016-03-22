@@ -162,7 +162,7 @@ public final class MonetaryFormat {
      *            any number numbers of decimals, one for each group
      */
     public MonetaryFormat optionalDecimals(int... groups) {
-        List<Integer> decimalGroups = new ArrayList<Integer>(groups.length);
+        List<Integer> decimalGroups = new ArrayList<>(groups.length);
         for (int group : groups)
             decimalGroups.add(group);
         return new MonetaryFormat(negativeSign, positiveSign, zeroDigit, decimalMark, minDecimals, decimalGroups,
@@ -188,7 +188,7 @@ public final class MonetaryFormat {
      */
     public MonetaryFormat repeatOptionalDecimals(int decimals, int repetitions) {
         checkArgument(repetitions >= 0);
-        List<Integer> decimalGroups = new ArrayList<Integer>(repetitions);
+        List<Integer> decimalGroups = new ArrayList<>(repetitions);
         for (int i = 0; i < repetitions; i++)
             decimalGroups.add(decimals);
         return new MonetaryFormat(negativeSign, positiveSign, zeroDigit, decimalMark, minDecimals, decimalGroups,
@@ -239,7 +239,7 @@ public final class MonetaryFormat {
      */
     public MonetaryFormat code(int codeShift, String code) {
         checkArgument(codeShift >= 0);
-        Map<Integer, String> codes = new HashMap<Integer, String>();
+        Map<Integer, String> codes = new HashMap<>();
         if (this.codes != null)
             codes.putAll(this.codes);
         codes.put(codeShift, code);
@@ -304,7 +304,7 @@ public final class MonetaryFormat {
         this.decimalGroups = null;
         this.shift = 0;
         this.roundingMode = RoundingMode.HALF_UP;
-        this.codes = new HashMap<Integer, String>();
+        this.codes = new HashMap<>();
         this.codes.put(0, CODE_BTC);
         this.codes.put(3, CODE_MBTC);
         this.codes.put(6, CODE_UBTC);

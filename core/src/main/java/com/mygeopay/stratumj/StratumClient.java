@@ -46,12 +46,12 @@ public class StratumClient extends AbstractExecutionThreadService {
     final private ExecutorService pool = Executors.newFixedThreadPool(NUM_OF_WORKERS);
 
     final private ConcurrentHashMap<Long, SettableFuture<ResultMessage>> callers =
-            new ConcurrentHashMap<Long, SettableFuture<ResultMessage>>();
+            new ConcurrentHashMap<>();
 
     final private ConcurrentHashMap<String, List<SubscribeResult>> subscribes =
-            new ConcurrentHashMap<String, List<SubscribeResult>>();
+            new ConcurrentHashMap<>();
 
-    final private BlockingQueue<BaseMessage> queue = new LinkedBlockingDeque<BaseMessage>();
+    final private BlockingQueue<BaseMessage> queue = new LinkedBlockingDeque<>();
 
 
     public interface SubscribeResult {
