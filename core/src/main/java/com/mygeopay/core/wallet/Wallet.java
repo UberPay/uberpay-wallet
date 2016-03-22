@@ -47,7 +47,7 @@ import static com.google.common.base.Preconditions.checkState;
  */
 final public class Wallet {
     private static final Logger log = LoggerFactory.getLogger(Wallet.class);
-    public static int ENTROPY_SIZE_DEBUG = -1;
+    public static final int ENTROPY_SIZE_DEBUG = -1;
 
     private final ReentrantLock lock = Threading.lock("KeyChain");
 
