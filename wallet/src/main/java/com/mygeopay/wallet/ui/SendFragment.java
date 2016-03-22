@@ -560,7 +560,6 @@ public class SendFragment extends Fragment {
 
         sendAmountType = (CoinType) address.getParameters();
         sendAmount = coinUri.getAmount();
-        final String label = coinUri.getLabel();
     }
 
     private void updateView() {
