@@ -75,7 +75,7 @@ public class FinalizeWalletRestorationFragment extends Fragment {
 
     private List<CoinType> getCoinsTypes(Bundle args) {
         if (args.containsKey(Constants.ARG_MULTIPLE_COIN_IDS)) {
-            List<CoinType> coinTypes = new ArrayList<CoinType>();
+            List<CoinType> coinTypes = new ArrayList<>();
             for (String id : args.getStringArrayList(Constants.ARG_MULTIPLE_COIN_IDS)) {
                 coinTypes.add(CoinID.typeFromId(id));
             }
@@ -109,7 +109,7 @@ public class FinalizeWalletRestorationFragment extends Fragment {
         }
 
         protected Wallet doInBackground(Bundle... params) {
-            ArrayList<String> seedWords = new ArrayList<String>();
+            ArrayList<String> seedWords = new ArrayList<>();
             for (String word : seed.trim().split(" ")) {
                 if (word.isEmpty()) continue;
                 seedWords.add(word);

@@ -278,7 +278,7 @@ public class Constants {
         COINS_ICONS.put(CoinID.STEPSCOIN_MAIN.getCoinType(), R.drawable.steps);
         COINS_ICONS.put(CoinID.FAIRCOIN_MAIN.getCoinType(), R.drawable.faircoin);
 
-        COINS_BLOCK_EXPLORERS = new HashMap<CoinType, String>();
+        COINS_BLOCK_EXPLORERS = new HashMap<>();
         COINS_BLOCK_EXPLORERS.put(CoinID.BITCOIN_MAIN.getCoinType(), "https://blockchain.info/tx/%s");
         COINS_BLOCK_EXPLORERS.put(CoinID.BITCOIN_TEST.getCoinType(), "https://chain.so/tx/BTCTEST/%s");
         COINS_BLOCK_EXPLORERS.put(CoinID.DOGECOIN_MAIN.getCoinType(), "https://chain.so/tx/DOGE/%s");

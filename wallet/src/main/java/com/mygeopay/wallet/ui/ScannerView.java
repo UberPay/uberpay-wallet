@@ -53,7 +53,7 @@ public class ScannerView extends View
     private Bitmap resultBitmap;
     private final int maskColor;
     private final int resultColor;
-    private final Map<ResultPoint, Long> dots = new HashMap<ResultPoint, Long>(16);
+    private final Map<ResultPoint, Long> dots = new HashMap<>(16);
     private Rect frame, framePreview;
 
     public ScannerView(final Context context, final AttributeSet attrs)

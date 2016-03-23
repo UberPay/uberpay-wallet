@@ -64,7 +64,7 @@ public class Qr
             // Make qr-code size multiples of baseSize
             int size = (int) (Math.max(Math.floor(maxSize / baseSize), 1) * baseSize);
 
-            final Hashtable<EncodeHintType, Object> hints = new Hashtable<EncodeHintType, Object>();
+            final Hashtable<EncodeHintType, Object> hints = new Hashtable<>();
             hints.put(EncodeHintType.MARGIN, 0);
             hints.put(EncodeHintType.ERROR_CORRECTION, ERROR_CORRECTION_LV);
             final BitMatrix result = QR_CODE_WRITER.encode(content, BarcodeFormat.QR_CODE, size, size, hints);

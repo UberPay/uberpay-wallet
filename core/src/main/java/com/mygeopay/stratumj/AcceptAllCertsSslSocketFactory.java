@@ -35,7 +35,7 @@ public class AcceptAllCertsSslSocketFactory extends SSLSocketFactory {
 	}
 
 	private TrustManager[] getTrustManagers() {
-		List<TrustManager> managers = new ArrayList<TrustManager>();
+		List<TrustManager> managers = new ArrayList<>();
 
 		managers.add(new X509TrustManager() {
 

@@ -355,7 +355,7 @@ public class ExchangeRatesProvider extends ContentProvider {
     private Map<String, ExchangeRate> parseExchangeRates(JSONObject json, String fromSymbol, boolean isLocalToCrypto) {
         if (json == null) return null;
 
-        final Map<String, ExchangeRate> rates = new TreeMap<String, ExchangeRate>();
+        final Map<String, ExchangeRate> rates = new TreeMap<>();
         try {
             CoinType type = isLocalToCrypto ? null : CoinID.typeFromSymbol(fromSymbol);
             for (final Iterator<String> i = json.keys(); i.hasNext(); ) {

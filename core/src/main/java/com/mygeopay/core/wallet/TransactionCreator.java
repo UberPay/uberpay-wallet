@@ -95,7 +95,7 @@ public class TransactionCreator {
                     log.warn("SendRequest transaction already has inputs but we don't know how much they are worth - they will be added to fee.");
             value = value.subtract(totalInput);
 
-            List<TransactionInput> originalInputs = new ArrayList<TransactionInput>(req.tx.getInputs());
+            List<TransactionInput> originalInputs = new ArrayList<>(req.tx.getInputs());
 
             // We need to know if we need to add an additional fee because one of our values are smaller than 0.01 BTC
             int numberOfSoftDustOutputs = 0;
@@ -335,7 +335,7 @@ public class TransactionCreator {
             // Of the coins we could spend, pick some that we actually will spend.
             CoinSelector selector = req.coinSelector == null ? coinSelector : req.coinSelector;
             // selector is allowed to modify candidates list.
-            CoinSelection selection = selector.select(valueNeeded, new LinkedList<TransactionOutput>(candidates));
+            CoinSelection selection = selector.select(valueNeeded, new LinkedList<>(candidates));
             // Can we afford this?
             if (selection.valueGathered.compareTo(valueNeeded) < 0) {
                 valueMissing = valueNeeded.subtract(selection.valueGathered);

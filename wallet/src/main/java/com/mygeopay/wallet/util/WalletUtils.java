@@ -122,7 +122,7 @@ public class WalletUtils {
     @CheckForNull
     private static List<Address> getToAddresses(@Nonnull final Transaction tx,
                                                 @Nonnull final AbstractWallet pocket, boolean toMe) {
-        List<Address> addresses = new ArrayList<Address>();
+        List<Address> addresses = new ArrayList<>();
         for (final TransactionOutput output : tx.getOutputs()) {
             try {
                 if (output.isMine(pocket) == toMe) {

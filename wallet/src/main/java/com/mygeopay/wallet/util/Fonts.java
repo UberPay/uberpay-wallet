@@ -13,7 +13,7 @@ import java.util.HashMap;
  */
 public class Fonts {
 
-    private final static HashMap<Font, Typeface> typefaces = new HashMap<Font, Typeface>();
+    private final static HashMap<Font, Typeface> typefaces = new HashMap<>();
 
     public enum Font {
         COINOMI_FONT_ICONS("fonts/coinomi-font-icons.ttf");

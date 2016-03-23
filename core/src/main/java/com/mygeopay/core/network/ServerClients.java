@@ -33,7 +33,7 @@ public class ServerClients {
     }
 
     public ServerClients(List<CoinAddress> coins, Wallet wallet, ConnectivityHelper connectivityHelper) {
-        connections = new HashMap<CoinType, ServerClient>(coins.size());
+        connections = new HashMap<>(coins.size());
 
         for (CoinAddress coinAddress : coins) {
             ServerClient client = new ServerClient(coinAddress, connectivityHelper);

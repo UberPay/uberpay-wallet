@@ -60,7 +60,7 @@ public class TransactionsListAdapter extends BaseAdapter {
     private final LayoutInflater inflater;
     private final AbstractWallet walletPocket;
 
-    private final List<Transaction> transactions = new ArrayList<Transaction>();
+    private final List<Transaction> transactions = new ArrayList<>();
     private final Resources res;
     private int precision = 0;
     private int shift = 0;
@@ -78,7 +78,7 @@ public class TransactionsListAdapter extends BaseAdapter {
     private final String receivedWithTitle;
     private final String fontIconReceivedWith;
 
-    private final Map<String, String> labelCache = new HashMap<String, String>();
+    private final Map<String, String> labelCache = new HashMap<>();
     private final static Object CACHE_NULL_MARKER = "";
 
     private static final String CONFIDENCE_SYMBOL_DEAD = "\u271D"; // latin cross

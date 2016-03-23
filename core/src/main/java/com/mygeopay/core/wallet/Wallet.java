@@ -74,15 +74,15 @@ final public class Wallet {
 
         seed = new DeterministicSeed(mnemonic, null, password, 0);
         masterKey = HDKeyDerivation.createMasterPrivateKey(seed.getSeedBytes());
-        accountsByType = new LinkedHashMap<CoinType, ArrayList<WalletAccount>>();
-        accounts = new LinkedHashMap<String, WalletAccount>();
+        accountsByType = new LinkedHashMap<>();
+        accounts = new LinkedHashMap<>();
     }
 
     public Wallet(DeterministicKey masterKey, @Nullable DeterministicSeed seed) {
         this.seed = seed;
         this.masterKey = masterKey;
-        accountsByType = new LinkedHashMap<CoinType, ArrayList<WalletAccount>>();
-        accounts = new LinkedHashMap<String, WalletAccount>();
+        accountsByType = new LinkedHashMap<>();
+        accounts = new LinkedHashMap<>();
     }
 
     public static List<String> generateMnemonic(int entropyBitsSize) {

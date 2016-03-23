@@ -12,7 +12,7 @@ import java.lang.ref.WeakReference;
 public abstract class WeakHandler<T> extends Handler {
     private final WeakReference<T> reference;
     public WeakHandler(T ref) {
-        this.reference = new WeakReference<T>(ref);
+        this.reference = new WeakReference<>(ref);
     }
 
     @Override

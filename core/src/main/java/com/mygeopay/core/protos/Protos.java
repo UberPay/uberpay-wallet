@@ -1321,7 +1321,7 @@ public final class Protos {
             }
             case 16: {
               if (!((mutable_bitField0_ & 0x00000002) == 0x00000002)) {
-                path_ = new java.util.ArrayList<java.lang.Integer>();
+                path_ = new java.util.ArrayList<>();
                 mutable_bitField0_ |= 0x00000002;
               }
               path_.add(input.readUInt32());
@@ -1331,7 +1331,7 @@ public final class Protos {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000002) == 0x00000002) && input.getBytesUntilLimit() > 0) {
-                path_ = new java.util.ArrayList<java.lang.Integer>();
+                path_ = new java.util.ArrayList<>();
                 mutable_bitField0_ |= 0x00000002;
               }
               while (input.getBytesUntilLimit() > 0) {
@@ -1916,7 +1916,7 @@ public final class Protos {
       private java.util.List<java.lang.Integer> path_ = java.util.Collections.emptyList();
       private void ensurePathIsMutable() {
         if (!((bitField0_ & 0x00000002) == 0x00000002)) {
-          path_ = new java.util.ArrayList<java.lang.Integer>(path_);
+          path_ = new java.util.ArrayList<>(path_);
           bitField0_ |= 0x00000002;
          }
       }
@@ -3376,8 +3376,7 @@ public final class Protos {
          com.mygeopay.core.protos.Protos.EncryptedData,com.mygeopay.core.protos.Protos.EncryptedData.Builder,com.mygeopay.core.protos.Protos.EncryptedDataOrBuilder>
           getEncryptedDataFieldBuilder() {
         if (encryptedDataBuilder_ == null) {
-          encryptedDataBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-             com.mygeopay.core.protos.Protos.EncryptedData,com.mygeopay.core.protos.Protos.EncryptedData.Builder,com.mygeopay.core.protos.Protos.EncryptedDataOrBuilder>(
+          encryptedDataBuilder_ = new com.google.protobuf.SingleFieldBuilder<>(
                   getEncryptedData(),
                   getParentForChildren(),
                   isClean());
@@ -3647,8 +3646,7 @@ public final class Protos {
          com.mygeopay.core.protos.Protos.DeterministicKey,com.mygeopay.core.protos.Protos.DeterministicKey.Builder,com.mygeopay.core.protos.Protos.DeterministicKeyOrBuilder>
           getDeterministicKeyFieldBuilder() {
         if (deterministicKeyBuilder_ == null) {
-          deterministicKeyBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-             com.mygeopay.core.protos.Protos.DeterministicKey,com.mygeopay.core.protos.Protos.DeterministicKey.Builder,com.mygeopay.core.protos.Protos.DeterministicKeyOrBuilder>(
+          deterministicKeyBuilder_ = new com.google.protobuf.SingleFieldBuilder<>(
                   getDeterministicKey(),
                   getParentForChildren(),
                   isClean());
@@ -5514,7 +5512,7 @@ public final class Protos {
             }
             case 42: {
               if (!((mutable_bitField0_ & 0x00000010) == 0x00000010)) {
-                broadcastBy_ = new java.util.ArrayList<com.mygeopay.core.protos.Protos.PeerAddress>();
+                broadcastBy_ = new java.util.ArrayList<>();
                 mutable_bitField0_ |= 0x00000010;
               }
               broadcastBy_.add(input.readMessage(com.mygeopay.core.protos.Protos.PeerAddress.PARSER, extensionRegistry));
@@ -6562,7 +6560,7 @@ public final class Protos {
         java.util.Collections.emptyList();
       private void ensureBroadcastByIsMutable() {
         if (!((bitField0_ & 0x00000010) == 0x00000010)) {
-          broadcastBy_ = new java.util.ArrayList<com.mygeopay.core.protos.Protos.PeerAddress>(broadcastBy_);
+          broadcastBy_ = new java.util.ArrayList<>(broadcastBy_);
           bitField0_ |= 0x00000010;
          }
       }
@@ -6787,8 +6785,7 @@ public final class Protos {
          com.mygeopay.core.protos.Protos.PeerAddress,com.mygeopay.core.protos.Protos.PeerAddress.Builder,com.mygeopay.core.protos.Protos.PeerAddressOrBuilder>
           getBroadcastByFieldBuilder() {
         if (broadcastByBuilder_ == null) {
-          broadcastByBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
-             com.mygeopay.core.protos.Protos.PeerAddress,com.mygeopay.core.protos.Protos.PeerAddress.Builder,com.mygeopay.core.protos.Protos.PeerAddressOrBuilder>(
+          broadcastByBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<>(
                   broadcastBy_,
                   ((bitField0_ & 0x00000010) == 0x00000010),
                   getParentForChildren(),
@@ -7156,7 +7153,7 @@ public final class Protos {
             }
             case 50: {
               if (!((mutable_bitField0_ & 0x00000040) == 0x00000040)) {
-                transactionInput_ = new java.util.ArrayList<com.mygeopay.core.protos.Protos.TransactionInput>();
+                transactionInput_ = new java.util.ArrayList<>();
                 mutable_bitField0_ |= 0x00000040;
               }
               transactionInput_.add(input.readMessage(com.mygeopay.core.protos.Protos.TransactionInput.PARSER, extensionRegistry));
@@ -7164,7 +7161,7 @@ public final class Protos {
             }
             case 58: {
               if (!((mutable_bitField0_ & 0x00000080) == 0x00000080)) {
-                transactionOutput_ = new java.util.ArrayList<com.mygeopay.core.protos.Protos.TransactionOutput>();
+                transactionOutput_ = new java.util.ArrayList<>();
                 mutable_bitField0_ |= 0x00000080;
               }
               transactionOutput_.add(input.readMessage(com.mygeopay.core.protos.Protos.TransactionOutput.PARSER, extensionRegistry));
@@ -7172,7 +7169,7 @@ public final class Protos {
             }
             case 66: {
               if (!((mutable_bitField0_ & 0x00000100) == 0x00000100)) {
-                blockHash_ = new java.util.ArrayList<com.google.protobuf.ByteString>();
+                blockHash_ = new java.util.ArrayList<>();
                 mutable_bitField0_ |= 0x00000100;
               }
               blockHash_.add(input.readBytes());
@@ -7180,7 +7177,7 @@ public final class Protos {
             }
             case 72: {
               if (!((mutable_bitField0_ & 0x00000200) == 0x00000200)) {
-                blockRelativityOffsets_ = new java.util.ArrayList<java.lang.Integer>();
+                blockRelativityOffsets_ = new java.util.ArrayList<>();
                 mutable_bitField0_ |= 0x00000200;
               }
               blockRelativityOffsets_.add(input.readInt32());
@@ -7190,7 +7187,7 @@ public final class Protos {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000200) == 0x00000200) && input.getBytesUntilLimit() > 0) {
-                blockRelativityOffsets_ = new java.util.ArrayList<java.lang.Integer>();
+                blockRelativityOffsets_ = new java.util.ArrayList<>();
                 mutable_bitField0_ |= 0x00000200;
               }
               while (input.getBytesUntilLimit() > 0) {
@@ -8593,7 +8590,7 @@ public final class Protos {
         java.util.Collections.emptyList();
       private void ensureTransactionInputIsMutable() {
         if (!((bitField0_ & 0x00000040) == 0x00000040)) {
-          transactionInput_ = new java.util.ArrayList<com.mygeopay.core.protos.Protos.TransactionInput>(transactionInput_);
+          transactionInput_ = new java.util.ArrayList<>(transactionInput_);
           bitField0_ |= 0x00000040;
          }
       }
@@ -8818,8 +8815,7 @@ public final class Protos {
          com.mygeopay.core.protos.Protos.TransactionInput,com.mygeopay.core.protos.Protos.TransactionInput.Builder,com.mygeopay.core.protos.Protos.TransactionInputOrBuilder>
           getTransactionInputFieldBuilder() {
         if (transactionInputBuilder_ == null) {
-          transactionInputBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
-             com.mygeopay.core.protos.Protos.TransactionInput,com.mygeopay.core.protos.Protos.TransactionInput.Builder,com.mygeopay.core.protos.Protos.TransactionInputOrBuilder>(
+          transactionInputBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<>(
                   transactionInput_,
                   ((bitField0_ & 0x00000040) == 0x00000040),
                   getParentForChildren(),
@@ -8833,7 +8829,7 @@ public final class Protos {
         java.util.Collections.emptyList();
       private void ensureTransactionOutputIsMutable() {
         if (!((bitField0_ & 0x00000080) == 0x00000080)) {
-          transactionOutput_ = new java.util.ArrayList<com.mygeopay.core.protos.Protos.TransactionOutput>(transactionOutput_);
+          transactionOutput_ = new java.util.ArrayList<>(transactionOutput_);
           bitField0_ |= 0x00000080;
          }
       }
@@ -9058,8 +9054,7 @@ public final class Protos {
          com.mygeopay.core.protos.Protos.TransactionOutput,com.mygeopay.core.protos.Protos.TransactionOutput.Builder,com.mygeopay.core.protos.Protos.TransactionOutputOrBuilder>
           getTransactionOutputFieldBuilder() {
         if (transactionOutputBuilder_ == null) {
-          transactionOutputBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
-             com.mygeopay.core.protos.Protos.TransactionOutput,com.mygeopay.core.protos.Protos.TransactionOutput.Builder,com.mygeopay.core.protos.Protos.TransactionOutputOrBuilder>(
+          transactionOutputBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<>(
                   transactionOutput_,
                   ((bitField0_ & 0x00000080) == 0x00000080),
                   getParentForChildren(),
@@ -9072,7 +9067,7 @@ public final class Protos {
       private java.util.List<com.google.protobuf.ByteString> blockHash_ = java.util.Collections.emptyList();
       private void ensureBlockHashIsMutable() {
         if (!((bitField0_ & 0x00000100) == 0x00000100)) {
-          blockHash_ = new java.util.ArrayList<com.google.protobuf.ByteString>(blockHash_);
+          blockHash_ = new java.util.ArrayList<>(blockHash_);
           bitField0_ |= 0x00000100;
          }
       }
@@ -9179,7 +9174,7 @@ public final class Protos {
       private java.util.List<java.lang.Integer> blockRelativityOffsets_ = java.util.Collections.emptyList();
       private void ensureBlockRelativityOffsetsIsMutable() {
         if (!((bitField0_ & 0x00000200) == 0x00000200)) {
-          blockRelativityOffsets_ = new java.util.ArrayList<java.lang.Integer>(blockRelativityOffsets_);
+          blockRelativityOffsets_ = new java.util.ArrayList<>(blockRelativityOffsets_);
           bitField0_ |= 0x00000200;
          }
       }
@@ -9384,8 +9379,7 @@ public final class Protos {
          com.mygeopay.core.protos.Protos.TransactionConfidence,com.mygeopay.core.protos.Protos.TransactionConfidence.Builder,com.mygeopay.core.protos.Protos.TransactionConfidenceOrBuilder>
           getConfidenceFieldBuilder() {
         if (confidenceBuilder_ == null) {
-          confidenceBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-             com.mygeopay.core.protos.Protos.TransactionConfidence,com.mygeopay.core.protos.Protos.TransactionConfidence.Builder,com.mygeopay.core.protos.Protos.TransactionConfidenceOrBuilder>(
+          confidenceBuilder_ = new com.google.protobuf.SingleFieldBuilder<>(
                   getConfidence(),
                   getParentForChildren(),
                   isClean());
@@ -10437,7 +10431,7 @@ public final class Protos {
             }
             case 26: {
               if (!((mutable_bitField0_ & 0x00000004) == 0x00000004)) {
-                key_ = new java.util.ArrayList<com.mygeopay.core.protos.Protos.Key>();
+                key_ = new java.util.ArrayList<>();
                 mutable_bitField0_ |= 0x00000004;
               }
               key_.add(input.readMessage(com.mygeopay.core.protos.Protos.Key.PARSER, extensionRegistry));
@@ -10460,7 +10454,7 @@ public final class Protos {
             }
             case 58: {
               if (!((mutable_bitField0_ & 0x00000040) == 0x00000040)) {
-                transaction_ = new java.util.ArrayList<com.mygeopay.core.protos.Protos.Transaction>();
+                transaction_ = new java.util.ArrayList<>();
                 mutable_bitField0_ |= 0x00000040;
               }
               transaction_.add(input.readMessage(com.mygeopay.core.protos.Protos.Transaction.PARSER, extensionRegistry));
@@ -10468,7 +10462,7 @@ public final class Protos {
             }
             case 66: {
               if (!((mutable_bitField0_ & 0x00000080) == 0x00000080)) {
-                addressStatus_ = new java.util.ArrayList<com.mygeopay.core.protos.Protos.AddressStatus>();
+                addressStatus_ = new java.util.ArrayList<>();
                 mutable_bitField0_ |= 0x00000080;
               }
               addressStatus_.add(input.readMessage(com.mygeopay.core.protos.Protos.AddressStatus.PARSER, extensionRegistry));
@@ -11567,7 +11561,7 @@ public final class Protos {
         java.util.Collections.emptyList();
       private void ensureKeyIsMutable() {
         if (!((bitField0_ & 0x00000004) == 0x00000004)) {
-          key_ = new java.util.ArrayList<com.mygeopay.core.protos.Protos.Key>(key_);
+          key_ = new java.util.ArrayList<>(key_);
           bitField0_ |= 0x00000004;
          }
       }
@@ -11792,8 +11786,7 @@ public final class Protos {
          com.mygeopay.core.protos.Protos.Key,com.mygeopay.core.protos.Protos.Key.Builder,com.mygeopay.core.protos.Protos.KeyOrBuilder>
           getKeyFieldBuilder() {
         if (keyBuilder_ == null) {
-          keyBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
-             com.mygeopay.core.protos.Protos.Key,com.mygeopay.core.protos.Protos.Key.Builder,com.mygeopay.core.protos.Protos.KeyOrBuilder>(
+          keyBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<>(
                   key_,
                   ((bitField0_ & 0x00000004) == 0x00000004),
                   getParentForChildren(),
@@ -11938,7 +11931,7 @@ public final class Protos {
         java.util.Collections.emptyList();
       private void ensureTransactionIsMutable() {
         if (!((bitField0_ & 0x00000040) == 0x00000040)) {
-          transaction_ = new java.util.ArrayList<com.mygeopay.core.protos.Protos.Transaction>(transaction_);
+          transaction_ = new java.util.ArrayList<>(transaction_);
           bitField0_ |= 0x00000040;
          }
       }
@@ -12163,8 +12156,7 @@ public final class Protos {
          com.mygeopay.core.protos.Protos.Transaction,com.mygeopay.core.protos.Protos.Transaction.Builder,com.mygeopay.core.protos.Protos.TransactionOrBuilder>
           getTransactionFieldBuilder() {
         if (transactionBuilder_ == null) {
-          transactionBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
-             com.mygeopay.core.protos.Protos.Transaction,com.mygeopay.core.protos.Protos.Transaction.Builder,com.mygeopay.core.protos.Protos.TransactionOrBuilder>(
+          transactionBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<>(
                   transaction_,
                   ((bitField0_ & 0x00000040) == 0x00000040),
                   getParentForChildren(),
@@ -12178,7 +12170,7 @@ public final class Protos {
         java.util.Collections.emptyList();
       private void ensureAddressStatusIsMutable() {
         if (!((bitField0_ & 0x00000080) == 0x00000080)) {
-          addressStatus_ = new java.util.ArrayList<com.mygeopay.core.protos.Protos.AddressStatus>(addressStatus_);
+          addressStatus_ = new java.util.ArrayList<>(addressStatus_);
           bitField0_ |= 0x00000080;
          }
       }
@@ -12403,8 +12395,7 @@ public final class Protos {
          com.mygeopay.core.protos.Protos.AddressStatus,com.mygeopay.core.protos.Protos.AddressStatus.Builder,com.mygeopay.core.protos.Protos.AddressStatusOrBuilder>
           getAddressStatusFieldBuilder() {
         if (addressStatusBuilder_ == null) {
-          addressStatusBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
-             com.mygeopay.core.protos.Protos.AddressStatus,com.mygeopay.core.protos.Protos.AddressStatus.Builder,com.mygeopay.core.protos.Protos.AddressStatusOrBuilder>(
+          addressStatusBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<>(
                   addressStatus_,
                   ((bitField0_ & 0x00000080) == 0x00000080),
                   getParentForChildren(),
@@ -13504,7 +13495,7 @@ public final class Protos {
             }
             case 50: {
               if (!((mutable_bitField0_ & 0x00000040) == 0x00000040)) {
-                pockets_ = new java.util.ArrayList<com.mygeopay.core.protos.Protos.WalletPocket>();
+                pockets_ = new java.util.ArrayList<>();
                 mutable_bitField0_ |= 0x00000040;
               }
               pockets_.add(input.readMessage(com.mygeopay.core.protos.Protos.WalletPocket.PARSER, extensionRegistry));
@@ -14439,8 +14430,7 @@ public final class Protos {
          com.mygeopay.core.protos.Protos.Key,com.mygeopay.core.protos.Protos.Key.Builder,com.mygeopay.core.protos.Protos.KeyOrBuilder>
           getSeedFieldBuilder() {
         if (seedBuilder_ == null) {
-          seedBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-             com.mygeopay.core.protos.Protos.Key,com.mygeopay.core.protos.Protos.Key.Builder,com.mygeopay.core.protos.Protos.KeyOrBuilder>(
+          seedBuilder_ = new com.google.protobuf.SingleFieldBuilder<>(
                   getSeed(),
                   getParentForChildren(),
                   isClean());
@@ -14587,8 +14577,7 @@ public final class Protos {
          com.mygeopay.core.protos.Protos.Key,com.mygeopay.core.protos.Protos.Key.Builder,com.mygeopay.core.protos.Protos.KeyOrBuilder>
           getMasterKeyFieldBuilder() {
         if (masterKeyBuilder_ == null) {
-          masterKeyBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-             com.mygeopay.core.protos.Protos.Key,com.mygeopay.core.protos.Protos.Key.Builder,com.mygeopay.core.protos.Protos.KeyOrBuilder>(
+          masterKeyBuilder_ = new com.google.protobuf.SingleFieldBuilder<>(
                   getMasterKey(),
                   getParentForChildren(),
                   isClean());
@@ -14738,8 +14727,7 @@ public final class Protos {
          com.mygeopay.core.protos.Protos.ScryptParameters,com.mygeopay.core.protos.Protos.ScryptParameters.Builder,com.mygeopay.core.protos.Protos.ScryptParametersOrBuilder>
           getEncryptionParametersFieldBuilder() {
         if (encryptionParametersBuilder_ == null) {
-          encryptionParametersBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-             com.mygeopay.core.protos.Protos.ScryptParameters,com.mygeopay.core.protos.Protos.ScryptParameters.Builder,com.mygeopay.core.protos.Protos.ScryptParametersOrBuilder>(
+          encryptionParametersBuilder_ = new com.google.protobuf.SingleFieldBuilder<>(
                   getEncryptionParameters(),
                   getParentForChildren(),
                   isClean());
@@ -14752,7 +14740,7 @@ public final class Protos {
         java.util.Collections.emptyList();
       private void ensurePocketsIsMutable() {
         if (!((bitField0_ & 0x00000040) == 0x00000040)) {
-          pockets_ = new java.util.ArrayList<com.mygeopay.core.protos.Protos.WalletPocket>(pockets_);
+          pockets_ = new java.util.ArrayList<>(pockets_);
           bitField0_ |= 0x00000040;
          }
       }
@@ -14977,8 +14965,7 @@ public final class Protos {
          com.mygeopay.core.protos.Protos.WalletPocket,com.mygeopay.core.protos.Protos.WalletPocket.Builder,com.mygeopay.core.protos.Protos.WalletPocketOrBuilder>
           getPocketsFieldBuilder() {
         if (pocketsBuilder_ == null) {
-          pocketsBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
-             com.mygeopay.core.protos.Protos.WalletPocket,com.mygeopay.core.protos.Protos.WalletPocket.Builder,com.mygeopay.core.protos.Protos.WalletPocketOrBuilder>(
+          pocketsBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<>(
                   pockets_,
                   ((bitField0_ & 0x00000040) == 0x00000040),
                   getParentForChildren(),
