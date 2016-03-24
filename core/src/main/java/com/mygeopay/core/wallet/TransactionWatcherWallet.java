@@ -978,7 +978,7 @@ abstract public class TransactionWatcherWallet implements WalletAccount {
         try {
             if (blockchainConnection != null) {
                 List<Address> addressesToWatch = getAddressesToWatch();
-                if (addressesToWatch.size() > 0) {
+                if (!addressesToWatch.isEmpty()) {
                     addressesPendingSubscription.addAll(addressesToWatch);
                     blockchainConnection.subscribeToAddresses(addressesToWatch, this);
                 }

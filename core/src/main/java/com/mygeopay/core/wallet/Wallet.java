@@ -257,7 +257,7 @@ final public class Wallet {
 
         // TODO, currently we support a single account so return the existing account
         List<WalletAccount> currentAccount = getAccounts(coinType);
-        if (currentAccount.size() > 0) {
+        if (!currentAccount.isEmpty()) {
             return (WalletPocketHD) currentAccount.get(0);
         }
         // TODO ///////////////

@@ -289,12 +289,12 @@ public class TransactionsListAdapter extends BaseAdapter {
             // we send payment to those addresses
             List<Address> sentTo = WalletUtils.getSendToAddress(tx, walletPocket);
             // For now show only the first address
-            address = sentTo.size() == 0 ? null : sentTo.get(0);
+            address = sentTo.isEmpty() ? null : sentTo.get(0);
         } else {
             // received with those addresses
             List<Address> receivedWith = WalletUtils.getReceivedWithAddress(tx, walletPocket);
             // Should be one
-            address = receivedWith.size() == 0 ? null : receivedWith.get(0);
+            address = receivedWith.isEmpty() ? null : receivedWith.get(0);
         }
 
         if (address != null) {

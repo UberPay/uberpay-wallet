@@ -79,7 +79,7 @@ public class Base43
 
     public static byte[] decode(@Nonnull final String input) throws IllegalArgumentException
     {
-        if (input.length() == 0)
+        if (input.isEmpty())
             return new byte[0];
 
         final byte[] input43 = new byte[input.length()];

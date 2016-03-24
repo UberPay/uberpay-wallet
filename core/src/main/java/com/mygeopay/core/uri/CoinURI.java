@@ -268,7 +268,7 @@ public class CoinURI {
                 } else {
                     // Known fields and unknown parameters that are optional.
                     try {
-                        if (valueToken.length() > 0)
+                        if (!valueToken.isEmpty())
                             putWithValidation(nameToken, URLDecoder.decode(valueToken, "UTF-8"));
                     } catch (UnsupportedEncodingException e) {
                         // Unreachable.

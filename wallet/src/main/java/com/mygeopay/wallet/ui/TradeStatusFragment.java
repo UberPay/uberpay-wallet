@@ -381,7 +381,7 @@ public class TradeStatusFragment extends Fragment {
         final CoinType withdrawType = (CoinType) withdrawAddress.getParameters();
         final List<WalletAccount> accounts = application.getAccounts(withdrawAddress);
 
-        if (accounts.size() > 0 || Constants.COINS_BLOCK_EXPLORERS.containsKey(withdrawType)) {
+        if (!accounts.isEmpty() || Constants.COINS_BLOCK_EXPLORERS.containsKey(withdrawType)) {
             setVisible(viewTransaction);
         } else {
             setGone(viewTransaction);
