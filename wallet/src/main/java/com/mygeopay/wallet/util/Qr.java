@@ -22,6 +22,7 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Hashtable;
+import java.util.Map;
 import java.util.zip.GZIPInputStream;
 import java.util.zip.GZIPOutputStream;
 
@@ -64,7 +65,7 @@ public class Qr
             // Make qr-code size multiples of baseSize
             int size = (int) (Math.max(Math.floor(maxSize / baseSize), 1) * baseSize);
 
-            final Hashtable<EncodeHintType, Object> hints = new Hashtable<EncodeHintType, Object>();
+            final Map<EncodeHintType, Object> hints = new Hashtable<EncodeHintType, Object>();
             hints.put(EncodeHintType.MARGIN, 0);
             hints.put(EncodeHintType.ERROR_CORRECTION, ERROR_CORRECTION_LV);
             final BitMatrix result = QR_CODE_WRITER.encode(content, BarcodeFormat.QR_CODE, size, size, hints);

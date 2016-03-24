@@ -405,7 +405,7 @@ public class TradeSelectFragment extends Fragment {
 
         // If we have only one source type, remove it as a destination
         if (sourceTypes.size() == 1) {
-            ArrayList<CoinType> typesWithoutSourceType = Lists.newArrayList(supportedTypes);
+            List<CoinType> typesWithoutSourceType = Lists.newArrayList(supportedTypes);
             typesWithoutSourceType.remove(sourceType);
             destinationAdapter.update(allAccounts, typesWithoutSourceType, true);
         } else {

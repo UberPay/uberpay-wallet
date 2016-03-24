@@ -503,8 +503,8 @@ public class WalletPocketHD extends AbstractWallet {
     public List<Address> getIssuedReceiveAddresses() {
         lock.lock();
         try {
-            ArrayList<DeterministicKey> issuedKeys = keys.getIssuedExternalKeys();
-            ArrayList<Address> receiveAddresses = new ArrayList<Address>();
+            List<DeterministicKey> issuedKeys = keys.getIssuedExternalKeys();
+            List<Address> receiveAddresses = new ArrayList<Address>();
 
             Collections.sort(issuedKeys, HD_KEY_COMPARATOR);
 
@@ -523,7 +523,7 @@ public class WalletPocketHD extends AbstractWallet {
     public Set<Address> getUsedAddresses() {
         lock.lock();
         try {
-            HashSet<Address> usedAddresses = new HashSet<Address>();
+            Set<Address> usedAddresses = new HashSet<Address>();
 
             for (Map.Entry<Address, String> entry : addressesStatus.entrySet()) {
                 if (entry.getValue() != null) {

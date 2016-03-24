@@ -597,7 +597,7 @@ abstract public class TransactionWatcherWallet implements WalletAccount {
     public List<AddressStatus> getAllAddressStatus() {
         lock.lock();
         try {
-            ArrayList<AddressStatus> statuses = new ArrayList<AddressStatus>(addressesStatus.size());
+            List<AddressStatus> statuses = new ArrayList<AddressStatus>(addressesStatus.size());
             for (Map.Entry<Address, String> status : addressesStatus.entrySet()) {
                 statuses.add(new AddressStatus(status.getKey(), status.getValue()));
             }
