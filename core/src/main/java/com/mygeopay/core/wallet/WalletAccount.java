@@ -73,7 +73,7 @@ public interface WalletAccount extends TransactionBag, KeyBag, TransactionEventL
     void encrypt(KeyCrypter keyCrypter, KeyParameter aesKey);
     void decrypt(KeyParameter aesKey);
 
-    boolean equals(WalletAccount otherAccount);
+    boolean isEquals(WalletAccount otherAccount);
 
     void addEventListener(WalletAccountEventListener listener);
     void addEventListener(WalletAccountEventListener listener, Executor executor);

@@ -31,7 +31,7 @@ public interface ValueType extends Serializable {
     public MonetaryFormat getMonetaryFormat();
     public MonetaryFormat getPlainFormat();
 
-    public boolean equals(ValueType obj);
+    public boolean isEquals(ValueType obj);
 
     Value value(String string);
 }

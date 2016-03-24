@@ -227,7 +227,7 @@ abstract public class CoinType extends NetworkParameters implements ValueType, S
     }
 
     @Override
-    public boolean equals(ValueType obj) {
+    public boolean isEquals(ValueType obj) {
         return super.equals(obj);
     }
 }
