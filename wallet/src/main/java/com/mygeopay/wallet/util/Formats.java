@@ -33,9 +33,9 @@ public final class Formats
             + "([\\+\\-" + Constants.CURRENCY_PLUS_SIGN + Constants.CURRENCY_MINUS_SIGN + "]?+(?:\\d*+\\.\\d{0,2}+|\\d++))" // significant
             + "(\\d++)?"); // insignificant
 
-    public static int PATTERN_GROUP_PREFIX = 1; // optional
-    public static int PATTERN_GROUP_SIGNIFICANT = 2; // mandatory
-    public static int PATTERN_GROUP_INSIGNIFICANT = 3; // optional
+    public static final int PATTERN_GROUP_PREFIX = 1; // optional
+    public static final int PATTERN_GROUP_SIGNIFICANT = 2; // mandatory
+    public static final int PATTERN_GROUP_INSIGNIFICANT = 3; // optional
 
     private static final Pattern PATTERN_OUTER_HTML_PARAGRAPH = Pattern.compile("<p[^>]*>(.*)</p>\n?", Pattern.CASE_INSENSITIVE | Pattern.DOTALL);
 

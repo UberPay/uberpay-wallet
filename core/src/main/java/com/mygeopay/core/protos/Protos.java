@@ -129,7 +129,7 @@ public final class Protos {
              com.mygeopay.core.protos.Protos.PeerAddress.class,com.mygeopay.core.protos.Protos.PeerAddress.Builder.class);
     }
 
-    public static com.google.protobuf.Parser<PeerAddress> PARSER =
+    public static final com.google.protobuf.Parser<PeerAddress> PARSER =
         new com.google.protobuf.AbstractParser<PeerAddress>() {
       public PeerAddress parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
@@ -710,7 +710,7 @@ public final class Protos {
              com.mygeopay.core.protos.Protos.EncryptedData.class,com.mygeopay.core.protos.Protos.EncryptedData.Builder.class);
     }
 
-    public static com.google.protobuf.Parser<EncryptedData> PARSER =
+    public static final com.google.protobuf.Parser<EncryptedData> PARSER =
         new com.google.protobuf.AbstractParser<EncryptedData>() {
       public EncryptedData parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
@@ -1380,7 +1380,7 @@ public final class Protos {
              com.mygeopay.core.protos.Protos.DeterministicKey.class,com.mygeopay.core.protos.Protos.DeterministicKey.Builder.class);
     }
 
-    public static com.google.protobuf.Parser<DeterministicKey> PARSER =
+    public static final com.google.protobuf.Parser<DeterministicKey> PARSER =
         new com.google.protobuf.AbstractParser<DeterministicKey>() {
       public DeterministicKey parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
@@ -2431,7 +2431,7 @@ public final class Protos {
              com.mygeopay.core.protos.Protos.Key.class,com.mygeopay.core.protos.Protos.Key.Builder.class);
     }
 
-    public static com.google.protobuf.Parser<Key> PARSER =
+    public static final com.google.protobuf.Parser<Key> PARSER =
         new com.google.protobuf.AbstractParser<Key>() {
       public Key parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
@@ -2549,7 +2549,7 @@ public final class Protos {
           internalGetValueMap() {
         return internalValueMap;
       }
-      private static com.google.protobuf.Internal.EnumLiteMap<Type>
+      private static final com.google.protobuf.Internal.EnumLiteMap<Type>
           internalValueMap =
             new com.google.protobuf.Internal.EnumLiteMap<Type>() {
               public Type findValueByNumber(int number) {
@@ -3847,7 +3847,7 @@ public final class Protos {
              com.mygeopay.core.protos.Protos.TransactionInput.class,com.mygeopay.core.protos.Protos.TransactionInput.Builder.class);
     }
 
-    public static com.google.protobuf.Parser<TransactionInput> PARSER =
+    public static final com.google.protobuf.Parser<TransactionInput> PARSER =
         new com.google.protobuf.AbstractParser<TransactionInput>() {
       public TransactionInput parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
@@ -4715,7 +4715,7 @@ public final class Protos {
              com.mygeopay.core.protos.Protos.TransactionOutput.class,com.mygeopay.core.protos.Protos.TransactionOutput.Builder.class);
     }
 
-    public static com.google.protobuf.Parser<TransactionOutput> PARSER =
+    public static final com.google.protobuf.Parser<TransactionOutput> PARSER =
         new com.google.protobuf.AbstractParser<TransactionOutput>() {
       public TransactionOutput parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
@@ -5546,7 +5546,7 @@ public final class Protos {
              com.mygeopay.core.protos.Protos.TransactionConfidence.class,com.mygeopay.core.protos.Protos.TransactionConfidence.Builder.class);
     }
 
-    public static com.google.protobuf.Parser<TransactionConfidence> PARSER =
+    public static final com.google.protobuf.Parser<TransactionConfidence> PARSER =
         new com.google.protobuf.AbstractParser<TransactionConfidence>() {
       public TransactionConfidence parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
@@ -5642,7 +5642,7 @@ public final class Protos {
           internalGetValueMap() {
         return internalValueMap;
       }
-      private static com.google.protobuf.Internal.EnumLiteMap<Type>
+      private static final com.google.protobuf.Internal.EnumLiteMap<Type>
           internalValueMap =
             new com.google.protobuf.Internal.EnumLiteMap<Type>() {
               public Type findValueByNumber(int number) {
@@ -5778,7 +5778,7 @@ public final class Protos {
           internalGetValueMap() {
         return internalValueMap;
       }
-      private static com.google.protobuf.Internal.EnumLiteMap<Source>
+      private static final com.google.protobuf.Internal.EnumLiteMap<Source>
           internalValueMap =
             new com.google.protobuf.Internal.EnumLiteMap<Source>() {
               public Source findValueByNumber(int number) {
@@ -7246,7 +7246,7 @@ public final class Protos {
              com.mygeopay.core.protos.Protos.Transaction.class,com.mygeopay.core.protos.Protos.Transaction.Builder.class);
     }
 
-    public static com.google.protobuf.Parser<Transaction> PARSER =
+    public static final com.google.protobuf.Parser<Transaction> PARSER =
         new com.google.protobuf.AbstractParser<Transaction>() {
       public Transaction parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
@@ -7361,7 +7361,7 @@ public final class Protos {
           internalGetValueMap() {
         return internalValueMap;
       }
-      private static com.google.protobuf.Internal.EnumLiteMap<Pool>
+      private static final com.google.protobuf.Internal.EnumLiteMap<Pool>
           internalValueMap =
             new com.google.protobuf.Internal.EnumLiteMap<Pool>() {
               public Pool findValueByNumber(int number) {
@@ -9566,7 +9566,7 @@ public final class Protos {
              com.mygeopay.core.protos.Protos.AddressStatus.class,com.mygeopay.core.protos.Protos.AddressStatus.Builder.class);
     }
 
-    public static com.google.protobuf.Parser<AddressStatus> PARSER =
+    public static final com.google.protobuf.Parser<AddressStatus> PARSER =
         new com.google.protobuf.AbstractParser<AddressStatus>() {
       public AddressStatus parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
@@ -10498,7 +10498,7 @@ public final class Protos {
              com.mygeopay.core.protos.Protos.WalletPocket.class,com.mygeopay.core.protos.Protos.WalletPocket.Builder.class);
     }
 
-    public static com.google.protobuf.Parser<WalletPocket> PARSER =
+    public static final com.google.protobuf.Parser<WalletPocket> PARSER =
         new com.google.protobuf.AbstractParser<WalletPocket>() {
       public WalletPocket parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
@@ -12661,7 +12661,7 @@ public final class Protos {
              com.mygeopay.core.protos.Protos.ScryptParameters.class,com.mygeopay.core.protos.Protos.ScryptParameters.Builder.class);
     }
 
-    public static com.google.protobuf.Parser<ScryptParameters> PARSER =
+    public static final com.google.protobuf.Parser<ScryptParameters> PARSER =
         new com.google.protobuf.AbstractParser<ScryptParameters>() {
       public ScryptParameters parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
@@ -13526,7 +13526,7 @@ public final class Protos {
              com.mygeopay.core.protos.Protos.Wallet.class,com.mygeopay.core.protos.Protos.Wallet.Builder.class);
     }
 
-    public static com.google.protobuf.Parser<Wallet> PARSER =
+    public static final com.google.protobuf.Parser<Wallet> PARSER =
         new com.google.protobuf.AbstractParser<Wallet>() {
       public Wallet parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
@@ -13621,7 +13621,7 @@ public final class Protos {
           internalGetValueMap() {
         return internalValueMap;
       }
-      private static com.google.protobuf.Internal.EnumLiteMap<EncryptionType>
+      private static final com.google.protobuf.Internal.EnumLiteMap<EncryptionType>
           internalValueMap =
             new com.google.protobuf.Internal.EnumLiteMap<EncryptionType>() {
               public EncryptionType findValueByNumber(int number) {
@@ -14981,63 +14981,63 @@ public final class Protos {
 
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_com_coinomi_core_protos_PeerAddress_descriptor;
-  private static
-    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+  private static final
+  com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_com_coinomi_core_protos_PeerAddress_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_com_coinomi_core_protos_EncryptedData_descriptor;
-  private static
-    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+  private static final
+  com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_com_coinomi_core_protos_EncryptedData_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_com_coinomi_core_protos_DeterministicKey_descriptor;
-  private static
-    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+  private static final
+  com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_com_coinomi_core_protos_DeterministicKey_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_com_coinomi_core_protos_Key_descriptor;
-  private static
-    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+  private static final
+  com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_com_coinomi_core_protos_Key_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_com_coinomi_core_protos_TransactionInput_descriptor;
-  private static
-    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+  private static final
+  com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_com_coinomi_core_protos_TransactionInput_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_com_coinomi_core_protos_TransactionOutput_descriptor;
-  private static
-    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+  private static final
+  com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_com_coinomi_core_protos_TransactionOutput_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_com_coinomi_core_protos_TransactionConfidence_descriptor;
-  private static
-    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+  private static final
+  com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_com_coinomi_core_protos_TransactionConfidence_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_com_coinomi_core_protos_Transaction_descriptor;
-  private static
-    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+  private static final
+  com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_com_coinomi_core_protos_Transaction_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_com_coinomi_core_protos_AddressStatus_descriptor;
-  private static
-    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+  private static final
+  com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_com_coinomi_core_protos_AddressStatus_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_com_coinomi_core_protos_WalletPocket_descriptor;
-  private static
-    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+  private static final
+  com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_com_coinomi_core_protos_WalletPocket_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_com_coinomi_core_protos_ScryptParameters_descriptor;
-  private static
-    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+  private static final
+  com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_com_coinomi_core_protos_ScryptParameters_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_com_coinomi_core_protos_Wallet_descriptor;
-  private static
-    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+  private static final
+  com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_com_coinomi_core_protos_Wallet_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
