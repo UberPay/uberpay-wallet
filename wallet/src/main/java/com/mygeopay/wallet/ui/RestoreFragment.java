@@ -443,11 +443,9 @@ public class RestoreFragment extends Fragment {
 
     @Override
     public void onActivityResult(final int requestCode, final int resultCode, final Intent intent) {
-        if (requestCode == REQUEST_CODE_SCAN) {
-            if (resultCode == Activity.RESULT_OK) {
-                mnemonicTextView.setText(intent.getStringExtra(ScanActivity.INTENT_EXTRA_RESULT));
-                verifyMnemonic();
-            }
+        if (requestCode == REQUEST_CODE_SCAN && resultCode == Activity.RESULT_OK) {
+            mnemonicTextView.setText(intent.getStringExtra(ScanActivity.INTENT_EXTRA_RESULT));
+            verifyMnemonic();
         }
     }
 

@@ -102,10 +102,8 @@ public class AmountEditView extends RelativeLayout {
         Value amount = null;
 
         try {
-            if (!str.isEmpty()) {
-                if (type != null) {
-                    amount = inputFormat.parse(type, str);
-                }
+            if (!str.isEmpty() && type != null) {
+                amount = inputFormat.parse(type, str);
             }
         } catch (final Exception x) { /* ignored */ }
 

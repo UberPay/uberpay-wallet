@@ -2787,17 +2787,13 @@ public final class Protos {
         memoizedIsInitialized = 0;
         return false;
       }
-      if (hasEncryptedData()) {
-        if (!getEncryptedData().isInitialized()) {
-          memoizedIsInitialized = 0;
-          return false;
-        }
+      if (hasEncryptedData() && !getEncryptedData().isInitialized()) {
+        memoizedIsInitialized = 0;
+        return false;
       }
-      if (hasDeterministicKey()) {
-        if (!getDeterministicKey().isInitialized()) {
-          memoizedIsInitialized = 0;
-          return false;
-        }
+      if (hasDeterministicKey() && !getDeterministicKey().isInitialized()) {
+        memoizedIsInitialized = 0;
+        return false;
       }
       memoizedIsInitialized = 1;
       return true;
@@ -3116,11 +3112,8 @@ public final class Protos {
             return false;
           }
         }
-        if (hasDeterministicKey()) {
-          if (!getDeterministicKey().isInitialized()) {
-            
-            return false;
-          }
+        if (hasDeterministicKey() && !getDeterministicKey().isInitialized()) {
+          return false;
         }
         return true;
       }
@@ -7770,11 +7763,9 @@ public final class Protos {
           return false;
         }
       }
-      if (hasConfidence()) {
-        if (!getConfidence().isInitialized()) {
-          memoizedIsInitialized = 0;
-          return false;
-        }
+      if (hasConfidence() && !getConfidence().isInitialized()) {
+        memoizedIsInitialized = 0;
+        return false;
       }
       memoizedIsInitialized = 1;
       return true;
@@ -13863,11 +13854,9 @@ public final class Protos {
         memoizedIsInitialized = 0;
         return false;
       }
-      if (hasEncryptionParameters()) {
-        if (!getEncryptionParameters().isInitialized()) {
-          memoizedIsInitialized = 0;
-          return false;
-        }
+      if (hasEncryptionParameters() && !getEncryptionParameters().isInitialized()) {
+        memoizedIsInitialized = 0;
+        return false;
       }
       for (int i = 0; i < getPocketsCount(); i++) {
         if (!getPockets(i).isInitialized()) {
@@ -14247,11 +14236,9 @@ public final class Protos {
           
           return false;
         }
-        if (hasEncryptionParameters()) {
-          if (!getEncryptionParameters().isInitialized()) {
+        if (hasEncryptionParameters() && !getEncryptionParameters().isInitialized()) {
             
             return false;
-          }
         }
         for (int i = 0; i < getPocketsCount(); i++) {
           if (!getPockets(i).isInitialized()) {
