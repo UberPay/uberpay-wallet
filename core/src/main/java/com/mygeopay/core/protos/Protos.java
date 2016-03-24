@@ -797,10 +797,10 @@ public final class Protos {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+      if ((bitField0_ & 0x00000001) == 0x00000001) {
         output.writeBytes(1, initialisationVector_);
       }
-      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+      if ((bitField0_ & 0x00000002) == 0x00000002) {
         output.writeBytes(2, encryptedPrivateKey_);
       }
       getUnknownFields().writeTo(output);
@@ -812,11 +812,11 @@ public final class Protos {
       if (size != -1) return size;
 
       size = 0;
-      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+      if ((bitField0_ & 0x00000001) == 0x00000001) {
         size += com.google.protobuf.CodedOutputStream
           .computeBytesSize(1, initialisationVector_);
       }
-      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+      if ((bitField0_ & 0x00000002) == 0x00000002) {
         size += com.google.protobuf.CodedOutputStream
           .computeBytesSize(2, encryptedPrivateKey_);
       }
@@ -969,11 +969,11 @@ public final class Protos {
        com.mygeopay.core.protos.Protos.EncryptedData result = new com.mygeopay.core.protos.Protos.EncryptedData(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
-        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+        if ((from_bitField0_ & 0x00000001) == 0x00000001) {
           to_bitField0_ |= 0x00000001;
         }
         result.initialisationVector_ = initialisationVector_;
-        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+        if ((from_bitField0_ & 0x00000002) == 0x00000002) {
           to_bitField0_ |= 0x00000002;
         }
         result.encryptedPrivateKey_ = encryptedPrivateKey_;
@@ -1361,7 +1361,7 @@ public final class Protos {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e.getMessage()).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000002) == 0x00000002)) {
+        if ((mutable_bitField0_ & 0x00000002) == 0x00000002) {
           path_ = java.util.Collections.unmodifiableList(path_);
         }
         this.unknownFields = unknownFields.build();
@@ -1557,19 +1557,19 @@ public final class Protos {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+      if ((bitField0_ & 0x00000001) == 0x00000001) {
         output.writeBytes(1, chainCode_);
       }
       for (int i = 0; i < path_.size(); i++) {
         output.writeUInt32(2, path_.get(i));
       }
-      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+      if ((bitField0_ & 0x00000002) == 0x00000002) {
         output.writeUInt32(3, issuedSubkeys_);
       }
-      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+      if ((bitField0_ & 0x00000004) == 0x00000004) {
         output.writeUInt32(4, lookaheadSize_);
       }
-      if (((bitField0_ & 0x00000008) == 0x00000008)) {
+      if ((bitField0_ & 0x00000008) == 0x00000008) {
         output.writeBool(5, isFollowing_);
       }
       getUnknownFields().writeTo(output);
@@ -1581,7 +1581,7 @@ public final class Protos {
       if (size != -1) return size;
 
       size = 0;
-      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+      if ((bitField0_ & 0x00000001) == 0x00000001) {
         size += com.google.protobuf.CodedOutputStream
           .computeBytesSize(1, chainCode_);
       }
@@ -1594,15 +1594,15 @@ public final class Protos {
         size += dataSize;
         size += 1 * getPathList().size();
       }
-      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+      if ((bitField0_ & 0x00000002) == 0x00000002) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(3, issuedSubkeys_);
       }
-      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+      if ((bitField0_ & 0x00000004) == 0x00000004) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(4, lookaheadSize_);
       }
-      if (((bitField0_ & 0x00000008) == 0x00000008)) {
+      if ((bitField0_ & 0x00000008) == 0x00000008) {
         size += com.google.protobuf.CodedOutputStream
           .computeBoolSize(5, isFollowing_);
       }
@@ -1766,24 +1766,24 @@ public final class Protos {
        com.mygeopay.core.protos.Protos.DeterministicKey result = new com.mygeopay.core.protos.Protos.DeterministicKey(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
-        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+        if ((from_bitField0_ & 0x00000001) == 0x00000001) {
           to_bitField0_ |= 0x00000001;
         }
         result.chainCode_ = chainCode_;
-        if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        if ((bitField0_ & 0x00000002) == 0x00000002) {
           path_ = java.util.Collections.unmodifiableList(path_);
           bitField0_ = (bitField0_ & ~0x00000002);
         }
         result.path_ = path_;
-        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
+        if ((from_bitField0_ & 0x00000004) == 0x00000004) {
           to_bitField0_ |= 0x00000002;
         }
         result.issuedSubkeys_ = issuedSubkeys_;
-        if (((from_bitField0_ & 0x00000008) == 0x00000008)) {
+        if ((from_bitField0_ & 0x00000008) == 0x00000008) {
           to_bitField0_ |= 0x00000004;
         }
         result.lookaheadSize_ = lookaheadSize_;
-        if (((from_bitField0_ & 0x00000010) == 0x00000010)) {
+        if ((from_bitField0_ & 0x00000010) == 0x00000010) {
           to_bitField0_ |= 0x00000008;
         }
         result.isFollowing_ = isFollowing_;
@@ -2372,7 +2372,7 @@ public final class Protos {
             }
             case 26: {
              com.mygeopay.core.protos.Protos.EncryptedData.Builder subBuilder = null;
-              if (((bitField0_ & 0x00000004) == 0x00000004)) {
+              if ((bitField0_ & 0x00000004) == 0x00000004) {
                 subBuilder = encryptedData_.toBuilder();
               }
               encryptedData_ = input.readMessage(com.mygeopay.core.protos.Protos.EncryptedData.PARSER, extensionRegistry);
@@ -2396,7 +2396,7 @@ public final class Protos {
             }
             case 50: {
              com.mygeopay.core.protos.Protos.DeterministicKey.Builder subBuilder = null;
-              if (((bitField0_ & 0x00000020) == 0x00000020)) {
+              if ((bitField0_ & 0x00000020) == 0x00000020) {
                 subBuilder = deterministicKey_.toBuilder();
               }
               deterministicKey_ = input.readMessage(com.mygeopay.core.protos.Protos.DeterministicKey.PARSER, extensionRegistry);
@@ -2799,22 +2799,22 @@ public final class Protos {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+      if ((bitField0_ & 0x00000001) == 0x00000001) {
         output.writeEnum(1, type_.getNumber());
       }
-      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+      if ((bitField0_ & 0x00000002) == 0x00000002) {
         output.writeBytes(2, secretBytes_);
       }
-      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+      if ((bitField0_ & 0x00000004) == 0x00000004) {
         output.writeMessage(3, encryptedData_);
       }
-      if (((bitField0_ & 0x00000008) == 0x00000008)) {
+      if ((bitField0_ & 0x00000008) == 0x00000008) {
         output.writeBytes(4, publicKey_);
       }
-      if (((bitField0_ & 0x00000010) == 0x00000010)) {
+      if ((bitField0_ & 0x00000010) == 0x00000010) {
         output.writeBytes(5, getLabelBytes());
       }
-      if (((bitField0_ & 0x00000020) == 0x00000020)) {
+      if ((bitField0_ & 0x00000020) == 0x00000020) {
         output.writeMessage(6, deterministicKey_);
       }
       getUnknownFields().writeTo(output);
@@ -2826,27 +2826,27 @@ public final class Protos {
       if (size != -1) return size;
 
       size = 0;
-      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+      if ((bitField0_ & 0x00000001) == 0x00000001) {
         size += com.google.protobuf.CodedOutputStream
           .computeEnumSize(1, type_.getNumber());
       }
-      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+      if ((bitField0_ & 0x00000002) == 0x00000002) {
         size += com.google.protobuf.CodedOutputStream
           .computeBytesSize(2, secretBytes_);
       }
-      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+      if ((bitField0_ & 0x00000004) == 0x00000004) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(3, encryptedData_);
       }
-      if (((bitField0_ & 0x00000008) == 0x00000008)) {
+      if ((bitField0_ & 0x00000008) == 0x00000008) {
         size += com.google.protobuf.CodedOutputStream
           .computeBytesSize(4, publicKey_);
       }
-      if (((bitField0_ & 0x00000010) == 0x00000010)) {
+      if ((bitField0_ & 0x00000010) == 0x00000010) {
         size += com.google.protobuf.CodedOutputStream
           .computeBytesSize(5, getLabelBytes());
       }
-      if (((bitField0_ & 0x00000020) == 0x00000020)) {
+      if ((bitField0_ & 0x00000020) == 0x00000020) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(6, deterministicKey_);
       }
