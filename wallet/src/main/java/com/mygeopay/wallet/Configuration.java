@@ -32,6 +32,9 @@ public class Configuration {
 
     private static final String PREFS_KEY_LAST_VERSION = "last_version";
     private static final String PREFS_KEY_LAST_USED = "last_used";
+    /**
+     * @deprecated kept for backward compatibility
+     */
     @Deprecated
     private static final String PREFS_KEY_LAST_POCKET = "last_pocket";
     private static final String PREFS_KEY_LAST_ACCOUNT = "last_account";

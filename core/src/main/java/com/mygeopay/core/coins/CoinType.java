@@ -73,6 +73,10 @@ abstract public class CoinType extends NetworkParameters implements ValueType, S
         return checkNotNull(unitExponent, "A coin failed to set a unit exponent");
     }
 
+    /**
+     * @deprecated kept for backward compatibility
+     * @return
+     */
     @Deprecated
     public Coin getFeePerKb() {
         return feePerKb().toCoin();
@@ -82,6 +86,10 @@ abstract public class CoinType extends NetworkParameters implements ValueType, S
         return checkNotNull(feePerKb, "A coin failed to set a fee per kilobyte");
     }
 
+    /**
+     * @deprecated kept for backward compatibility
+     * @return
+     */
     @Deprecated
     public Coin getMinNonDust() {
         return minNonDust().toCoin();
@@ -92,6 +100,10 @@ abstract public class CoinType extends NetworkParameters implements ValueType, S
         return checkNotNull(minNonDust, "A coin failed to set a minimum amount to be considered not dust");
     }
 
+    /**
+     * @deprecated kept for backward compatibility
+     * @return
+     */
     @Deprecated
     public Coin getSoftDustLimit() {
         return softDustLimit().toCoin();
@@ -135,6 +147,7 @@ abstract public class CoinType extends NetworkParameters implements ValueType, S
     }
 
     /**
+     * @deprecated kept for backward compatibility
      * Returns a 1 coin of this type with the correct amount of units (satoshis)
      * Use {@linkcom.mygeopay.core.coins.CoinType:oneCoin}
      */

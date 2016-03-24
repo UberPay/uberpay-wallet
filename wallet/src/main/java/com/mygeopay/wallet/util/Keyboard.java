@@ -10,7 +10,11 @@ import android.widget.TextView;
  * @author John L. Jegutanis
  */
 public class Keyboard {
-
+    /**
+     * @deprecated kept for backward compatibility
+     * @param textView
+     * @param activity
+     */
     // FIXME causes problems in older Androids
     @Deprecated
     public static void focusAndShowKeyboard(final TextView textView, final Activity activity) {
