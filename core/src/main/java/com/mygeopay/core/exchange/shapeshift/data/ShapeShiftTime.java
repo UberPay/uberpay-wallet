@@ -14,7 +14,7 @@ public class ShapeShiftTime extends ShapeShiftBase {
     public final Status status;
     public final int secondsRemaining;
 
-    public static enum Status {
+    public enum Status {
         PENDING, EXPIRED, UNKNOWN
     }
 

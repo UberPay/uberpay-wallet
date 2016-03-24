@@ -22,7 +22,7 @@ public class ShapeShiftTxStatus extends ShapeShiftBase {
     public final Value outgoingValue;
     public final String transactionId;
 
-    public static enum Status {
+    public enum Status {
         NO_DEPOSITS, RECEIVED, COMPLETE, FAILED, UNKNOWN
     }
 
