@@ -182,7 +182,7 @@ public class Constants {
                                                     new ServerAddress("server.vialectrum.org", 50001)),
             //
             new CoinAddress(OkCashMain.get(),       new ServerAddress("ok.el.0.btcnetwork.info", 5040),  //162.248.142.89
-                                                    new ServerAddress("ok.el.1.btcnetwork.info", 5040)),  //162.244.30.214
+                                                    new ServerAddress("ok.el.1.btcnetwork.info", 5040)),  //167.88.40.231
             // 192.99.35.69:9247 # node1.startcoin.org
             // 37.59.54.5:9247 # node2.startcoin.org
             // 5024 primecoin
